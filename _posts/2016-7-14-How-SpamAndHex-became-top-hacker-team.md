@@ -32,4 +32,4 @@ But, how did we get from this first CTF competition to compete twice at the [Def
 
 In the meantime, we are creating [awesome tutorial challenges for you](https://platform.avatao.com/paths/ee29eaed-cd00-4a4d-b4bd-4e3cd83d714b/challenges/fa6e6174-2f17-11e6-bdf4-0800200c9a66) to try some of these hacker tools. Check out the hacking tools above in the list and comment if you want to suggest some tools.
 
-![The !SpamAndHex team a few years later](../images/20131015_crysys_student_core.jpg)
+![The !SpamAndHex team a few years later](../_img/20131015_crysys_student_core.jpg)

@@ -40,7 +40,7 @@ gcc -m64 -o re_challenge re_challenge.c
 There are various disassemblers available online in demo version (e.g., [IDA](https://www.hex-rays.com/products/ida/), [Binary Ninja](https://binary.ninja/demo.html)) or entirely free (e.g., [radare2](https://github.com/radare/radare2)). In this tutorial, we are going to use IDA to dissect our [32-bit binary](../downloads/re_challenge). If you simply open the binary in IDA you will see something similar:
 
 
-![re_challenge](../images/re_challenge.png)
+![re_challenge](../_img/re_challenge.png)
 
 
 The compiled binary contains instructions that can be executed by the CPU directly. The language which makes these machine instructions readable for humans is called [Assembly](https://en.wikipedia.org/wiki/Assembly_language). That is what we generally work with while reverse engineering binaries.

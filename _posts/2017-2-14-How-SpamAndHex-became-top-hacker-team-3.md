@@ -61,11 +61,11 @@ In December 2013, we played again on iCTF as team !SpamAndHex for the first time
 also from our university, but the key people of our team were all Student Core members. We tried our best, and we ranked 2nd. 
 We could not believe it! Wow. It was an huge success for us! Something began at that point. 
    
-![The !SpamAndHex team on iCTF 2013](../images/20131206_iCTF_02.jpg)
+![The !SpamAndHex team on iCTF 2013](../_img/20131206_iCTF_02.jpg)
 
 (The !SpamAndHex team on iCTF 2013)
 
-![iCTF 2013 scoreboard](../images/20131206_iCTF_01.jpg)
+![iCTF 2013 scoreboard](../_img/20131206_iCTF_01.jpg)
 
 (iCTF 2013 scoreboard)
 
@@ -87,7 +87,7 @@ DEFCON CTF Finals. Either you win one of the selected CTF games like Boston Key 
 qualifier. We took the second path and for the first time in the history a Hungarian team qualified for the DEFCON
 CTF Finals in 2015. I was very proud to the team that practically did not exist two years before.
 
-![The !SpamAndHex team preparing for the DEFCON CTF 2015 Finals](../images/defcon_team_2015.jpg)
+![The !SpamAndHex team preparing for the DEFCON CTF 2015 Finals](../_img/defcon_team_2015.jpg)
 
 (The !SpamAndHex team is preparing for the DEFCON CTF 2015 Finals)
 

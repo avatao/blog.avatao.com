@@ -13,7 +13,7 @@ Here is his story.
 
 ----
 
-![KT](../images/kt.jpg)
+![KT](../_img/kt.jpg)
 
 <span class="post question">Gabor Pek (avatao): Tamás, you are one of those students who joined [CrySyS Student Core](https://blog.avatao.com/How-SpamAndHex-became-top-hacker-team-3/) at the very beginning. How did you feel when you got invited into the CrySyS Student Core?</span>
 

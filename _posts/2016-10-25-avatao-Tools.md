@@ -11,7 +11,7 @@ One of the most difficult parts in IT security is to get started. There are zill
 <!--excerpt-->
 ----
 <i align="center">
-![avataoTools](../images/avataoTools.png)
+![avataoTools](../_img/avataoTools.png)
 </i>
 
 As [Charlie Miller said in his interview](https://blog.avatao.com/Interview-Charlie-Miller/) "security is best learned by doing." Today, everybody is using security tools, because we do not have time to implement everything from scratch. At the same time, if a new problem emerges someone is going to release a tool very soon. These tools are among the key driving forces of IT security. Experts like [j00ru](https://blog.avatao.com/Interview-Mateusz-Jurczyk/) use all the classics such as [IDA Pro](https://www.hex-rays.com/products/ida/) or [peda](https://github.com/longld/peda). Top CTF teams such as [CyKor](https://blog.avatao.com/Interview-CyKor/) heavily use [Fiddler](http://www.telerik.com/fiddler), [Paros](http://tools.kali.org/web-applications/paros) and [Burp Suite](https://portswigger.net/burp/) for web challenges. Long story short, tools are essential in IT security. 
