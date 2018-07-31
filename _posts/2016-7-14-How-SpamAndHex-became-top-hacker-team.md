@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How !SpamAndHex became a top hacker team (part 1)
+feature image: 20131015_crysys_student_core
 author: mark
 author_name: "Mark Felegyhazi"
 author_web: "https://hu.linkedin.com/in/felegyhazi"
