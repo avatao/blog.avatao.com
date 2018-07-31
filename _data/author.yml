@@ -1,0 +1,15 @@
+#
+# This file contains bloggers contributing to the avatao blog
+#
+
+mark:
+    name: Mark Felegyhazi
+    linkedin: felegyhazi
+    twitter: markfelegyhazi
+    web: https://hu.linkedin.com/in/felegyhazi
+
+gabor:
+    name: Gábor Pék
+    linkedin: gaborpek
+    twitter: gaborpek
+    web: http://www.crysys.hu/~pek/
