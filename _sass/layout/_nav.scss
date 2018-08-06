@@ -57,7 +57,7 @@
 .header__inner {
   display: flex;
   align-items: center;
-  height: 3.75em;
+  height: 4.1875em;
   justify-content: space-between;
 }
 
@@ -65,7 +65,7 @@
   padding-bottom: .5rem;
   display: none;
   position: absolute;
-  top: 3.75em;
+  top: 4.1875em;
   left: 0;
   width: 100%;
   height: auto;
@@ -73,7 +73,7 @@
 }
 
 .header__link {
-  color: $text-color;
+  color: $headertext-color;
   padding: .938rem 0;
   border-top: 1px solid $border;
 }

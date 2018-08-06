@@ -1,4 +1,4 @@
-$primary: #277cea !default;
+$primary: #277eec !default;
 $secondary: #ff6161 !default;
 $border: #ededed !default;
 $primary-light: #68a4f1;
@@ -10,11 +10,12 @@ $bg-color: #fff !default;
 $light-bg-color: #f9f9f9;
 $text-color: #343851;
 $heading-color: #313237;
-$link-color: $primary;
-$button-dark: #222325;
+$link-color: #1471e5;
+$button-gradient: linear-gradient(135deg,#277eec,#10bfbf 70%,#7ae2c2);
 $dark-light: #313237;
 $outline: #dbdbdb;
 $grey: #838c8d;
+$headertext-color: $primary;
 
 $font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 

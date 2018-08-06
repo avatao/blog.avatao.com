@@ -14,7 +14,7 @@ input[type="button"] {
   white-space: nowrap;
   cursor: pointer;
   color: $bg-color;
-  background-color: $button-dark;
+  background-color: $button-gradient;
   text-align: center;
   border: 0;
   border-radius: 0;
@@ -29,7 +29,7 @@ input[type="button"] {
   :focus,
   :active {
     color: $bg-color;
-    background-color: lighten($button-dark, 14%);
+    background-color: lighten($button-gradient, 14%);
     outline: 0;
   }
 }
@@ -50,6 +50,6 @@ button:disabled {
 
   &:hover,
   :focus {
-    background-color: $button-dark;
+    background-color: $button-gradient;
   }
 }
