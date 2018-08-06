@@ -55,6 +55,9 @@ hero_img: posts/background_lg.jpg # Main background image: use the path from /as
 email: contact@avatao.com # email for form submission
 
 twitter_username: theavatao # replace with your_twitter_username or comment to remove link from footer
+facebook_username: theavatao
+linkedin_username: company/theavatao
+github_username: avatao
 
 disqus:
   shortname: avataoblog # to enable comments replace with your_disqus_shortname
