@@ -53,7 +53,7 @@ navigation: # Navigation links
 
 hero_img: posts/background.jpeg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
-email: contact@avatao.com # email for form submission
+email: zsuzsanna.eleod@avatao.com # email for form submission
 
 twitter_username: theavatao # replace with your_twitter_username or comment to remove link from footer
 facebook_username: theavatao
