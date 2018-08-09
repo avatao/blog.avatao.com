@@ -61,7 +61,7 @@
   z-index: 1;
 
   @include breakpoint($md) {
-    max-width: 40em;
+    max-width: 35em;
   }
 
   .hero__title {
@@ -103,8 +103,8 @@
 }
 
 .bloglogo_position {
-  max-width: 500px;
+  max-width: 500px !important;
   align-items: center;
   display: inline-block;
-  
+
 }
