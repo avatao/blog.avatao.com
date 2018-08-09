@@ -61,6 +61,12 @@
   justify-content: space-between;
 }
 
+.grid__navbar {
+  display: inline-grid !important;
+  grid-template-columns: 2fr 3fr 2fr;
+  width: 100%;
+}
+
 .header__links {
   padding-bottom: .5rem;
   display: none;
