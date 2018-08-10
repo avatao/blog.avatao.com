@@ -15,9 +15,10 @@ In this post, we will have a look at the technical details of the Equifax breach
 
 <!--excerpt-->
 
-Equifax is using Apache Struts, an open-source MVC Java framework for their web-application. 
-Struts is a popular target for attackers as approximately 65% of Fortune 100 companies use Struts-based applications [according to statistics](http://www.zdnet.com/article/critical-security-bug-threatens-fortune-100-companies/).
-In the past year several vulnerabilites have been found in the software and two of them were RCE (Remote Code Execution) bugs.
+# Equifax is using **Apache Struts**, an open-source **MVC Java framework** for their web-application. 
+
+Struts is a popular target for attackers as approximately 65% of Fortune 100 companies use **Struts-based applications** [according to statistics](http://www.zdnet.com/article/critical-security-bug-threatens-fortune-100-companies/).
+In the past year several vulnerabilites have been found in the software and two of them were **RCE (Remote Code Execution)** bugs.
 In case of an RCE, attackers could run code on vulnerable servers, which allows them almost anything they want: to steal company secrets or customer data, upload ransomware, inject malicious code into the web-applications and much more. It's no fun to let evil visitors run their code on our servers.
 
 The [first vulnerability](https://www.cvedetails.com/cve/CVE-2017-5638/) has been found in the Jakarta Multipart parser on March 10, 2017.
@@ -27,7 +28,9 @@ These native payloads will be converted to executables and dropped in the server
 ![CVE details](../images/CVEs.png)
 
 Immediately patching CVEs (in hours, but at least in few days) should be self-evident, 
-however many companies are failing to update known vulnerable components for months or even years and it looks like Equifax is one of them. Let's see the timeline of events:
+however many companies are failing to update known vulnerable components for months or even years and it looks like Equifax is one of them. 
+
+# Let's see the timeline of events:
 
  * **March 10, 2017** Publish date of [CVE-2017-5638](https://www.cvedetails.com/cve/CVE-2017-5638/) (this vulnerability was exploited by the attackers)
  * **May 13 through July 30, 2017** Series of unauthorized accesses to sensitive files containing customer data on Equifax servers (based on the company's investigation)
@@ -41,17 +44,21 @@ There are several tools which can help you find and fix security issues in your 
 If your software has 3rd party components as many applications today and you're not using one of the dependency checker tools, this could be the first step
 to secure your application. One example is [Snyk](https://snyk.io/) that continuously finds and fixes vulnerabilities in your dependencies.
 
+# Struts REST 
+
 The second RCE vulnerability [CVE-2017-9805](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9805) 
 (discovered on **September 5, 2017**) was in a plugin called `Struts REST`. It allows attackers to post
-XML formatted data to application endpoints. The XML format is supported by a library called **XStream**, which can be used for
+**XML formatted data to application endpoints**. The XML format is supported by a library called **XStream**, which can be used for
 serialization (converting data structures or objects into a format that can be stored or transmitted and reconstructed later) as well.
-That means, a specially crafted XML input could be translated into a malicious Java object and the code of the attacker will be executed.
-You might think the web-application is vulnerable only if it is used with XML, but this is not the case. Struts REST is poorly configured by default, so installing this plugin makes the application vulnerable - even the `struts2-rest-showcase.war` official example application is exploitable.
+That means, a **specially crafted XML input could be translated into a malicious Java object** and the code of the attacker will be executed.
+You might think the web-application is vulnerable only if it is used with XML, but this is not the case. **Struts REST** is poorly configured by default, so installing this plugin makes the application vulnerable - even the `struts2-rest-showcase.war` official example application is exploitable.
 
-You are wrong if you think you have to be a hardcore hacker to launch successful attacks against vulnerable Apache Struts instances. Exploiting public vulnerabilities is often just about parameterizing a python script with a URL.
+You are wrong if you think you have to be a hardcore hacker to launch successful attacks against vulnerable Apache Struts instances. Exploiting public vulnerabilities is often just about **parameterizing a python script with a URL**.
 
 **Test your hacking skills in our newest challenge and see how easy is to compromise servers running Apache Struts < 2.5.13 web-applications.** You will also find potential remedies and countermeasures to explain defense against this attack.
 [Access challenge](https://platform.avatao.com/paths/2bf3c9cb-f759-4915-9a2f-f30164c45fce/challenges/0ba77e1c-d415-4951-b547-6d2b142a010a)
+
+# XML generated XStream 
 
 It's hard to implement deserialization securely, because after the serialized data is processed its code has already executed. **XStream** is very honest about it as you can see in their [Security Aspects](http://x-stream.github.io/security.html):
 
