@@ -7,7 +7,7 @@ author_web: "http://www.crysys.hu/~pek/"
 featured-img: Avatao_tools
 ---
 
-One of the most difficult parts in IT security is to get started. There are zillions of interesting topics all around, but if you are completely new in this area you can easily get lost. Fortunately, there are a massive number of security tools online that help you to solve complex problems faster and easier even if you do not understand all the backgrounds. Distributions like [Kali Linux](https://www.kali.org/), for example, are heavily armoured by the most recent security tools to help you automatize your daily routines in penetration testing. Such tools, however, are not only for beginners.
+One of the most difficult parts in IT security is to get started. There are zillions of interesting topics all around, but if you are completely new in this area you can easily get lost. Fortunately, there are a massive number of security tools online that help you to solve complex problems faster and easier even if you do not understand all the backgrounds. Distributions like **[Kali Linux]**(https://www.kali.org/), for example, are heavily armoured by the most recent security tools to help you automatize your daily routines in penetration testing. Such tools, however, are not only for beginners.
 
 <!--excerpt-->
 ----
@@ -15,7 +15,7 @@ One of the most difficult parts in IT security is to get started. There are zill
 ![avataoTools](../images/avataoTools.png)
 </i>
 
-As [Charlie Miller said in his interview](https://blog.avatao.com/Interview-Charlie-Miller/) "security is best learned by doing." Today, everybody is using security tools, because we do not have time to implement everything from scratch. At the same time, if a new problem emerges someone is going to release a tool very soon. These tools are among the key driving forces of IT security. Experts like [j00ru](https://blog.avatao.com/Interview-Mateusz-Jurczyk/) use all the classics such as [IDA Pro](https://www.hex-rays.com/products/ida/) or [peda](https://github.com/longld/peda). Top CTF teams such as [CyKor](https://blog.avatao.com/Interview-CyKor/) heavily use [Fiddler](http://www.telerik.com/fiddler), [Paros](http://tools.kali.org/web-applications/paros) and [Burp Suite](https://portswigger.net/burp/) for web challenges. Long story short, tools are essential in IT security. 
+As [Charlie Miller said in his interview](https://blog.avatao.com/Interview-Charlie-Miller/) "security is best learned by doing." Today, everybody is using security tools, because we do not have time to implement everything from scratch. At the same time, if a new problem emerges someone is going to release a tool very soon. These tools are among the key driving forces of IT security. Experts like **[j00ru]**(https://blog.avatao.com/Interview-Mateusz-Jurczyk/) use all the classics such as **[IDA Pro]**(https://www.hex-rays.com/products/ida/) or **[peda]**(https://github.com/longld/peda). Top CTF teams such as **[CyKor]**(https://blog.avatao.com/Interview-CyKor/) heavily use **[Fiddler]**(http://www.telerik.com/fiddler), **[Paros]**(http://tools.kali.org/web-applications/paros) and **[Burp Suite]**(https://portswigger.net/burp/) for web challenges. Long story short, tools are essential in IT security. 
 
 **All right, I have tools, but how can I try them out?**
 
