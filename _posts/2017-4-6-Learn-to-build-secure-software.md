@@ -9,9 +9,9 @@ featured-img: learntobuildsecuresoftware_blogpost
 
 We are writing millions of lines of code day by day, but only a few of us take security into account. 
 We exactly know that it's really easy to put security aside as it takes more investment than 
-just inserting the very first working answer from **[Stackoverflow]**(https://meta.stackoverflow.com/questions/252506/question-quality-is-dropping-on-stack-overflow). Time pressure of an approaching deadline is a good excuse to go fast when establishing the quality and security of the produced software. Everybody says that security is important, but
+just inserting the very first working answer from **[Stackoverflow](https://meta.stackoverflow.com/questions/252506/question-quality-is-dropping-on-stack-overflow)**. Time pressure of an approaching deadline is a good excuse to go fast when establishing the quality and security of the produced software. Everybody says that security is important, but
 the reality is that we'll always find a good reason to neglect it, if it is not built in entirely
-into our **[Software Development Life Cycle (SDLC)]** (https://www.tutorialspoint.com/sdlc/sdlc_overview.htm). 
+into our **[Software Development Life Cycle (SDLC)] (https://www.tutorialspoint.com/sdlc/sdlc_overview.htm)**. 
  
 Thinking with the mindset of a security guy does not come instantly, we have to train ourselves to design and implement
  something which is fairly good as a software and does not expose too many low-hanging vulnerabilities
