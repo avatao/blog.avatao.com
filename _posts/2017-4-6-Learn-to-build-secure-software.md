@@ -31,7 +31,7 @@ Long story short, here are the most important takeaways that I have in mind.
 
 ## Security by design
 
-**[Security should be the integral part of your SDLC]**(https://www.ft.com/content/4569a00e-c272-11e4-ad89-00144feab7de) from the very first moment. I know that it is almost impossible as we rely on huge piles of 3rd party and legacy codes. Still, the earlier you
+**[Security should be the integral part of your SDLC](https://www.ft.com/content/4569a00e-c272-11e4-ad89-00144feab7de)** from the very first moment. I know that it is almost impossible as we rely on huge piles of 3rd party and legacy codes. Still, the earlier you
  make steps towards this integration, the better code quality you can reach in terms of security. There are many references 
  and guides online (e.g., [OWASP](https://www.owasp.org/index.php/Secure_SDLC_Cheat_Sheet), 
  [NIST](http://csrc.nist.gov/publications/PubsSPs.html)) that can be helpful. Don't forget: no matter what software development model (e.g., Agile, Waterfall) you use, security should cover each phase of your software life cycle.  
