@@ -9,14 +9,14 @@ featured-img: learntobuildsecuresoftware_blogpost
 
 We are writing millions of lines of code day by day, but only a few of us take security into account. 
 We exactly know that it's really easy to put security aside as it takes more investment than 
-just inserting the very first working answer from [Stackoverflow](https://meta.stackoverflow.com/questions/252506/question-quality-is-dropping-on-stack-overflow). Time pressure of an approaching deadline is a good excuse to go fast when establishing the quality and security of the produced software. Everybody says that security is important, but
+just inserting the very first working answer from **[Stackoverflow]**(https://meta.stackoverflow.com/questions/252506/question-quality-is-dropping-on-stack-overflow). Time pressure of an approaching deadline is a good excuse to go fast when establishing the quality and security of the produced software. Everybody says that security is important, but
 the reality is that we'll always find a good reason to neglect it, if it is not built in entirely
-into our [Software Development Life Cycle (SDLC)](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm). 
+into our **[Software Development Life Cycle (SDLC)]** (https://www.tutorialspoint.com/sdlc/sdlc_overview.htm). 
  
 Thinking with the mindset of a security guy does not come instantly, we have to train ourselves to design and implement
  something which is fairly good as a software and does not expose too many low-hanging vulnerabilities
   ([here is an advice](https://medium.freecodecamp.com/so-you-want-to-work-in-security-bc6c10157d23) from [Parisa Tabriz](https://www.linkedin.com/in/parisa-tabriz-a676472/), 
-  security expert at Google). I want to share with you some takeaways that we experienced while developing our avatao platform. 
+  security expert at Google). I want to share with you some takeaways that we experienced while developing **our avatao platform**. 
 
 <!--excerpt-->
 
@@ -31,12 +31,10 @@ Long story short, here are the most important takeaways that I have in mind.
 
 ## Security by design
 
-[Security should be the integral part of your SDLC](https://www.ft.com/content/4569a00e-c272-11e4-ad89-00144feab7de) from the very first moment. I 
-know that it is almost impossible as we rely on huge piles of 3rd party and legacy codes. Still, the earlier you
+**[Security should be the integral part of your SDLC]**(https://www.ft.com/content/4569a00e-c272-11e4-ad89-00144feab7de) from the very first moment. I know that it is almost impossible as we rely on huge piles of 3rd party and legacy codes. Still, the earlier you
  make steps towards this integration, the better code quality you can reach in terms of security. There are many references 
  and guides online (e.g., [OWASP](https://www.owasp.org/index.php/Secure_SDLC_Cheat_Sheet), 
  [NIST](http://csrc.nist.gov/publications/PubsSPs.html)) that can be helpful. Don't forget: no matter what software development model (e.g., Agile, Waterfall) you use, security should cover each phase of your software life cycle.  
-
 
 
 ## A good code does not necessarily mean that it is secure
@@ -111,15 +109,15 @@ You can also check this challenge [here](https://platform.avatao.com/paths/2bf3c
 
 ## Threat modeling
 As the saying goes "Think like an attacker". No matter what software component we talk about it is always good to have a 
-threat model in mind. Threat modeling motivates you to identify all the information that might affect the security of 
+threat model in mind. **Threat modeling** motivates you to identify all the information that might affect the security of 
 your software. A good threat model helps you to collect and categorize weaknesses that your software can have. 
 
-We suggest you to have a threat model in each phase of your SDLC. For example, 
+We suggest you to have a **threat model in each phase of your SDLC**. For example, 
 before you start writing even a single line of code for your brand new web service, it's worth investing some time
 into the security pitfalls of available programming languages and web frameworks. Personally, I really like [Angular 4 (released
 a few weeks ago)](https://angular.io/) where security was taken into account from the very beginning.
  
-You can read more about threat modeling [here](https://www.owasp.org/index.php/Category:Threat_Modeling).
+You can read more about **threat modeling** [here](https://www.owasp.org/index.php/Category:Threat_Modeling).
 
 ## Code review
 I am sure that you also do code review before you merge into your production branch. In my opinion, this is the last point 
