@@ -7,7 +7,7 @@ author_web: "http://www.crysys.hu/~pek/"
 featured-img: CTF
 ---
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/avatao/blog.avatao.com/blob/master/assets/img/posts/CTF.jpg">
+<meta name="twitter:image" content="blog.avatao.com/blob/master/assets/img/posts/CTF.jpg">
 
 The South Korean CTF team [CyKor](https://ctftime.org/team/369), (also [on Facebook](https://ko-kr.facebook.com/cistcykor/)) is one of the best CTF teams in the world. Together with other South Korean security experts like Junghoon Lee (aka "lokihardt") and the members of [Raon_ASRT](https://ctftime.org/team/3206) the [DEFKOR](https://ctftime.org/team/16702) CTF team was formed which won the [DEFCON CTF Finals in 2015](https://ctftime.org/event/213) and [ranked 3rd in 2016](https://ctftime.org/event/344). As team CyKor they ranked 2nd on [Belluminar](http://belluminar.org/) 2016, a top invite-only hacking contest organized by [POC](http://www.powerofcommunity.net/) and [Qihoo 360](https://www.360totalsecurity.com/en/).
 
