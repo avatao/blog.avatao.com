@@ -6,6 +6,8 @@ author_name: "Gabor Pek"
 author_web: "http://www.crysys.hu/~pek/"
 featured-img: CTF
 ---
+
+<meta property="og:image:secure_url" content="https//:blog.avatao.com/blob/master/assets/img/posts/CTF.jpg">
 <meta name="twitter:card" content="https//:blog.avatao.com/blob/master/assets/img/posts/CTF.jpg">
 <meta name="twitter:image" content="https//:blog.avatao.com/blob/master/assets/img/posts/CTF.jpg">
 
