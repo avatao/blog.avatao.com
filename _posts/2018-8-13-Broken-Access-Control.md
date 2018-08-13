@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Broken Access Control 
-author: Márton
+author: marton
 author_name: "Márton Németh"
 author_web: ""
 ---
