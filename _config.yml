@@ -51,7 +51,6 @@ social:
 navigation: # Navigation links
   - {name: 'Home', link: 'https://avatao.com'}
   - {name: 'Blog', link: '/'}
-  - {name: 'Contact', link: '/contact'}
 
 #tagline: >
   #Learn to build secure software
