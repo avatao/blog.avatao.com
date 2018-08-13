@@ -6,7 +6,7 @@ description: > # Meta description of Homepage
   Avatao covers the entire SDLC including topics like secure coding in Python, Java, C#, web security, OWASP top 10, Testing, Code review and DevSecOps.
 baseurl: "" # the subpath of your site, e.g. /blog
 host: "0.0.0.0"
-url: "https://blog2.avatao.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.avatao.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/avatao/avatao.github.io/master/images/avataobloglogo.png
