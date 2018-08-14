@@ -7,14 +7,14 @@
   {% if post.featured-img %}
   <meta charset="utf-8">
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="{{ site.url }}assets/img/posts/{{ post.featured-img }}.jpg" />
-  <meta name="twitter:title" content="{{ post.title }}" />
+  <meta name="twitter:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}.jpg" />
+  <meta name="twitter:title" content="{{ page.title }}" />
     {% if post.summary %}
-  <meta name="twitter:description" content="{{ post.summary | strip_html | truncatewords:20 }}"} />
+  <meta name="twitter:description" content="{{ page.summary | strip_html | truncatewords:20 }}"} />
     {% else %}
-  <meta name="twitter:description" content="{{ post.content | strip_html | truncatewords:20 }}"} />
+  <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords:20 }}"} />
     {% endif %}
-  <meta name="twitter:url" content="{{ post.url }}" />
+  <meta name="twitter:url" content="{{ page.url }}" />
   {% endif %}
 =======
 <!-- Twitter cards -->
