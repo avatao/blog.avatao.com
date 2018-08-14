@@ -49,7 +49,10 @@ social:
 
 # THEME SETTINGS
 navigation: # Navigation links
-  - {name: 'Home', link: 'https://avatao.com'}
+  - {name: 'Benefits', link: 'https://avatao.com/#Benefits'}
+  - {name: 'Solutions', link: 'https://avatao.com/#Solutions'}
+  - {name: 'Why us?', link: 'https://avatao.com/#WhyUs'}
+  - {name: 'Impact', link: 'https://avatao.com/#Impact'}
   - {name: 'Blog', link: '/'}
 
 #tagline: >

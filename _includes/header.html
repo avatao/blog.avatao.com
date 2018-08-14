@@ -12,21 +12,32 @@
                     {% endfor %}
                   </div>
                 </nav>
-                <div class="header__toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                <a class="header__logo" href="{{ '/' | relative_url }}">
+                <a class="header__logo" href="https://avatao.com/">
                   <div class="header__logo--container">
                   {% include logo.svg %}
                  </div>
                 </a>
-                <a  href="mailto:{{ site.email }}">
-                <button class="btn" type="submit">
-                  Contact us for a demo
-                </button>
-              </a>
+              <nav class="header__links">
+                <div class="container header__links-wrapper">
+                    <a class="header__link" href="mailto:{{ site.email }}" itemprop="url">
+                        <button class="btn" type="submit">
+                          Contact us for a demo
+                        </button>
+                    </a>
+                </div>
+              </nav>
+              <nav class="header__links">
+                <div class="container header__links-wrapper">
+                    <a class="header__link" href="https://platform.avatao.com/log-in" itemprop="url">
+                      <span>Log in</span>
+                    </a>
+                </div>
+              </nav>
+              <div class="header__toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
           </div>      
     </div>
   </div>
