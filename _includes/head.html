@@ -5,18 +5,22 @@
     
 
   {% if page.featured-img %}
-  <meta charset="utf-8">
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" />
   <meta name="twitter:title" content="{{ page.title }}" />
     {% if page.summary %}
-  <meta name="twitter:description" content="{{ page.summary | strip_html | truncatewords:20 }}"} />
+  <meta name="twitter:description" content="{{ page.summary | strip_html | truncatewords:20 }}" />
+  <meta property="og:description" content="{{ page.summary | strip_html | truncatewords:20 }}" />
     {% else %}
-  <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords:20 }}"} />
+  <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords:20 }}" />
+  <meta property="og:description" content="{{ page.content | strip_html | truncatewords:20 }}" />
     {% endif %}
   <meta name="twitter:url" content="{{ page.url }}" />
   {% endif %}
-
 
   
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/icons/apple-touch-icon.png?v=qA3OXqyw77' | relative_url }}">
