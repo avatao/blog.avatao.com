@@ -48,6 +48,6 @@ button:disabled {
   &:hover,
   :focus {
     background-color: $bg-color;
-    color: $secondary;
+    border: 2px solid #277eec;
   }
 }
