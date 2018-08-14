@@ -7,7 +7,7 @@
   {% if page.featured-img %}
   <meta charset="utf-8">
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}.jpg" />
+  <meta name="twitter:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" />
   <meta name="twitter:title" content="{{ page.title }}" />
     {% if page.summary %}
   <meta name="twitter:description" content="{{ page.summary | strip_html | truncatewords:20 }}"} />
@@ -17,25 +17,6 @@
   <meta name="twitter:url" content="{{ page.url }}" />
   {% endif %}
 
-<!-- Twitter cards -->
-<meta name="twitter:site"    content="@{{ site.twitter_username }}">
-<meta name="twitter:creator" content="@{{ page.author_name }}">
-<meta name="twitter:title"   content="{{ page.title }}">
-
-{% if page.summary %}
-<meta name="twitter:description" content="{{ page.summary }}">
-{% else %}
-<meta name="twitter:description" content="{{ site.description }}">
-{% endif %}
-
-{% if page.featured-img %}
-<meta name="twitter:card"  content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}{{ page.featured-img }}">
-{% else %}
-<meta name="twitter:card"  content="summary">
-<meta name="twitter:image" content="{{ site.featured-img }}">
-{% endif %}
-<!-- end of Twitter cards -->
 
   
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/icons/apple-touch-icon.png?v=qA3OXqyw77' | relative_url }}">
