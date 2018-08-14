@@ -5,10 +5,12 @@
     
 
   {% if page.featured-img %}
-  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" />
+  <meta property="og:image:secure_url" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" /> 
+  <meta property="og:image:width" content="767" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" />
   <meta name="twitter:title" content="{{ page.title }}" />
