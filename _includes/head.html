@@ -5,21 +5,21 @@
     
 
   {% if page.featured-img %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" />
-  <meta property="og:image:secure_url" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" /> 
-  <meta property="og:image:width" content="767" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{ page.title }}" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image:secure_url" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" /> 
+  <meta prefix="og: http://ogp.me/ns#" property="og:image:width" content="767" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ site.url }}assets/img/posts/{{ page.featured-img }}_sm.jpg" />
   <meta name="twitter:title" content="{{ page.title }}" />
     {% if page.summary %}
   <meta name="twitter:description" content="{{ page.summary | strip_html | truncatewords:20 }}" />
-  <meta property="og:description" content="{{ page.summary | strip_html | truncatewords:20 }}" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{ page.summary | strip_html | truncatewords:20 }}" />
     {% else %}
   <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords:20 }}" />
-  <meta property="og:description" content="{{ page.content | strip_html | truncatewords:20 }}" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{ page.content | strip_html | truncatewords:20 }}" />
     {% endif %}
   <meta name="twitter:url" content="{{ page.url }}" />
   {% endif %}
