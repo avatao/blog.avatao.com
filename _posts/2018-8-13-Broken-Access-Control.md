@@ -42,7 +42,7 @@ First, you need a well documented access control policy, otherwise you cannot de
 
 Depending on the exact vulnerability, the consequences can be devastating. The worst case scenario is when an unauthorized user has access to some privileged function. This can give them the ability to modify or delete contents on the website, or even worse, they might gain full control over the web application.
 
- ####  You can find some challenges related to this topic in the [Secure coding in Python](https://platform.avatao.com/paths/acb12c27-2027-4218-95ae-c6690e0a96b6/info) path on the Avatao platform.
+ **You can find some challenges related to this topic in the [Secure coding in Python](https://platform.avatao.com/paths/acb12c27-2027-4218-95ae-c6690e0a96b6/challenges/b5c2d318-bf7a-41c8-965f-b62e039573bc) path on the Avatao platform.**
  
  
 
