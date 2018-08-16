@@ -1,10 +1,9 @@
 <header class="header" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
   <div class="container">
-    <div class="grid__navbar">
 
-          <div class="header__inner">
+          <div class="grid__navbar header__inner">
               <nav class="header__links">
-                  <div class="container header__links-wrapper">
+                  <div class="tao-grid-center-right container header__links-wrapper">
                     {% for item in site.navigation %}
                       <a class="header__link" href="{{ item.link | relative_url }}" itemprop="url">
                         <span itemprop="name">{{ item.name }}</span>
@@ -12,13 +11,13 @@
                     {% endfor %}
                   </div>
                 </nav>
-                <a class="header__logo" href="https://avatao.com/">
+                <a class="header__logo tao-grid-center-center" href="https://avatao.com/">
                   <div class="header__logo--container">
                   {% include logo.svg %}
                  </div>
                 </a>
-              <nav class="header__links">
-                <div class="container header__links-wrapper">
+              <nav class="header__links ">
+                <div class="container header__links-wrapper tao-grid-center-left">
                     <a href="mailto:{{ site.email }}" itemprop="url">
                         <button class="btn" type="submit">
                           Contact us for a demo
@@ -29,12 +28,11 @@
                     </a>
                 </div>
               </nav>
-              <div class="header__toggle">
+              <div class="header__toggle tao-grid-center-right">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
           </div>      
-    </div>
   </div>
 </header>

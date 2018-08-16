@@ -14,8 +14,9 @@
 
 @mixin container($breakpoint) {
   margin: 0 auto;
+  padding: 0 96px;
   @if ($breakpoint != 0) {
-    max-width: $breakpoint;
+    max-width: 100%;
   } @else {
     max-width: 100%;
   }

@@ -92,18 +92,18 @@
 }
 
 .post-list {
-  padding-top: 2.5em;
+  padding: 2.5em;
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 auto;
 
   @include breakpoint($md) {
-    padding-top: 5em;
+    padding: 5em 10em;
   }
 }
 
 .bloglogo_position {
-  max-width: 500px !important;
+  max-width: 300px !important;
   align-items: center;
   display: inline-block;
 
