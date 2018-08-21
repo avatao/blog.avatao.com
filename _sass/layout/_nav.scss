@@ -70,8 +70,9 @@
 }
 
 .tao-grid-center-right {
-  justify-self: right !important;
+  justify-self: right;
   align-self: center;
+  margin-left: 105px;
 }
 
 .tao-grid-center-left {
