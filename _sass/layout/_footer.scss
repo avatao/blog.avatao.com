@@ -20,6 +20,11 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   margin: 0 auto;
   grid-column-gap: 50px;
+
+  @media only screen and (max-width: 991px) {
+    display: block;
+    margin-bottom: -70px;
+  }
 }
 
 .tao-grid-footer-column {
@@ -48,6 +53,8 @@ footer {
   height: 15px;
   position: relative;
   top: 5px;
+  max-width: 100px;
+  margin-bottom: 20px;
 }
 
 .tao-footer-company-text {
