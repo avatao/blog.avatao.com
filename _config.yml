@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-title: Avatao Blog # your site title
+title: Avatao # your site title
 author: Avatao # You :P
 description: > # Meta description of Homepage
   Avatao blog about IT security and Appsec trainings. Avatao teaches people how to build secure software from design to deployment. 
@@ -58,7 +58,7 @@ navigation: # Navigation links
 #tagline: >
   #Learn to build secure software
 
-hero_img: posts/background.jpeg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: posts/avataoblogbg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 email: contact@avatao.com # email for form submission
 

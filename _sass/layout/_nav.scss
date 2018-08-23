@@ -1,14 +1,14 @@
 .header {
   background-color: $bg-color;
   color: $text-color;
-  position: absolute;
+  position: fixed;
   z-index: 4;
   width: 100%;
   top: 0;
   left: 0;
-  will-change: transform;
-  transition: transform .3s, background-color 0.5s ease;
-  transform: translateY(0%);
+  //will-change: transform;
+  //transition: transform .3s, background-color 0.5s ease;
+  //transform: translateY(0%);
 
   a {
     display: flex;
@@ -24,10 +24,7 @@
     z-index: 5;
   }
 
-  &.hide-nav {
-    transform: translateY(-120%);
-    transition: transform .3s;
-  }
+  //&.hide-nav {transform: translateY(-120%);transition: transform .3s;}
 }
 
 .header__logo {
@@ -35,6 +32,7 @@
   height: 100%;
   overflow: hidden;
   padding: 19px 0;
+  margin-bottom: -10px;
   outline: 0;
   border-bottom: 0;
   color: $heading-color;
