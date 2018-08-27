@@ -31,7 +31,7 @@ The cybersecurity talent gap became a frequently debated topic in popular media 
 [link1](https://www.csoonline.com/article/3094683/leadership-management/market-expansion-adds-to-cybersecurity-talent-shortage.html), [link2](https://www.csoonline.com/article/3102105/techology-business/the-most-critical-gap-in-cybersecurity-today-talent.html).
 Recruiting the right cybersecurity professionals is becoming extremely difficult, and a study by ISACA and RSA revealed that most cybersecurity [job applicants require extensive training to start their job](https://www.csoonline.com/article/3102105/techology-business/the-most-critical-gap-in-cybersecurity-today-talent.html).
 
-# Outsourcing security operations 
+# Insourcing security operations 
 
 There is a strong trend to outsource cybersecurity operations to managed security service providers (MSSP) including the SOC operation. This is reasonable in the light of the talent shortage. Personnel at **MSSPs** are qualified and their daily job is to do the monitoring. However, I argue that their visibility on corporate networks is always limited to the interface and communication between the enterprise and the service provider. Hence, the solution to only rely on the **MSSP or outsourced SOC** cannot work. 
 
