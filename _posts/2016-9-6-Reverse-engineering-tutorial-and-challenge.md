@@ -53,4 +53,4 @@ In short, the code above first prepares space for the stack frame by aligning an
 For more information about the topic we suggest to read **Dennis Yurichev's [guide](https://github.com/dennis714/RE-for-beginners).
 
 
-**All right. I am sure that after this small introduction you can solve the [second avatao Tuesday challenge](https://platform.avatao.com/paths/2bf3c9cb-f759-4915-9a2f-f30164c45fce/challenges/82aced6a-baa8-4380-a553-a14ca304283d) on reverse engineering!**
+## All right. I am sure that after this small introduction you can solve the [second avatao Tuesday challenge](https://platform.avatao.com/paths/2bf3c9cb-f759-4915-9a2f-f30164c45fce/challenges/82aced6a-baa8-4380-a553-a14ca304283d) on reverse engineering!
