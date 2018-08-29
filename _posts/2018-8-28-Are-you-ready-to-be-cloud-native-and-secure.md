@@ -18,12 +18,18 @@ Simultaneously, traditional perimeter security issues move silently to the table
 In this blog, we give a short summary on some of the key threat actors and some suggested countermeasures that you should consider to introduce before being cloud native. 
 
 ## Securing the Infrastructure
-The cloud native world promises high scalability, reliability and minimal maintenance from customers at the price of lock-in effect. 
+
+The cloud native world promises high scalability, reliability and minimal maintenance from customers at the price of the lock-in effect. 
 
 ### Network sercurity
-secure private cloud via VPCs 
+
+The main difference between on-premise solutions and virtualized networks in the cloud is that in the latter case most of the security controls are owned by the cloud provider. For example, traditional network attacks like VLAN hopping are still feasible by exploiting a vulnerability in the network stack, however, this is an acceptable risk of public clouds.
+
+At the same time, virtualized networks give a lot of benefits. We can define virtual networks that can be isolated completly so we can restrict what our services can access at network level. For more granular control, network policies can be defined to create firewall-like rules. In this way, we can filter what ports and protocols are allowed between different services. 
 
 ### Host security
+
+### IT Automation
 
 IT automation tools (e.g., Ansible secure vault)
 
