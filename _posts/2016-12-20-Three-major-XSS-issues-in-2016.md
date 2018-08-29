@@ -21,7 +21,7 @@ This year was really interesting in terms of real use-cases. [One of the most re
 
 Another interesting issue was when the AngularJS team decided to [remove their "expression sandbox" from AngularJS 1](https://docs.angularjs.org/guide/security) after [reporting escapes for all AngularJS 1 versions](https://www.youtube.com/watch?v=67Yc8_Bszlk&index=1&list=PLhixgUqwRTjwJTIkNopKuGLk3Pm9Ri1sF). It's important to emphasize that this sandbox was never intended to provide **real protection against XSS attacks**. It rather misled developers who kept relying upon it as a security feature.  
 
-# Javascript function ovverrides
+# Javascript function overrides
 
 There are other XSS mitigation techniques such as [Javascript function overrides](https://www.trustwave.com/Resources/SpiderLabs-Blog/Detecting-Successful-XSS-Testing-with-JS-Overrides/), but these also failed to provide long-term XSS protection. A [recent blog entry on brutelogic.com](http://brutelogic.com.br/blog/bypassing-javascript-overrides/) suggests to **use iframes to bypass the protection provided by "js-override.js".**
 
