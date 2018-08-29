@@ -25,7 +25,7 @@ Here is his story.
 ## <span class="post question">GP: You won the Pwn2Own contest at CanSecWest 4 times and were nominated for the Pwnie Award 3 times. These are huge results. What is your approach to control a previously unknown software?
 </span>
 
-<span class="post answer">CM:</span>The most important part is deciding what to do. Whether that means picking the piece of software (say Safari) or which part of that software to attack (say a particular part of the Javascript engine), focusing on the right parts helps you become efficient at finding vulnerabilities. 
+<span class="post answer">CM:</span>The most important part is deciding what to do. Whether that means picking the piece of software (say Safari) or which part of that software to attack (say a particular part of the Javascript engine), **focusing on the right parts helps you become efficient at finding vulnerabilities.** 
 
 ## <span class="post question">GP: Most of the products today fail to meet the security best practices to keep up with the business demands. How do you think this controversy could be solved?
 </span>
