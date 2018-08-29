@@ -1,4 +1,4 @@
----
+e---
 layout: post
 title: Are you ready to be cloud native and secure?
 author: gaborpek
@@ -35,9 +35,9 @@ Atop virtual machines another level of virtualization gained high popularity in 
 
 Most recently, we cannot even trust modern CPUs as demonstrated by various high-profile attacks such as [Spectre and Meltdown](https://meltdownattack.com/) or [Foreshadow](https://foreshadowattack.eu/). More details about virtualization attacks are summarized in my [ACM Computing Survey](http://www.hit.bme.hu/~buttyan/publications/PekBB13acmcsur.pdf). 
 
-### IT Automation
+### Secure IT Automation
 
-IT automation tools (e.g., Ansible secure vault)
+In order automatically configure your virtual infrastucture from templates you should use IT automation tools (e.g., Ansible, Puppet, Chef, Terraform) to define your infrastructure as a code. This way, your infrastucture will be reproducible, maintainable and scalable. However, it's crucial to take security into consideration. One of the most important question is storage of your secrets (e.g., user logins, private keys). The simplest way is to push these secrets in an encrypted form into your source code management repository, however, the access control is non-obvious. Better yet, use a dedicated key-value store designed for secrets (e.g., [HashiCorp Vault](https://www.vaultproject.io/)).
 
 ### Security Misconfigurations
 
