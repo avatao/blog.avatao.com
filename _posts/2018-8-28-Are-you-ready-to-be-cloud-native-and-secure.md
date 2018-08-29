@@ -34,7 +34,10 @@ Due to the complex nature of access control paramteres that cloud providers expo
 To mitigate similar issues several tools have been released over the years. [Netflix's Security Monkey](https://github.com/Netflix/security_monkey) monitors AWS and GCP policy changes and alerts on insecure configurations. Don't forget, however, tools don't replace well-designed access controls and their careful maintenance. 
 
 ### Secure backups
-, or backups. 
+
+While cloud providers give handy tools to make automated backups of cloud native resources, it's worth digging into the details a little bit more. First and foremost, backups should be handled with the same security mindset as the corresponding live data. We have to encrypt and sign the backups of sensitive data (e.g., secrets, keys) on the client side. While encryption guarantees confidentality, signing is a proof that the backup was created by us and wasn't modified. Always make sure to test the automatic restoration process before using a solution in your production system.
+
+For non-cloud native resources, it's worth checking [Borg](https://borgbackup.readthedocs.io/en/stable/index.html)  or [tarsnap](https://www.tarsnap.com/) backups tools.
 
 ### Logging and monitoring
 
@@ -46,15 +49,18 @@ Even if we install good security best practices, it is important to monitor and 
 ### Embed security into your CI/CD pipeline
 
 ### Secure source code management
+
 Use source code management systems (e.g., tag/commit signing, scanning secrets), 
 
 ### Code security
 
 As cloud providers provide fine-grained access controls, roles and policies to protect our resources(e.g., computing instances, storages, databases and so on) from unauthorized accesses, a reasonable ratio of security issues is shifted to our shoulder. Here is a minimum todo list you should take into consideration. 
 
-The best practice to thwart SQL injection attacks is to use Object-Relational Mappings [ORMs](https://en.wikipedia.org/wiki/Object-relational_mapping) and prepared statements for your database queries. These templated queries encode user inputs properly and doesn't allow to execute injected queries. Problem raises, however, if the [ORM library is vulnerable as pointed out by Snyk in their blog](https://snyk.io/blog/sql-injection-orm-vulnerabilities/). 
+The best practice to thwart SQL injection attacks is to use Object-Relational Mappings [ORMs](https://en.wikipedia.org/wiki/Object-relational_mapping) and prepared statements for your database queries. These templated queries encode strings properly and don't allow to execute malicious user inputs. Problem raises when the [ORM library itself contains security bugs as pointed out by Snyk in their blog](https://snyk.io/blog/sql-injection-orm-vulnerabilities/). 
 
-Cross-site Scripting attacks are prevented by using the proper libraries in the backend and by the Angular frontend framework itself. Additional security layer is added here by inserting Same-origin policy to our web-server responses. XSRF is evaded by using cookies. Access controls are applied in the backend code so as to mitigate Unauthorized Direct Object References. Additionally, system services are executed in isolated runtime environments using Docker and Kubernetes so as to mitigate the impact of feasible exploits.
+Cross-site Scripting (XSS) attacks should be handled both on the back-end and front-end. While the former should disallow to persist client-side scipts in our data stores, the latter should drop malicious user inputs or evaluate them as strings and not as javascript code. A key remark arrived from one of the leading XSS researchers, [Mario Heiderberg](https://twitter.com/0x6D6172696F?lang=en) in his keynote speech at Appsec EU 2018. He stated that XSS has been already solved by the good combination of existing tools, we just simply ignore this fact. In our recent [blog post](https://blog.avatao.com/CSP-tutorial/), we discuss one such protection called Content Security Policy. 
+
+by using the proper libraries in the backend and by the Angular frontend framework itself. Additional security layer is added here by inserting Same-origin policy to our web-server responses. XSRF is evaded by using cookies. Access controls are applied in the backend code so as to mitigate Unauthorized Direct Object References. Additionally, system services are executed in isolated runtime environments using Docker and Kubernetes so as to mitigate the impact of feasible exploits.
 
 ## The Serverless world or how to secure our functions?
 
