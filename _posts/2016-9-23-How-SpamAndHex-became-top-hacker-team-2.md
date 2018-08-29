@@ -23,4 +23,4 @@ After arriving back home and sharing my experiences with Levente and **[Bencsát
 
 Next year we organized the **CrySyS Security Challenge** again, rewarded the best students and participated on **iCTF** as **Team.iCTF.CrySyS.B** and [finished 23rd](https://ctftime.org/event/22). We improved some position, but this result cannot be compared to the value of attracting some really bright students (e.g., [Tamás Koczka](https://twitter.com/koczkatamas), [Gábor Molnár](https://twitter.com/molnar_g), [Gábor Ács-Kurucz](https://twitter.com/acskurucz) or [Dániel Bali](https://twitter.com/balidani)) who later became the key members of the [!SpamAndHex](https://ctftime.org/team/5347) team. 
 
-[Read more about our story!] (https://blog.avatao.com/How-SpamAndHex-became-top-hacker-team-3/)
+## [Read more about our story!](https://blog.avatao.com/How-SpamAndHex-became-top-hacker-team-3/)
