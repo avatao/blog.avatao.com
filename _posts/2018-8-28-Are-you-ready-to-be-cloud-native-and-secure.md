@@ -29,6 +29,12 @@ At the same time, virtualized networks give a lot of benefits. We can define vir
 
 ### Host security
 
+Traditional physical servers are replaced by virtual machines or computing resources in an IaaS cloud. While tradtional host security configurations still apply (e.g., software patching, file and user permissions), we have to accept the risks of the virtual world such as multitenancy. As virtualization makes the software stack more complex there are various new attack vectors as well. 
+
+Atop virtual machines another level of virtualization gained high popularity in the last decade: containers. For now, containers interweave our entire technology as they guarentee good isolation between processes and makes horizontal scalability easy. Putting a service into a container doesn't mean that it is secure. Containers can be also exploited by an able attacker and thus gaining access to everything the service had access to. Container escapes are also realistic scenairos so different countermeasures can be applied such seccomp, dropping Linux capabilities, user namespaces and so on. 
+
+Most recently, we cannot even trust modern CPUs as demonstrated by various high-profile attacks such as [Spectre and Meltdown](https://meltdownattack.com/) or [Foreshadow](https://foreshadowattack.eu/). More details about virtualization attacks are summarized in my [ACM Computing Survey](http://www.hit.bme.hu/~buttyan/publications/PekBB13acmcsur.pdf). 
+
 ### IT Automation
 
 IT automation tools (e.g., Ansible secure vault)
