@@ -63,7 +63,7 @@ In the cloud native world, we have to put an extra emphasis on the security of o
 
 ### Embed security into your CI/CD pipeline
 
-Continuous integration and deployment (CI/CD) play a key role to quickly release our product. Problems arise when we ignore security in these fast iterations. That's why we highly suggest to embed automatic security tests into you CI/CD pipeline such static code analysers, vulnerability scanners for dependencies (e.g., by using Snyk), docker images (e.g., [Clair](https://github.com/coreos/clair)) and VM templates (e.g., [CFRipper](https://github.com/Skyscanner/cfripper)).
+Continuous integration and deployment (CI/CD) play a key role to quickly release our product. Problems arise when we ignore security in these fast iterations. That's why we highly suggest to embed automatic security tests into you CI/CD pipeline such as static code analysers, vulnerability scanners for dependencies (e.g., by using Snyk), docker images (e.g., [Clair](https://github.com/coreos/clair)) and VM templates (e.g., [CFRipper](https://github.com/Skyscanner/cfripper)).
 
 ### Code security
 
