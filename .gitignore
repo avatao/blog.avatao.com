@@ -8,6 +8,7 @@ Gemfile.lock
 npm-debug.log
 *.js.map
 maps
+package-lock.json
 
 # OS Generated files #
 ######################
