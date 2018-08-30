@@ -4,7 +4,7 @@ title: Are you ready to be cloud native and secure?
 author: gaborpek
 author_name: "Gábor Pék"
 author_web: ""
-featured-img: bugbounty_vulnerability 
+featured-img: cloud_native 
 ---
 
 Due to the heavy demand to scale our services, there is unexpected urgency to be cloud native. This shift allows for abstracting our infrastructure- and network layers into the software-defined space of clouds. 
