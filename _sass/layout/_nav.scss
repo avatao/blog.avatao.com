@@ -1,14 +1,14 @@
 .header {
   background-color: $bg-color;
   color: $text-color;
-  position: absolute;
+  position: fixed;
   z-index: 4;
   width: 100%;
   top: 0;
   left: 0;
-  will-change: transform;
-  transition: transform .3s, background-color 0.5s ease;
-  transform: translateY(0%);
+  //will-change: transform;
+  //transition: transform .3s, background-color 0.5s ease;
+  //transform: translateY(0%);
 
   a {
     display: flex;
@@ -24,10 +24,7 @@
     z-index: 5;
   }
 
-  &.hide-nav {
-    transform: translateY(-120%);
-    transition: transform .3s;
-  }
+  //&.hide-nav {transform: translateY(-120%);transition: transform .3s;}
 }
 
 .header__logo {
@@ -38,6 +35,7 @@
   outline: 0;
   border-bottom: 0;
   color: $heading-color;
+  margin: 0 10px;
 
   &:hover {
     color: $heading-color;
@@ -46,6 +44,7 @@
 
   .header__logo--container {
     width: 130px;
+    height: 20px;
 
     .logo {
       fill: currentColor;
@@ -61,8 +60,9 @@
 
 .grid__navbar {
   display: grid;
-  grid-template-columns: 3fr 4fr 3fr;
+  grid-template-columns: 2fr 3fr 2fr;
   width: 100%;
+  padding: 0 25px;
 }
 .tao-grid-center-center {
   justify-self: center;
@@ -72,7 +72,6 @@
 .tao-grid-center-right {
   justify-self: right;
   align-self: center;
-  margin-left: 105px;
 }
 
 .tao-grid-center-left {
@@ -86,7 +85,7 @@
   position: absolute;
   top: 4.1875em;
   left: 0;
-  width: auto;
+  width: 100%;
   height: auto;
   background: $bg-color;
 }
@@ -96,6 +95,21 @@
   padding: .938rem 0;
   border-top: 1px solid $border;
 }
+
+@media (min-width: $lg) {
+  .header__hide {
+  display: none !important;
+  visibility: hidden !important;
+  }
+}
+
+@media (max-width: 991px) {
+.header__hide__responsive {
+  display: none !important;
+  visibility: hidden !important;
+  }
+}
+
 
 
 .header__toggle {

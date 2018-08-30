@@ -1,7 +1,9 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <img class="tao-grid-footer-logo" src="assets/img/avatao_logo_white.svg">
+      <div class="tao-grid-footer-logo">
+        {% include avatao_logo_white.svg %}
+      </div>
       <div class="tao-grid-footer-column tao-grid-footer-header tao-grid-top-left">
           <div>Get to know</div>
     
@@ -30,7 +32,7 @@
               <a href="https://avatao.com" target="_blank">Refund policy</a>
       </div>
   </div>
-    <span class="tao-footer-company-text">&copy; {{ site.title | escape }}.com Innovative Learning Ltd.</span>
+    <span class="tao-footer-company-text">&copy; Avatao.com Innovative Learning Ltd.</span>
   </div>
 </footer>
 <script async src="{{ "/assets/js/bundle.js" | relative_url }}"></script>

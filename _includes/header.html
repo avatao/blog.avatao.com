@@ -10,13 +10,23 @@
                       </a>
                     {% endfor %}
                   </div>
+                  <div class="header__hide container header__links-wrapper tao-grid-center-left">
+                    <a href="mailto:{{ site.email }}" itemprop="url">
+                        <button class="btn" type="submit">
+                          Contact us for a demo
+                        </button>
+                    </a>
+                    <a class="header__link" href="https://platform.avatao.com/log-in" itemprop="url">
+                      <span>Log in</span>
+                    </a>
+                </div>
                 </nav>
                 <a class="header__logo tao-grid-center-center" href="https://avatao.com/">
                   <div class="header__logo--container">
                   {% include logo.svg %}
                  </div>
                 </a>
-              <nav class="header__links ">
+              <nav class="header__hide__responsive header__links">
                 <div class="container header__links-wrapper tao-grid-center-left">
                     <a href="mailto:{{ site.email }}" itemprop="url">
                         <button class="btn" type="submit">
