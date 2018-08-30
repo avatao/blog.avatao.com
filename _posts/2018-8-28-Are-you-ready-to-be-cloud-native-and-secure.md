@@ -51,10 +51,9 @@ While cloud providers give handy tools to make automated backups of cloud native
 
 For non-cloud native resources, it's worth checking [Borg](https://borgbackup.readthedocs.io/en/stable/index.html)  or [tarsnap](https://www.tarsnap.com/) backups tools.
 
-### Logging and monitoring
+### Logging and monitoring 
 
-Even if we install good security best practices, it is important to monitor and understand what happens in and between our services. For this reason, I touch the field of central log collection, metrics and tracing. 
-
+Even if we follow good security best practices, it is important to monitor and understand what happens in and between our services. Central log collection helps to keep an eye on your infrastructure via the logs of web servers, applications, operation systems and API calls. Thus, potential security problems such as application failure can be pinpointed easily. Google Stackdriver and Amazon Cloudwatch are two cloud native examples for cental logging and monitoring. 
 
 ## Securing the Services
 
@@ -72,7 +71,7 @@ The best practice to thwart SQL injection attacks is to use Object-Relational Ma
 
 Cross-site Scripting (XSS) attacks should be handled both on the back-end and front-end. While the former should disallow to persist client-side scipts in our data stores, the latter should drop malicious user inputs or evaluate them as strings and not as javascript code. A key remark arrived from one of the leading XSS researchers, [Mario Heiderberg](https://twitter.com/0x6D6172696F?lang=en) in his keynote speech at Appsec EU 2018. He stated that XSS has been already solved by the good combination of existing tools, we just simply ignore this fact. In our recent [blog post](https://blog.avatao.com/CSP-tutorial/), we discuss one such protection called Content Security Policy. 
 
-by using the proper libraries in the backend and by the Angular frontend framework itself. Additional security layer is added here by inserting Same-origin policy to our web-server responses. XSRF is evaded by using cookies. Access controls are applied in the backend code so as to mitigate Unauthorized Direct Object References. Additionally, system services are executed in isolated runtime environments using Docker and Kubernetes so as to mitigate the impact of feasible exploits
+OWASPXSRF is evaded by using cookies. Access controls are applied in the backend code so as to mitigate Unauthorized Direct Object References. Additionally, system services are executed in isolated runtime environments using Docker and Kubernetes so as to mitigate the impact of feasible exploits
 
 ## The Serverless world or how to secure our functions?
 
