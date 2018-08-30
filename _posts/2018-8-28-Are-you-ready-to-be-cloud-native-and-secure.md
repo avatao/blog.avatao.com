@@ -15,7 +15,7 @@ Due to the heavy demand to scale our services, there is unexpected urgency to be
 
 Simultaneously, traditional perimeter security issues move silently to the table of IaaS providers, but certain control parameters are still in our hand. Due to this unclear mutual responsibility, we tend to forget about key security problems, for example, the protection of our APIs, storages, inter-service communication or the code of our services. Most of the time we don’t even ask the most essential question: who is the attacker and what are his capabilities?
 
-In this blog, we give a short summary on some of the key threat actors and some suggested countermeasures that you should consider to introduce before being cloud native. 
+In this blog, we give a summary on some of the key threat actors and some suggested countermeasures that you should consider to introduce before being cloud native. 
 
 ## Securing the Infrastructure
 
@@ -23,27 +23,27 @@ The cloud native world promises high scalability, reliability and minimal mainte
 
 ### Network sercurity
 
-The main difference between on-premise solutions and virtualized networks in the cloud is that in the latter case most of the security controls are owned by the cloud provider. For example, traditional network attacks like VLAN hopping are still feasible by exploiting a vulnerability in the network stack, however, this is an acceptable risk of public clouds.
+The main difference between on-premise solutions and cloud native networks is that in the latter case most of the security controls are owned by the provider. For example, traditional network attacks like VLAN hopping are still feasible by exploiting a vulnerability in the network stack, however, this is an acceptable risk of public clouds.
 
-At the same time, virtualized networks give a lot of benefits. We can define virtual networks that can be isolated completly so we can restrict what our services can access at network level. For more granular control, network policies can be defined to create firewall-like rules. In this way, we can filter what ports and protocols are allowed between different services. 
+At the same time, virtualized networks give a lot of benefits. We can define virtual networks that can be isolated completely so as to restrict what our services can access at network level. For more granular control, network policies can be defined to create firewall-like rules. In this way, we can filter what ports and protocols are allowed between different services. 
 
 ### Host security
 
 Traditional physical servers are replaced by virtual machines or computing resources in an IaaS cloud. While tradtional host security configurations still apply (e.g., software patching, file and user permissions), we have to accept the risks of the virtual world such as multitenancy. As virtualization makes the software stack more complex there are various new attack vectors as well. 
 
-Atop virtual machines another level of virtualization gained high popularity in the last decade: containers. For now, containers interweave our entire technology as they guarentee good isolation between processes and makes horizontal scalability easy. Putting a service into a container doesn't mean that it is secure. Containers can be also exploited by an able attacker and thus gaining access to everything the service had access to. Container escapes are also realistic scenairos so different countermeasures can be applied such seccomp, dropping Linux capabilities, user namespaces and so on. One of the most popular containerazition technology today is Docker. 
+Atop virtual machines another level of virtualization gained high popularity in the last decade: containers. For now, containers interweave our entire technology as they guarentee good isolation between processes and make horizontal scalability easy. Putting a service into a container doesn't mean that it is secure. Containers can also be exploited by an able attacker and thus gaining access to everything the service had access to. Container escapes are also realistic scenairos so different countermeasures can be applied such as restricting system calls (i.e., Seccomp), dropping Linux capabilities, using user namespaces and so on. One of the most popular containerization technology today is Docker. 
 
-Most recently, we cannot even trust modern CPUs as demonstrated by various high-profile attacks such as [Spectre and Meltdown](https://meltdownattack.com/) or [Foreshadow](https://foreshadowattack.eu/). More details about virtualization attacks are summarized in my [ACM Computing Survey](http://www.hit.bme.hu/~buttyan/publications/PekBB13acmcsur.pdf). 
+Most recently, we cannot even trust modern CPUs as demonstrated by various high-profile attacks such as [Spectre and Meltdown](https://meltdownattack.com/) or [Foreshadow](https://foreshadowattack.eu/). More details about virtualization attacks are summarized in my [ACM Computing Survey](http://www.hit.bme.hu/~buttyan/publications/PekBB13acmcsur.pdf)(PDF). 
 
 ### Secure IT Automation
 
-In order automatically configure your virtual infrastucture from templates you should use IT automation tools (e.g., Ansible, Puppet, Chef, Terraform) to define your infrastructure as a code. This way, your infrastucture will be reproducible, maintainable and scalable. However, it's crucial to take security into consideration. One of the most important question is storage of your secrets (e.g., user logins, private keys). The simplest way is to push these secrets in an encrypted form into your source code management repository, however, the access control is non-obvious. Better yet, use a dedicated key-value store designed for secrets (e.g., [HashiCorp Vault](https://www.vaultproject.io/)).
+In order to automatically configure your virtual infrastucture from templates you should use IT automation tools (e.g., Ansible, Puppet, Chef, Terraform) to define your infrastructure as a code. This way, your infrastructure will be reproducible, maintainable and scalable. However, it's crucial to take security into consideration. One of the most important question is storage of your secrets (e.g., user logins, private keys). The simplest way is to push these secrets in an encrypted form into your source code management repository, however, access control is non-obvious here. Better yet, use a dedicated key-value store designed for secrets (e.g., [HashiCorp Vault](https://www.vaultproject.io/)).
 
 ### Security Misconfigurations
 
 Due to the complex nature of access control paramteres that cloud providers expose, a significant ratio of security problems stems from misconfigurations or misunderstandings. The [Million Dollar Instagram Bug](https://www.forbes.com/sites/thomasbrewster/2015/12/17/facebook-instagram-security-research-threats/#4edb643c2fb5) is just one of the most thought-provoking examples. Security researcher, Wes Wineberg gained access to Instagrams's AWS S3 buckets and leaked various security keys. He stated that  _"with the keys I obtained, I could now easily impersonate Instagram, or impersonate any valid user or staff member. While out of scope, I would have easily been able to gain full access to any user's account, private pictures and data."_  For more details about AWS S3 access controls we suggest to read the corresponding [blog post from the Detectify team](https://blog.detectify.com/2017/07/13/aws-s3-misconfiguration-explained-fix/?utm_source=labs&utm_campaign=s3_buckets).
 
-To mitigate similar issues several tools have been released over the years. [Netflix's Security Monkey](https://github.com/Netflix/security_monkey) monitors AWS and GCP policy changes and alerts on insecure configurations. Don't forget, however, tools don't replace well-designed access controls and their careful maintenance. 
+To mitigate similar issues several tools have been released over the years. [Netflix's Security Monkey](https://github.com/Netflix/security_monkey) monitors AWS and GCP policy changes and alerts on insecure configurations. Don't forget, tools will not replace well-designed access controls and their careful maintenance. 
 
 ### Secure backups
 
@@ -51,15 +51,19 @@ While cloud providers give handy tools to make automated backups of cloud native
 
 For non-cloud native resources, it's worth checking [Borg](https://borgbackup.readthedocs.io/en/stable/index.html)  or [tarsnap](https://www.tarsnap.com/) backups tools.
 
-### Logging and monitoring 
+### Logging and monitoring
 
 Even if we follow good security best practices, it is important to monitor and understand what happens in and between our services. Central log collection helps to keep an eye on your infrastructure via the logs of web servers, applications, operation systems and API calls. Thus, potential security problems such as application failure can be pinpointed easily. Google Stackdriver and Amazon Cloudwatch are two cloud native examples for cental logging and monitoring. 
 
+Collecting metrics help to catch certain spikes in user acticity and anomalies in your network traffic, thus DoS attacks or malfunctioning services can be detected faster by well-defined hooks and alerts.
+
 ## Securing the Services
+
+In the cloud native world, we have to put an extra emphasis on the security of our services. This is one of the very few places, where we have full control over the security countermeaures. 
 
 ### Embed security into your CI/CD pipeline
 
-Continuous integration and deployment play a key role to quickly release our product. To problem comes when we ignore security in these fast iterations. That's why we highly suggest to embed automatic security tests into you CI/CD pipeline such static code analysers, vulnerability scanners for dependencies (e.g., by using Snyk), docker images (e.g., [Clair](https://github.com/coreos/clair)) and VM templates (e.g., [CFRipper](https://github.com/Skyscanner/cfripper)).
+Continuous integration and deployment play a key role to quickly release our product. Problems arise when we ignore security in these fast iterations. That's why we highly suggest to embed automatic security tests into you CI/CD pipeline such static code analysers, vulnerability scanners for dependencies (e.g., by using Snyk), docker images (e.g., [Clair](https://github.com/coreos/clair)) and VM templates (e.g., [CFRipper](https://github.com/Skyscanner/cfripper)).
 
 ### Code security
 
@@ -71,7 +75,7 @@ Cross-site Scripting (XSS) attacks should be handled both on the back-end and fr
 
 Access controls should be applied in the backend code so as to mitigate Unauthorized Direct Object References and API misuse. For more complete list we suggest to read the [OWASP top 10 guides](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)(PDF).
 
-Another useful advice is to search for secrets in your code as a recent tool from Skycanner called [Sonar Secrets](https://medium.com/@SkyscannerEng/introducing-sonar-secrets-32e36e1bbc97) does. 
+Another useful advice is to search for secrets in your code as a recent tool from Skycanner called [Sonar Secrets](https://medium.com/@SkyscannerEng/introducing-sonar-secrets-32e36e1bbc97) does. A final suggestion here: Please, don't commit your secrets to source code repositories.
 
 
 ## The Serverless world or how to secure our functions?
