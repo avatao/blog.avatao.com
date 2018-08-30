@@ -71,7 +71,7 @@ The best practice to thwart SQL injection attacks is to use Object-Relational Ma
 
 Cross-site Scripting (XSS) attacks should be handled both on the back-end and front-end. While the former should disallow to persist client-side scipts in our data stores, the latter should drop malicious user inputs or evaluate them as strings and not as javascript code. A key remark arrived from one of the leading XSS researchers, [Mario Heiderberg](https://twitter.com/0x6D6172696F?lang=en) in his keynote speech at Appsec EU 2018. He stated that XSS has been already solved by the good combination of existing tools, we just simply ignore this fact. In our recent [blog post](https://blog.avatao.com/CSP-tutorial/), we discuss one such protection called Content Security Policy. 
 
-OWASPXSRF is evaded by using cookies. Access controls are applied in the backend code so as to mitigate Unauthorized Direct Object References. Additionally, system services are executed in isolated runtime environments using Docker and Kubernetes so as to mitigate the impact of feasible exploits
+Access controls should be applied in the backend code so as to mitigate Unauthorized Direct Object References and API misuse. For more complete list we suggest to read the [OWASP top 10 guides](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf).
 
 ## The Serverless world or how to secure our functions?
 
