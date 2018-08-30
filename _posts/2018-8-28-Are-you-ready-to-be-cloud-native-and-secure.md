@@ -63,26 +63,25 @@ In the cloud native world, we have to put an extra emphasis on the security of o
 
 ### Embed security into your CI/CD pipeline
 
-Continuous integration and deployment play a key role to quickly release our product. Problems arise when we ignore security in these fast iterations. That's why we highly suggest to embed automatic security tests into you CI/CD pipeline such static code analysers, vulnerability scanners for dependencies (e.g., by using Snyk), docker images (e.g., [Clair](https://github.com/coreos/clair)) and VM templates (e.g., [CFRipper](https://github.com/Skyscanner/cfripper)).
+Continuous integration and deployment (CI/CD) play a key role to quickly release our product. Problems arise when we ignore security in these fast iterations. That's why we highly suggest to embed automatic security tests into you CI/CD pipeline such static code analysers, vulnerability scanners for dependencies (e.g., by using Snyk), docker images (e.g., [Clair](https://github.com/coreos/clair)) and VM templates (e.g., [CFRipper](https://github.com/Skyscanner/cfripper)).
 
 ### Code security
 
-As cloud providers provide fine-grained access controls, roles and policies to protect our resources(e.g., computing instances, storages, databases and so on) from unauthorized accesses, a reasonable ratio of security issues is shifted to our shoulder. Here is a minimum todo list you should take into consideration. 
+As cloud providers add fine-grained access controls, roles and policies to protect our resources (e.g., computing instances, storages, databases and so on) from unauthorized accesses, a reasonable percentage of security issues is shifted to our shoulder. Here is a minimum todo list you should take into consideration. 
 
-The best practice to thwart SQL injection attacks is to use Object-Relational Mappings [ORMs](https://en.wikipedia.org/wiki/Object-relational_mapping) and prepared statements for your database queries. These templated queries encode strings properly and don't allow to execute malicious user inputs. Problem raises when the [ORM library itself contains security bugs as pointed out by Snyk in their blog](https://snyk.io/blog/sql-injection-orm-vulnerabilities/). 
+The best practice to thwart SQL injection attacks is to use Object-Relational Mappings [ORMs](https://en.wikipedia.org/wiki/Object-relational_mapping) and prepared statements for your database queries. These templated queries encode strings properly and don't allow to execute malicious user inputs. There are exceptions when, for example, the [ORM library itself contains security bugs as pointed out by Snyk in their blog](https://snyk.io/blog/sql-injection-orm-vulnerabilities/). 
 
-Cross-site Scripting (XSS) attacks should be handled both on the back-end and front-end. While the former should disallow to persist client-side scipts in our data stores, the latter should drop malicious user inputs or evaluate them as strings and not as javascript code. A key remark arrived from one of the leading XSS researchers, [Mario Heiderberg](https://twitter.com/0x6D6172696F?lang=en) in his keynote speech at Appsec EU 2018. He stated that XSS has been already solved by the good combination of existing tools, we just simply ignore this fact. In our recent [blog post](https://blog.avatao.com/CSP-tutorial/), we discuss one such protection called Content Security Policy. 
+Cross-site Scripting (XSS) attacks should be handled both on the back-end and front-end side. While the former should prevent persisting client-side scipts in our data stores, the latter should drop malicious user inputs or evaluate them as strings and not as javascript code. A key remark arrived from one of the leading XSS researchers, [Mario Heiderberg](https://twitter.com/0x6D6172696F?lang=en) in his keynote speech at Appsec EU 2018. He stated that XSS has been already solved by the good combination of existing tools, we just simply ignore this fact. In our recent [blog post](https://blog.avatao.com/CSP-tutorial/), we discuss one such protection called Content Security Policy. 
 
-Access controls should be applied in the backend code so as to mitigate Unauthorized Direct Object References and API misuse. For more complete list we suggest to read the [OWASP top 10 guides](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)(PDF).
+Access controls should be applied in the backend code so as to mitigate Unauthorized Direct Object References and API abuse. For more complete list we suggest to read the [OWASP top 10 guides](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)(PDF).
 
-Another useful advice is to search for secrets in your code as a recent tool from Skycanner called [Sonar Secrets](https://medium.com/@SkyscannerEng/introducing-sonar-secrets-32e36e1bbc97) does. A final suggestion here: Please, don't commit your secrets to source code repositories.
-
+A final suggestion here: Please, never commit your secrets to source code repositories. To prevent this, a recent tool from Skycanner called [Sonar Secrets](https://medium.com/@SkyscannerEng/introducing-sonar-secrets-32e36e1bbc97) was open-sourced. 
 
 ## The Serverless world or how to secure our functions?
 
-Serverless functions also knows as Function as a Service (FaaS) were designed to avoid the maintenance burden (e.g., OS and package udpates) of virtual servers and containers so that developers can focus strictly to the functionalities they need to implement. Another huge advantage is that serverless functions scale elastically even when peak load arrives to our endpoints.
+Serverless functions (also known as Function as a Service (FaaS)) were designed to avoid the maintenance burden (e.g., OS and package udpates) of virtual servers and containers so that developers can focus strictly on the functionalities they need to implement. Another huge advantage is that serverless functions scale elastically even when peak load arrives to our endpoints.
 
-At the same time, serverless functions raise new security concerns also. According to a [PureSec document](https://www.puresec.io/press_releases/sas_top_10_2018_released) the 10 most critical security risks for the serverless architecture in 2018 are the following:
+New security concerns are also raised. According to a [PureSec document](https://www.puresec.io/press_releases/sas_top_10_2018_released) the 10 most critical security risks for the serverless architecture in 2018 are the following:
 
 1. Function Event Data Injection
 1. Broken Authentication
