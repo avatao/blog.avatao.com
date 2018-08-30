@@ -76,7 +76,27 @@ by using the proper libraries in the backend and by the Angular frontend framewo
 
 ## The Serverless world or how to secure our functions?
 
-In the cloud native world, serverless functions were designed to avoid the maintenance burden (e.g., OS and package udpates) of virtual server and containers so that developers can focus strictly to the functionalities they need to implement. Another huge advantage is that serverless functions scale elastically even for peak load arrives to our endpoints.
+Serverless functions also knows as Function as a Service (FaaS) were designed to avoid the maintenance burden (e.g., OS and package udpates) of virtual servers and containers so that developers can focus strictly to the functionalities they need to implement. Another huge advantage is that serverless functions scale elastically even when peak load arrives to our endpoints.
+
+At the same time, serverless functions raise new security concerns also. According to a [PureSec document](https://www.puresec.io/press_releases/sas_top_10_2018_released) the 10 most critical security risks for the serverless architecture in 2018 are the following:
+
+1. Function Event Data Injection
+1. Broken Authentication
+1. Insecure Serverless Deployment Configuration
+1. Over-Privileged Function Permissions & Roles
+1. Inadequate Function Monitoring & Logging
+1. Insecure 3rd. Party Dependencies
+1. Insecure Application Secrets Storage
+1. Denial of Service & Financial Resource Exhaustion
+1. Serverless Function Execution Flow Manipulation
+1. Improper Exception Handling & Verobe Error Messages
+
+Make sure to have a clear roadmap in mind to mitigate the concerns above at the design phase of your product.
 
 ## Security Education
-Motication
+
+From the summary above you see that the cloud native world brings many-many advantages to make a leap in product development, however, we have to be conscious to make these steps with security in mind. 
+
+At Avatao, we believe that security education plays a key role to call the attention of developers to avoid such vulnerabilities. Eliminating these issues at the early phase of development saves huge costs and efforts. If you're ready after this post to taste the security issues mentioned above, we suggest to [try one of challenges on Docker security](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/ab760b71-2ceb-4eb5-9943-93c08926eed6). 
+
+
