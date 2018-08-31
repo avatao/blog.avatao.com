@@ -98,7 +98,7 @@ Make sure to have a clear roadmap in mind to mitigate the concerns above at the 
 
 ## Security Education
 
-From the summary above you see that the cloud native world brings many-many advantages to make a leap in product development, however, we have to be conscious to make these steps with security in mind. 
+From the summary above you see that the cloud native world brings many-many advantages to make a leap in product development, however, we have to be conscious to take these steps with security in mind. 
 
 At Avatao, we believe that security education plays a key role to call the attention of developers to avoid such vulnerabilities. Eliminating these issues at the early phase of development saves huge costs and efforts. If you're ready after this post to taste the security issues mentioned above, we suggest to [try one of our challenges on Docker security](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/ab760b71-2ceb-4eb5-9943-93c08926eed6). 
 
