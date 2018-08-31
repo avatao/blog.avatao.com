@@ -123,13 +123,15 @@
 }
 
 .post-list {
-  padding: 2.5em;
+  padding: 1.5em;
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 auto;
 
   @include breakpoint($md) {
-    padding: 5em;
+    padding: 56px;
+    width: 84%;
+    margin: 0 auto;
   }
 }
 
