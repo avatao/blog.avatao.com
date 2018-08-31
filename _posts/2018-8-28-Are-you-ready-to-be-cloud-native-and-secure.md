@@ -37,7 +37,7 @@ Most recently, we cannot even trust modern CPUs as demonstrated by various high-
 
 ### Secure IT Automation
 
-In order to automatically configure your virtual infrastructure from templates you should use IT automation tools (e.g., Ansible, Puppet, Chef, Terraform) to define your infrastructure as a code. This way, your infrastructure will be reproducible, maintainable and scalable. However, it's crucial to take security into consideration. One of the most important question is storage of your secrets (e.g., user logins, private keys). The simplest way is to push these secrets in an encrypted form into your source code management repository, however, access control is non-obvious here. Better yet, use a dedicated key-value store designed for secrets (e.g., [HashiCorp Vault](https://www.vaultproject.io/)).
+In order to automatically configure your virtual infrastructure from templates you should use IT automation tools (e.g., Ansible, Puppet, Chef, Terraform) to define your infrastructure as a code. This way, your infrastructure will be reproducible, maintainable and scalable. However, it's crucial to take security into consideration. One of the most important question is the storage of your secrets (e.g., user logins, private keys). The simplest way is to push these secrets in an encrypted form into your source code management repository, however, access control is non-obvious here. Better yet, use a dedicated key-value store designed for secrets (e.g., [HashiCorp Vault](https://www.vaultproject.io/)).
 
 ### Security Misconfigurations
 
@@ -49,7 +49,7 @@ To mitigate similar issues several tools have been released over the years. [Net
 
 While cloud providers give handy tools to make automated backups of cloud native resources, it's worth digging into the details a little bit more. First and foremost, backups should be handled with the same security mindset as the corresponding live data. We have to encrypt and sign the backups of sensitive data (e.g., secrets, keys) on the client side. While encryption guarantees confidentiality, signing is a proof that the backup was created by us and wasn't modified. Always make sure to test the automatic restoration process before using a solution in your production system.
 
-For non-cloud native resources, it's worth checking [Borg](https://borgbackup.readthedocs.io/en/stable/index.html)  or [tarsnap](https://www.tarsnap.com/) backups tools.
+For non-cloud native resources, it's worth checking [Borg](https://borgbackup.readthedocs.io/en/stable/index.html)  or [tarsnap](https://www.tarsnap.com/).
 
 ### Logging and monitoring
 
@@ -71,9 +71,9 @@ As cloud providers add fine-grained access controls, roles and policies to prote
 
 The best practice to thwart SQL injection attacks is to use Object-Relational Mappings [ORMs](https://en.wikipedia.org/wiki/Object-relational_mapping) and prepared statements for your database queries. These templated queries encode strings properly and don't allow to execute malicious user inputs. There are exceptions when, for example, the [ORM library itself contains security bugs as pointed out by Snyk in their blog](https://snyk.io/blog/sql-injection-orm-vulnerabilities/). 
 
-Cross-site Scripting (XSS) attacks should be handled both on the back-end and front-end side. While the former should prevent persisting client-side scripts in our data stores, the latter should drop malicious user inputs or evaluate them as strings and not as javascript code. A key remark arrived from one of the leading XSS researchers, [Mario Heiderberg](https://twitter.com/0x6D6172696F?lang=en) in his keynote speech at Appsec EU 2018. He stated that XSS has been already solved by the good combination of existing tools, we just simply ignore this fact. In our recent [blog post](https://blog.avatao.com/CSP-tutorial/), we discuss one such protection called Content Security Policy. 
+Cross-site Scripting (XSS) attacks should be handled both on the back-end and front-end side. While the former should prevent persisting client-side scripts in our data stores, the latter should drop malicious user inputs or evaluate them as strings and not as javascript code. A key remark arrived from one of the leading XSS researchers, [Mario Heiderberg](https://twitter.com/0x6D6172696F?lang=en) in his keynote speech at Appsec EU 2018. He stated that XSS has already been solved by the good combination of existing tools, we just simply ignore this fact. In our recent [blog post](https://blog.avatao.com/CSP-tutorial/), we discuss one such protection called Content Security Policy. 
 
-Access controls should be applied in the backend code so as to mitigate Unauthorized Direct Object References and API abuse. For more complete list we suggest to read the [OWASP top 10 guides](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)(PDF).
+Access controls should be applied in the backend code so as to mitigate Unauthorized Direct Object References and API abuse. For more complete list we suggest to read the [OWASP top 10 guide](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)(PDF).
 
 A final suggestion here: Please, never commit your secrets to source code repositories. To prevent this, a recent tool from Skycanner called [Sonar Secrets](https://medium.com/@SkyscannerEng/introducing-sonar-secrets-32e36e1bbc97) was open-sourced. 
 
@@ -100,6 +100,6 @@ Make sure to have a clear roadmap in mind to mitigate the concerns above at the 
 
 From the summary above you see that the cloud native world brings many-many advantages to make a leap in product development, however, we have to be conscious to make these steps with security in mind. 
 
-At Avatao, we believe that security education plays a key role to call the attention of developers to avoid such vulnerabilities. Eliminating these issues at the early phase of development saves huge costs and efforts. If you're ready after this post to taste the security issues mentioned above, we suggest to [try one of challenges on Docker security](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/ab760b71-2ceb-4eb5-9943-93c08926eed6). 
+At Avatao, we believe that security education plays a key role to call the attention of developers to avoid such vulnerabilities. Eliminating these issues at the early phase of development saves huge costs and efforts. If you're ready after this post to taste the security issues mentioned above, we suggest to [try one of our challenges on Docker security](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/ab760b71-2ceb-4eb5-9943-93c08926eed6). 
 
 
