@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Are you ready to be cloud native and secure?
-author: gaborpek
-author_name: "Gábor Pék"
+author: paul
+author_name: "Paul"
 author_web: ""
 featured-img: cloud_native 
 ---
