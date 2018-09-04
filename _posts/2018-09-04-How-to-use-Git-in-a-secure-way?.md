@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to use Git in a secure way
-author: pekgabor 
+author: Paul 
 author_name: "Paul-Emmanuel Raoul"
 author_web: "https://blog.skyplabs.net"
 featured-img: cloud-native
