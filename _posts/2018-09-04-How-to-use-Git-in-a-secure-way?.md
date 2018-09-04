@@ -2,7 +2,7 @@
 layout: post
 title: How to use Git in a secure way
 author: Paul 
-author_name: "Gábor Pék"
+author_name: "Paul"
 author_web: ""
 featured-img: git
 ---
