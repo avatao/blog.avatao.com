@@ -7,7 +7,7 @@ author_web: "https://blog.skyplabs.net"
 featured-img: git
 ---
  
-We live in a world where it is hard not to know Git, the most popular [Distributed Version Control System (DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control). Free and open source, it has been initially created by Linux Torvalds to be used for the development of the Linux Kernel. These days, Git is completely omnipresent in the IT industry. It is the key element of platforms such as GitHub or GitLab and used as a package management system by the Go language for examples.
+We live in a world where it is hard not to know Git, the most popular [Distributed Version Control System (DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control). Free and open source, it has been initially created by Linus Torvalds to be used for the development of the Linux Kernel. These days, Git is completely omnipresent in the IT industry. It is the key element of platforms such as GitHub or GitLab and used as a package management system by the Go language for examples.
 
 <!--excerpt-->
 
