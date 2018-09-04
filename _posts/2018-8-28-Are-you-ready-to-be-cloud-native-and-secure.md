@@ -1,58 +1,105 @@
 ---
 layout: post
-title: How to use Git in a secure way
-author: Paul 
-author_name: "Paul-Emmanuel Raoul"
-author_web: "https://blog.skyplabs.net"
-featured-img: git
+title: Are you ready to be cloud native and secure?
+author: pekgabor
+author_name: "Gábor Pék"
+author_web: ""
+featured-img: cloud_native 
 ---
- 
-We live in a world where it is hard not to know Git, the most popular [Distributed Version Control System (DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control). Free and open source, it has been initially created by Linux Torvalds to be used for the development of the Linux Kernel. These days, Git is completely omnipresent in the IT industry. It is the key element of platforms such as GitHub or GitLab and used as a package management system by the Go language for examples.
+
+Due to the heavy demand to scale our services, there is unexpected urgency to be cloud native. This shift allows for abstracting our infrastructure- and network layers into the software-defined space of clouds. 
 
 <!--excerpt-->
 
 ----
 
-Throughout this article, different methods will be described to avoid common pitfalls in terms of security which might occur when using Git.
+Simultaneously, traditional perimeter security issues move silently to the table of IaaS providers, but certain control parameters are still in our hand. Due to this unclear mutual responsibility, we tend to forget about key security problems, for example, the protection of our APIs, storages, inter-service communication or the code of our services. Most of the time we don’t even ask the most essential question: who is the attacker and what are his capabilities?
 
-## Do not commit sensitive information
+In this blog, we give a summary on some of the key threat actors and some suggested countermeasures that you should consider to introduce before being cloud native. 
 
-Committing sensitive information can lead to critical situations and happens more often than you might think. In particular, with the emergence of cloud providers, continuous integration online services and the [Infrastructure as Code (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_Code) paradigm, our source codes now contain access tokens, IP addresses, etc. Even a `.DS_Store` for instance (a hidden file present in every folder on an OS X system) can leak the name of the files and folders present on a web server and a quick search on GitHub returns more than 800 000 results (see ["Scanning the Alexa Top 1M for .DS_Store files"](https://en.internetwache.org/scanning-the-alexa-top-1m-for-ds-store-files-12-03-2018/) for further information).
+## Securing the Infrastructure
 
-The first thing to do to avoid such situations is to add a [`.gitignore`](https://git-scm.com/docs/gitignore) file into your code repository containing the files that Git should intentionally ignore and so keep untracked. Private keys are an obvious example of what should be ignored by Git (`*.pem`, `*.key`, ...) but other sensitive files are harder to anticipate. Text editors such as vim or gedit create backup files (respectively `.<filename>.swp` and `.<filename>~`) of your work and can be committed by accident. If the content of a Git repository containing a PHP web application is pushed into production, a `db.php` file with the database credentials would be probably accessible via its backup file through the web server without triggering any error.
+The cloud native world promises high scalability, reliability and minimal maintenance from customers at the price of the lock-in effect. 
 
-Even if we suppose that your `.gitignore` contains all the potential sensitive files of your project, it won't stop to inadvertency commit an access token in a file legitimately tracked by Git. Solutions like [git-seekret](https://github.com/apuigsech/git-seekret) can be used to address this issue. This tool leverages [Git hooks](https://git-scm.com/docs/githooks) to inspect the content of your staged files or commits and checks if sensitive information have been added based on customised rules.
+### Network security
 
-If, despite these preventive measures, sensitive information can be found in your Git repository history, [`git-filter-branch`](https://git-scm.com/docs/git-filter-branch) is here to help you fix it. This Git feature allows you to rewrite the Git revision history of your project using filters. Other third-party solutions also exist such as [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) and are quite easy to use:
+The main difference between on-premise solutions and cloud native networks is that in the latter case most of the security controls are owned by the provider. For example, traditional network attacks like VLAN hopping are still feasible by exploiting a vulnerability in the network stack, however, this is an acceptable risk of public clouds.
 
-    bfg --delete-files id_{dsa,rsa} my-repo.git
+At the same time, virtualized networks give a lot of benefits. We can define virtual networks that can be isolated completely so as to restrict what our services can access at network level. For more granular control, network policies can be defined to create firewall-like rules. In this way, we can filter what ports and protocols are allowed between different services. 
 
-The above line (taken from the BFG documentation) deletes all files named `id_rsa` or `id_dsa` from the Git history of `my-repo.git`.
+### Host security
 
-## Protect the access to your Git repositories
+Traditional physical servers are replaced by virtual machines or computing resources in an IaaS cloud. While traditional host security configurations still apply (e.g., software patching, file and user permissions), we have to accept the risks of the virtual world such as multitenancy. As virtualization makes the software stack more complex there are various new attack vectors as well. 
 
-Another critical security issue you should guard against is unauthorised access to your Git repositories. Git by itself only takes care of keeping track of the changes occurring inside a repository. When you want to share your work, you need to expose this repository, and you should do it in a secure manner, otherwise you can get into trouble.
+Atop virtual machines another level of virtualization gained high popularity in the last decade: containers. For now, containers interweave our entire technology as they guarantee good isolation between processes and make horizontal scalability easy. Putting a service into a container doesn't mean that it is secure. Containers can also be exploited by an able attacker who can now access everything the service had access to. Container escapes are also realistic scenarios so different countermeasures can be applied such as restricting system calls (i.e., Seccomp), dropping Linux capabilities, using user namespaces and so on. One of the most popular containerization technology today is Docker. 
 
-Git stores internal files inside a hidden `.git` folder itself contained inside your Git repository. These internal files contain the whole history of your committed changes. In other words, the `.git` folder is your Git repository and consequently should never be exposed to people not authorised to clone it. Using Git to version websites is a common practice and restricting the access to the `.git` folder from the production servers [is not always done correctly](https://en.internetwache.org/dont-publicly-expose-git-or-how-we-downloaded-your-websites-sourcecode-an-analysis-of-alexas-1m-28-07-2015/).
+Most recently, we cannot even trust modern CPUs as demonstrated by various high-profile attacks such as [Spectre and Meltdown](https://meltdownattack.com/) or [Foreshadow](https://foreshadowattack.eu/). More details about virtualization attacks are summarized in my [ACM Computing Survey](http://www.hit.bme.hu/~buttyan/publications/PekBB13acmcsur.pdf)(PDF). 
 
-From a network perspective, your best choice is to rely on HTTPS or SSH to encrypt your traffic and authenticate the remote server. When using SSH (recommended), your private key should be protected by a passphrase and never leave your computer. If you have several development workstations, create one pair of SSH keys for each of them. This way, it would be easy to revoke access to your Git repositories for a specific device that you believe may have been compromised. The same is true when you give access to your Git repositories to third-party applications. Use access tokens that can be easily revokable instead of your account credentials and make sure to keep them secret. The [Homebrew](https://brew.sh/) project recently disclosed a [security incident](https://brew.sh/2018/08/05/security-incident-disclosure/) where a GitHub personal access token has leaked through their Jenkins instance's logs.
+### Secure IT Automation
 
-When using development platforms like GitHub or GitLab, the [Two-Factor Authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) (2FA) logging method should be enabled for your account. It means that each time you want to connect to your online account, you will be prompted to enter a One Time Password (OTP) which constantly changes after a short period of time. Opt for the use of a mobile application to generate the OTP rather than text messages. You may consider it worth investing in the security for the security of your data in which case a hardware token is the best option (for example, a [YubiKey](https://www.yubico.com/)).
+In order to automatically configure your virtual infrastructure from templates you should use IT automation tools (e.g., Ansible, Puppet, Chef, Terraform) to define your infrastructure as a code. This way, your infrastructure will be reproducible, maintainable and scalable. However, it's crucial to take security into consideration. One of the most important question is the storage of your secrets (e.g., user logins, private keys). The simplest way is to push these secrets in an encrypted form into your source code management repository, however, access control is non-obvious here. Better yet, use a dedicated key-value store designed for secrets (e.g., [HashiCorp Vault](https://www.vaultproject.io/)).
 
-## Sign your work
+### Security Misconfigurations
 
-Git enables you to cryptographically sign your work using GPG keys. Signing your work is important because anyone can choose the name and the email address of the author displayed in the Git commits. Both Git commits and tags can be signed and even the [push requests](https://git-scm.com/docs/git-push#git-push---signedtruefalseif-asked) since version 2.2.0. However, in practice, it is pointless to sign each commit since many operations would invalidate those signatures (see [Linus Torvalds' arguments on this point](http://git.661346.n2.nabble.com/GPG-signing-for-git-commit-td2582986.html)). Only Git tags need to be signed.
+Due to the complex nature of access control parameters that cloud providers expose, a significant ratio of security problems stems from misconfigurations or misunderstandings. The [Million Dollar Instagram Bug](https://www.forbes.com/sites/thomasbrewster/2015/12/17/facebook-instagram-security-research-threats/#4edb643c2fb5) is just one of the most thought-provoking examples. Security researcher, Wes Wineberg gained access to Instagram's AWS S3 buckets and leaked various security keys. He stated that  _"with the keys I obtained, I could now easily impersonate Instagram, or impersonate any valid user or staff member. While out of scope, I would have easily been able to gain full access to any user's account, private pictures and data."_  For more details about AWS S3 access controls we suggest to read the corresponding [blog post from the Detectify team](https://blog.detectify.com/2017/07/13/aws-s3-misconfiguration-explained-fix/?utm_source=labs&utm_campaign=s3_buckets).
 
-As with any asymmetric cryptosystem, security measures should be taken:
+To mitigate similar issues several tools have been released over the years. [Netflix's Security Monkey](https://github.com/Netflix/security_monkey) monitors AWS and GCP policy changes and alerts on insecure configurations. Don't forget, tools will not replace well-designed access controls and their careful maintenance. 
 
-* Don't use short-length keys. Today, 4096-bit keys are recommended.
-* When creating a new key pair, don't forget to generate a revocation key and store it in a safe place.
-* Protect your private key with a passphrase.
-* Avoid using an infinite validity period for your keys. It would become a time bomb if one day you loose a key, especially if you can't revoke it for any reason.
+### Secure backups
 
-Even if signing your work is an excellent way to add an extra layer of trust, the ultimate proof of trust is still to review the source code instead of blindly accept any contribution.
+While cloud providers give handy tools to make automated backups of cloud native resources, it's worth digging into the details a little bit more. First and foremost, backups should be handled with the same security mindset as the corresponding live data. We have to encrypt and sign the backups of sensitive data (e.g., secrets, keys) on the client side. While encryption guarantees confidentiality, signing is a proof that the backup was created by us and wasn't modified. Always make sure to test the automatic restoration process before using a solution in your production system.
 
-## Keep Git and related tools up to date
+For non-cloud native resources, it's worth checking [Borg](https://borgbackup.readthedocs.io/en/stable/index.html)  or [tarsnap](https://www.tarsnap.com/).
 
-As is true of software in general, Git is not perfect and can be impacted by vulnerabilities. The recent [CVE-2018-11235](https://nvd.nist.gov/vuln/detail/CVE-2018-11235) is a good example of this, allowing an attacker to craft a malicious Git repository leading to a remote code execution when cloned by someone. Any Git-related tool can be impacted by similar issues and they all need to be kept up to date. I recommend you to subscribe to security advisory feeds and to read them carefully. Here is an example of such a security bulletin made by [GitLab](https://about.gitlab.com/2018/08/28/security-release-gitlab-11-dot-2-dot-2-released/).
+### Logging and monitoring
+
+Even if we follow good security best practices, it is important to monitor and understand what happens in and between our services. Central log collection helps to keep an eye on your infrastructure via the logs of web servers, applications, operation systems and API calls. Thus, potential security problems such as application failure can be pinpointed easily. Google Stackdriver and Amazon Cloudwatch are two cloud native examples for central logging and monitoring. 
+
+Collecting metrics help to catch certain spikes in user activity and anomalies in your network traffic, thus DoS attacks or malfunctioning services can be detected faster by well-defined hooks and alerts.
+
+## Securing the Services
+
+In the cloud native world, we have to put an extra emphasis on the security of our services. This is one of the very few places, where we have full control over the security countermeasures. 
+
+### Embed security into your CI/CD pipeline
+
+Continuous integration and deployment (CI/CD) play a key role to quickly release our product. Problems arise when we ignore security in these fast iterations. That's why we highly suggest to embed automatic security tests into you CI/CD pipeline such as static code analysers, vulnerability scanners for dependencies (e.g., by using Snyk), docker images (e.g., [Clair](https://github.com/coreos/clair)) and VM templates (e.g., [CFRipper](https://github.com/Skyscanner/cfripper)).
+
+### Code security
+
+As cloud providers add fine-grained access controls, roles and policies to protect our resources (e.g., computing instances, storages, databases and so on) from unauthorized accesses, a reasonable percentage of security issues is shifted to our shoulder. Here is a minimum todo list you should take into consideration. 
+
+The best practice to thwart SQL injection attacks is to use Object-Relational Mappings [ORMs](https://en.wikipedia.org/wiki/Object-relational_mapping) and prepared statements for your database queries. These templated queries encode strings properly and don't allow to execute malicious user inputs. There are exceptions when, for example, the [ORM library itself contains security bugs as pointed out by Snyk in their blog](https://snyk.io/blog/sql-injection-orm-vulnerabilities/). 
+
+Cross-site Scripting (XSS) attacks should be handled both on the back-end and front-end side. While the former should prevent persisting client-side scripts in our data stores, the latter should drop malicious user inputs or evaluate them as strings and not as javascript code. A key remark arrived from one of the leading XSS researchers, [Mario Heiderberg](https://twitter.com/0x6D6172696F?lang=en) in his keynote speech at Appsec EU 2018. He stated that XSS has already been solved by the good combination of existing tools, we just simply ignore this fact. In our recent [blog post](https://blog.avatao.com/CSP-tutorial/), we discuss one such protection called Content Security Policy. 
+
+Access controls should be applied in the backend code so as to mitigate Unauthorized Direct Object References and API abuse. For more complete list we suggest to read the [OWASP top 10 guide](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)(PDF).
+
+A final suggestion here: Please, never commit your secrets to source code repositories. To prevent this, a recent tool from Skycanner called [Sonar Secrets](https://medium.com/@SkyscannerEng/introducing-sonar-secrets-32e36e1bbc97) was open-sourced. 
+
+## The Serverless world or how to secure our functions?
+
+Serverless functions (also known as Function as a Service (FaaS)) were designed to avoid the maintenance burden (e.g., OS and package updates) of virtual servers and containers so that developers can focus strictly on the functionalities they need to implement. Another huge advantage is that serverless functions scale elastically even when peak load arrives to our endpoints.
+
+New security concerns are also raised. According to a [PureSec document](https://www.puresec.io/press_releases/sas_top_10_2018_released) the 10 most critical security risks for the serverless architecture in 2018 are the following:
+
+1. Function Event Data Injection
+1. Broken Authentication
+1. Insecure Serverless Deployment Configuration
+1. Over-Privileged Function Permissions & Roles
+1. Inadequate Function Monitoring & Logging
+1. Insecure 3rd. Party Dependencies
+1. Insecure Application Secrets Storage
+1. Denial of Service & Financial Resource Exhaustion
+1. Serverless Function Execution Flow Manipulation
+1. Improper Exception Handling & Verobe Error Messages
+
+Make sure to have a clear roadmap in mind to mitigate the concerns above at the design phase of your product.
+
+## Security Education
+
+From the summary above you see that the cloud native world brings many-many advantages to make a leap in product development, however, we have to be conscious to take these steps with security in mind. 
+
+At Avatao, we believe that security education plays a key role to call the attention of developers to avoid such vulnerabilities. Eliminating these issues at the early phase of development saves huge costs and efforts. If you're ready after this post to taste the security issues mentioned above, we suggest to [try one of our challenges on Docker security](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/ab760b71-2ceb-4eb5-9943-93c08926eed6). 
+
 
