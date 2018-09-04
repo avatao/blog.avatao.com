@@ -1,6 +1,17 @@
-# How to use Git in a secure way
-
+---
+layout: post
+title: How to use Git in a secure way
+author: Paul 
+author_name: "Gábor Pék"
+author_web: ""
+featured-img: git
+---
+ 
 We live in a world where it is hard not to know Git, the most popular [Distributed Version Control System (DVCS)](https://en.wikipedia.org/wiki/Distributed_version_control). Free and open source, it has been initially created by Linux Torvalds to be used for the development of the Linux Kernel. These days, Git is completely omnipresent in the IT industry. It is the key element of platforms such as GitHub or GitLab and used as a package management system by the Go language for examples.
+
+<!--excerpt-->
+
+----
 
 Throughout this article, different methods will be described to avoid common pitfalls in terms of security which might occur when using Git.
 
