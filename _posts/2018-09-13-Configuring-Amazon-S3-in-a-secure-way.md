@@ -86,7 +86,7 @@ When creating an AWS account you get a single **root** user which has complete a
 
 ### Extracting keys from instance metadata
 
-Instance metadata described in above is a source from which keys can be extracted. For details the [official AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#instance-metadata-security-credentials) describes getting access keys using only the metadata service. This again makes it very important to make sure there is no unintended access to this service.
+Instance metadata described above is a source from which keys can be extracted. For details the [official AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#instance-metadata-security-credentials) describes getting access keys using only the metadata service. This again makes it very important to make sure there is no unintended access to this service.
 
 ### Dealing with compromised keys
 
