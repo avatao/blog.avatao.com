@@ -7,7 +7,7 @@ author_web: ""
 featured-img: aws_s3_security 
 ---
 
-As more and more infrastructures are moved to the cloud datacenters services offered by the cloud providers provide an obvious target for exploitation and **cloud security in practice** becomes more and more important. Configuring these services to be as secure as possible is a new challenge coming from the datacenter world. As explained in the [previous post](https://blog.avatao.com/Are-you-ready-to-be-cloud-native-and-secure/) there still are security considerations that we're already used to but these provide new angles to consider.
+As more and more infrastructures are moved to the cloud datacenters, services offered by the cloud providers became an obvious target for exploitation and **cloud security in practice** is more important than ever. Configuring these services to be as secure as possible is a new challenge coming from the datacenter world. As explained in the [previous post](https://blog.avatao.com/Are-you-ready-to-be-cloud-native-and-secure/) there still are security considerations that we're already used to but these provide new angles to consider.
 
 <!--excerpt-->
 
@@ -21,13 +21,13 @@ There is a great number of documented cases of people discovering vulnerabilitie
 
 ## Automating security checks and rules
 
-One of the huge benefits of cloud computing is that everything is software. Having infrastructure defined by code allows the use of tools that we've got accustomed to from traditional software development. This brings the same advantages to the infrastructure world, bringing increased reliability and thus allowing teams to move faster while maintaining security and reliability.
+One of the huge benefits of cloud computing is that everything is software. Having infrastructure defined by code allows the use of tools that we've used to because of traditional software development. This brings the same advantages to the infrastructure world, bringing increased reliability and thus allowing teams to move faster while maintaining security and reliability.
 
-For example Netflix published [security_monkey](https://github.com/Netflix/security_monkey) which is a tool that allows monitoring of cloud accounts for security policy changes that would potentially introduce vulnerabilities. It has a customisable ruleset with which organizations can configure the policies that are of interest.
+For example Netflix published [security_monkey](https://github.com/Netflix/security_monkey), a tool that allows monitoring of cloud accounts for security policy changes that would potentially introduce vulnerabilities. It has a customisable ruleset with which organizations can configure the policies that are of interest.
 
 [cfn-nag](https://github.com/stelligent/cfn_nag) is another tool that checks [CloudFormation](https://aws.amazon.com/cloudformation/) templates for possible insecurities. Checks like this integrated into a continuous integration pipeline provides a great feedback loop for developers while also making sure that no vulnerabilities are introduced in the software defining the infrastructure.
 
-Just as with any automated checks for code, these do not provide 100% protection, but can increase confidence in the code a lot. In the long run the effort put into setting up automated checks like these offer great assistance in making sure mistakes are avoided in the infrastructure code before it hits production.
+Just as with any automated checks for code, these do not provide 100% protection, but can increase confidence in the code significantly. In the long run the effort put into setting up automated checks like these offer great assistance in making sure mistakes are avoided in the infrastructure code before it hits production.
 
 ## S3 permission fails
 
@@ -93,7 +93,7 @@ Access control to AWS is done by identifying users by [keypairs](https://docs.aw
 
 ### Keeping the root account safe
 
-When creating an AWS account you get a single **root** user which has complete access to all AWS services and resources in the account. It is very important to keep credentials to this account safe because of being all access and the difficulty of recovering a lost password through support. Because of this it is considered a [best practice](https://alestic.com/2014/09/aws-root-password/) to "disable" the root account assigning it a throwaway password that is not saved and in the case access is needed using the password reset feature. Most of the day-to-day administrative tasks can be delegated to IAM users with the proper permissions and in case of a compromised IAM user it can simply be disabled unlike the root account.
+When creating an AWS account you get a single **root user** which has complete access to all AWS services and resources in the account. It is very important to keep credentials for this account safe because of being all access and the difficulty of recovering a lost password through support. Because of this it is considered a [best practice](https://alestic.com/2014/09/aws-root-password/) to "disable" the root account assigning it a throwaway password that is not saved and in the case access is needed using the password reset feature. Most of the day-to-day administrative tasks can be delegated to IAM users with the proper permissions and in case of a compromised IAM user it can simply be disabled unlike the root account.
 
 ### Extracting keys from instance metadata
 
