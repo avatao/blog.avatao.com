@@ -1,6 +1,17 @@
-# Cloud security in practice
+---
+layout: post
+title: Security issues to be aware before moving to the cloud
+author: maroyandras
+author_name: "András Maróy"
+author_web: ""
+featured-img: aws_s3_security 
+---
 
-As more and more infrastructures are moved to the cloud from datacenters services offered by the cloud providers provide an obvious target for exploitation. Configuring these services to be as secure as possible is a new challenge coming from the datacenter world. As explained in the [previous post](https://blog.avatao.com/Are-you-ready-to-be-cloud-native-and-secure/) there still are security considerations that we're already used to but these provide new angles to consider.
+As more and more infrastructures are moved to the cloud datacenters services offered by the cloud providers provide an obvious target for exploitation and **cloud security in practice** becomes more and more important. Configuring these services to be as secure as possible is a new challenge coming from the datacenter world. As explained in the [previous post](https://blog.avatao.com/Are-you-ready-to-be-cloud-native-and-secure/) there still are security considerations that we're already used to but these provide new angles to consider.
+
+<!--excerpt-->
+
+----
 
 In this post we’ll show you how to automate infrastructure security checks, store data securely, metadata endpoints and key management in the cloud. These services don’t have ubiquitous counterparts from the datacenter world, so we recommend getting familiar with them.
 
