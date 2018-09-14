@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Security issues to be aware before moving to the cloud
+title: Security issues to be aware of before moving to the cloud
 author: maroyandras
 author_name: "András Maróy"
 author_web: ""
