@@ -53,22 +53,26 @@
     position: relative;
     padding: 1.875rem 1.25rem 0.625rem;
     width: 100%;
-    color: $grey;
+    color: $tao-gray-400;
     border-bottom: 0;
 
     &:focus,
     &:hover {
-      color: $grey;
+      color: $tao-gray-500;
       border-bottom: 0;
     }
   }
 
   &__header {
     margin-bottom: 0.75rem;
+    h2 {
+    color: $heading-color;
+    }
   }
 
   &__meta {
     font-size: 0.875rem;
+    color: $tao-gray-300
   }
 }
 

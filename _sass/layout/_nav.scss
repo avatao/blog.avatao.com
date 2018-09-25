@@ -44,7 +44,8 @@
 
   .header__logo--container {
     width: 130px;
-    height: 20px;
+    margin-bottom: -10px;
+    margin-left: 15px;
 
     .logo {
       fill: currentColor;
@@ -54,7 +55,7 @@
 
 .header__inner {
   align-items: center;
-  height: 4.1875em;
+  height: 4.25em;
   justify-content: space-between;
 }
 
@@ -77,7 +78,9 @@
 .tao-grid-center-left {
   justify-self: left !important;
   align-self: center;
+  margin-left: 17px;
 }
+
 
 .header__links {
   padding-bottom: .5rem;
@@ -202,6 +205,7 @@
     border: 0;
     height: 100%;
     color:$primary;
+
 
     &::after {
       content: "";
