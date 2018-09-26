@@ -1,10 +1,19 @@
-# Semancat versioning
+---
+layout: post
+title: Semancat versioning 
+author: kristoftoth
+author_name: "Kristóf Tóth"
+author_web: ""
+featured-img: semancat_versioning 
+---
 
 Tackling the versioning pains of a greenfield project with cats.
 
-![cat](yaaay_cat.jpeg)
+<!--excerpt-->
 
-New projects can force us developers to face certain challenges that we won't even have to think about when working on an already existing codebase.
+----
+
+New projects can force us, developers to face certain challenges that we won't even have to think about when working on an already existing codebase.
 These include stuff like "how are we going to ship our code to customers/clients?" or coming up with a way to distinguish between versions.
 
 We started working on a thing called "Tutorial Framework" here at Avatao back in 2017.
