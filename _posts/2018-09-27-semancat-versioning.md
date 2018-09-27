@@ -17,7 +17,7 @@ New projects can force us, developers to face certain challenges that we won't e
 These include stuff like "how are we going to ship our code to customers/clients?" or coming up with a way to distinguish between versions.
 
 We started working on a thing called "Tutorial Framework" here at Avatao back in 2017.
-This is the framework behind the tutorial challenges on our platform with the "Avatao Tutorials" header up top.
+This is the framework behind the tutorial challenges on our platform with the "Avatao Tutorials" header up top. Try a TFW based challenge [here](https://platform.avatao.com/paths/34773552-4495-4c78-aba5-afc875a47255/challenges/84ae9210-5dce-4f40-a10a-ae188be8c02e).  
 
 Esentially this is a framework developed *for* our challenge developers that provides a robust messaging architecture between frontend and backend, and a set of commonly used components with the APIs to use them.
 These include things like keeping track of user progression, writing instructions to our chat-like messaging component, or executing commands in a terminal visible on the webpage.
@@ -83,7 +83,7 @@ Calver is really well suited for projects with a stable release cycle, or for so
 In the case of an operating system - or any large software system in general - package developers can have a high level of trust for the OS (API) that their code will keep working for a certain amount of time.
 
 JetBrain's PyCharm IDE uses calver as well, but it won't really break it's API in a traditional sense: 
-most of the time you only depend on your IDE in the sense you know how to use it, but if they change somthing your production cluster won't go up in flames.
+most of the time you only depend on your IDE in the sense you know how to use it, but if they change something your production cluster won't go up in flames.
 
 It is also really easy to tell when a certain version was released, which is always nice (and useful in some cases).
 
@@ -121,7 +121,7 @@ For example code depending on `bombay-20180618` shouldn't break with `bombay-201
 
 We have found that this system comes with the advantages we need, and disadvantages that we can deal with:
 - we cannot release more versions on the same day
-- versions do not distinguish feature additons and bugfixes
+- versions do not distinguish feature additions and bugfixes
 
 The first issue could easily be solved by postfixing the versions with hours (HH) or incrementing numbers, but we thought that this won't be that big of a deal and we should not complicate things further.
 
