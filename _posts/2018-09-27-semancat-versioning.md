@@ -25,7 +25,7 @@ These include things like keeping track of user progression, writing instruction
 TLDR; the targeted group of users are developers working on tutorials for Avatao.
 Once we've decided how to ship our framework (via Docker) we got to the versioning bit.
 
-## Main contenders
+# Main contenders
 
 The most commonly used versioning systems are: 
 1. Semver -- semantic versioning
@@ -33,7 +33,7 @@ The most commonly used versioning systems are:
 
 You have probably seen both of them already, event if you haven't really gave thought to their advantages and disadvantages.
 
-### Semver
+## Semver
 
 Semantic versioning is the practice of distinguishing release tags with 3 main components: *major*, *minor* and *patch*.
 An example would be `v3.1.7` -- `vmajor.minor.patch`.
@@ -43,12 +43,12 @@ Each part in the release tag is there for a different purpose, and incrementing 
 2. `minor` -- addition of new features in a **backwards compatible** manner
 3. `patch` -- a release without new features, mostly bugfixes and such, all being **backwards compatible**
 
-#### The good
+### The good
 
 The most appealing feature of semver is the promise of solving *dependency hell* -- the nature of releases is clearly communicated through their version numbers, making it easier to manage your packages.
 It is a hotly debated topic among developers whether semver actually delivers on it's promise or not, but it is probably safe to assume that it does more in this department than other versioning schemes, i.e. it encourages developers *not to* break public APIs and tries to signal it loudly when they do.
 
-#### The bad
+### The bad
 
 It is not always clear what a *breaking change* exactly *is*.
 Sometimes things are not so black or white, but all the shades in between, and this applies for software as well.
@@ -61,7 +61,7 @@ What I mean by all that is the fact that semver *can* encourage you to pretend l
 
 Semver is good, but in no way perfect, as it is not always possible to compress this amount of information into 3 numbers.
 
-### Calver
+## Calver
 
 Calendar versioning is not **a** versioning system per se, but rather a *family* of versioning schemes.
 It has several flavours, which all share that the versions are based on the *release calendar* instead of arbitrary numbers.
@@ -76,7 +76,7 @@ Citing [their wiki](https://wiki.ubuntu.com/TimeBasedReleases), this means that 
 - Other high-impact bug fixes, for example those which cause data loss
 - Very conservative, unintrusive bug fixes with substantial benefit and very low risk
 
-#### The good
+### The good
 
 Calver is really well suited for projects with a stable release cycle, or for software products aimed at people - not necessarily technical - instead of code.
 
@@ -87,7 +87,7 @@ most of the time you only depend on your IDE in the sense you know how to use it
 
 It is also really easy to tell when a certain version was released, which is always nice (and useful in some cases).
 
-#### The bad
+### The bad
 
 It can be hard to tell if a release contains breaking changes, especially when there are lots of them.
 
@@ -97,7 +97,7 @@ In case it is clearly visible that this is going to be an issue, calver is often
 
 Dates are also flat: in semver you have a hierarchy encoded into release numbers, but with calver you have no such thing.
 
-## Semancat
+# Semancat
 
 Our situation was pretty unique:
 - we knew we are going to have lots of releases - especially early on (semver+)
@@ -134,7 +134,7 @@ The best parts are the "ritual" of naming a new `major` release (I found a book 
 
 Cats are awesome for team morale 🐱.
 
-## Final notes
+# Final notes
 
 I think that what you can take away from all this is that you should not be afraid of coming up with your own stuff.
 It certainly is possible to do that without reinventing the wheel (i.e. combining wheels into new ones).
