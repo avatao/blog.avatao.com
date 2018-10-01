@@ -53,9 +53,9 @@ It's not enough to know the surface; **you must develop a skill to see what's ha
 
 Start with the things you already know and make your understanding rock solid. **HTTP(S), XSS, SQL injections, CSRF, and alike might look too simple at first, but take the time to dig deeper and create the solid foundation needed to build on.**
 
-As a first step check out my [360 XSS](https://www.securitydrops.com/360-xss/) post and [Avatao's free XSS challenges](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/fa6eaf92-2f17-11e6-bdf4-0800200c9a66). It'll get you up to speed regarding XSS and also give you an idea about what kind of depth to look for in further resources. Also, take a look at OWASP's cheatsheet series and browse the rest of the Avatao blog. Both are excellent sources of knowledge.
+As a first step check out my [360 XSS](https://www.securitydrops.com/360-xss/) post and [Avatao's free XSS challenges](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/fa6eaf92-2f17-11e6-bdf4-0800200c9a66). It'll get you up to speed regarding XSS and also give you an idea about what kind of depth to look for in further resources. Also, take a look at [OWASP's cheatsheet series](https://www.owasp.org/index.php/OWASP_Cheat_Sheet_Series) and browse the rest of the [our blog](https://blog.avatao.com/). Both are excellent sources of knowledge.
 
-While reading these materials, don't aim for completion. Aim for comprehension. Engage with the ideas in the articles, connect them with your pre-existing knowledgebase, map them to your experiences, identify critical lessons. Most importantly, do not take them as laws you need to obey. Practicing security is not about enforcing best practices, it's about making smart tradeoffs. Onward.
+While reading these materials, don't aim for completion. Aim for comprehension. Engage with the ideas in the articles, connect them with your pre-existing knowledgebase, map them to your experiences, identify critical lessons. Most importantly, do not take them as laws you need to obey. Practicing security is not about enforcing best practices, it's about [making smart tradeoffs](https://www.securitydrops.com/security-for-software-engineers/). Onward.
 
 # Expose yourself to more security knowledge
 
@@ -65,7 +65,7 @@ Doing this is both simple and hard at the same time. It's easy as all you need t
 
 It is also hard. I'll be frank here; you will never have enough time to do this. Luckily, you shouldn't need to. Security has to be an enhancer of your skills, not a replacer (unless you want it to). This is why I started blogging, to create small, easily consumable drops of security knowledge essential for developers.
 
-A great way to jump-start your exposure is to browse the Security Glossary at Securitydrops and browse the rest of the site.
+**A great way to jump-start your exposure is to browse [the Security Glossary at Securitydrops](https://www.securitydrops.com/glossary/) and browse the rest of the site.**
 
 Foundation, check! Exposure, check! Moving on!
 
@@ -79,11 +79,11 @@ Consequently, I believe, the best way to learn security is in workshops with a g
 
 These are available in a large number with varying quality. You can find video courses with practice sites, online hacking challenges, or vulnerable open-source applications. Depending on your goals and requirements either could be a great choice. 
 
-I found the Avatao platform to be optimized for learning. It provides hints if you are stuck and gives you plenty of context and recommended readings for each challenge. No wonder it works well, people who ran real-life workshops built it. Make sure to give it a try!
+I found the [Avatao platform](https://avatao.com/) to be optimized for learning. It provides hints if you are stuck and gives you plenty of context and recommended readings for each challenge. No wonder it works well, people who ran real-life workshops built it. Make sure to give it a try!
 
 # Conclusion
 
-Security knowledge is an excellent addition to your skillset. During your career advancement, it will be a requirement at a certain point. It'll also make you better at what you currently do. Your software knowledge is a great foundation to build on. Take one step at a time, and you will grow faster than you think.
+Security knowledge is an excellent addition to your skillset. **During your career advancement, it will be a requirement at a certain point.** It'll also make you better at what you currently do. Your software knowledge is a great foundation to build on. Take one step at a time, and you will grow faster than you think.
 
 Start with things already familiar and deepen your knowledge there. Once you are confident in these topics expose yourself to new concepts, vulnerabilities, and defense techniques. In the meantime, do not forget about the importance of hands-on training.
 
