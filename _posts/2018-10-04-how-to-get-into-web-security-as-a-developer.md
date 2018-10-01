@@ -1,8 +1,8 @@
 ---
 layout: post
 title: How to get into web-security as a developer
-author: szpijsakdaniel 
-author_name: "Dániel Szpijsák"
+author: szpisjakdaniel 
+author_name: "Dániel Szpisják"
 author_web: "https://www.securitydrops.com/author/daniel/"
 featured-img: 
 ---
@@ -39,7 +39,7 @@ In short, **learning security is a good career move.** This article is designed 
 
 Chances are, you are already familiar with quite a few security vulnerabilities and concepts. The first step is to understand what's happening behind the scenes. It's usually more than you would first think. Let's see an example.
 
-Take **(XSS)[https://blog.avatao.com/CSP-tutorial/]** for instance; at first glance, it's merely an alert box unable to cause real harm. If you look closer though, it is a lot more than that; it's code execution in the browser. It allows the attacker to do almost anything, from mining bitcoin to defacing the site or attack the user's OS. You as a developer must understand its impact and possible defense mechanisms. Speaking of which, what can you do about it? Does the following sound familiar?
+Take **[XSS](https://blog.avatao.com/CSP-tutorial/)** for instance; at first glance, it's merely an alert box unable to cause real harm. If you look closer though, it is a lot more than that; it's code execution in the browser. It allows the attacker to do almost anything, from mining bitcoin to defacing the site or attack the user's OS. You as a developer must understand its impact and possible defense mechanisms. Speaking of which, what can you do about it? Does the following sound familiar?
 
 **"Just escape the brackets, and you'll be fine!"**  
 *Captain Obvious*
@@ -53,7 +53,7 @@ It's not enough to know the surface; **you must develop a skill to see what's ha
 
 Start with the things you already know and make your understanding rock solid. **HTTP(S), XSS, SQL injections, CSRF, and alike might look too simple at first, but take the time to dig deeper and create the solid foundation needed to build on.**
 
-As a first step check out my (360 XSS)[https://www.securitydrops.com/360-xss/] post and (Avatao's free XSS challenges)[https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/fa6eaf92-2f17-11e6-bdf4-0800200c9a66]. It'll get you up to speed regarding XSS and also give you an idea about what kind of depth to look for in further resources. Also, take a look at OWASP's cheatsheet series and browse the rest of the Avatao blog. Both are excellent sources of knowledge.
+As a first step check out my [360 XSS](https://www.securitydrops.com/360-xss/) post and [Avatao's free XSS challenges](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/fa6eaf92-2f17-11e6-bdf4-0800200c9a66). It'll get you up to speed regarding XSS and also give you an idea about what kind of depth to look for in further resources. Also, take a look at OWASP's cheatsheet series and browse the rest of the Avatao blog. Both are excellent sources of knowledge.
 
 While reading these materials, don't aim for completion. Aim for comprehension. Engage with the ideas in the articles, connect them with your pre-existing knowledgebase, map them to your experiences, identify critical lessons. Most importantly, do not take them as laws you need to obey. Practicing security is not about enforcing best practices, it's about making smart tradeoffs. Onward.
 
