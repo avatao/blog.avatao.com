@@ -2,7 +2,7 @@
 title: Avatao - Learn to build secure software # your site title
 author: Avatao # You :P
 description: > # Meta description of Homepage
-  Avatao blog about IT security and Appsec trainings. Avatao teaches people how to build secure software from design to deployment. 
+  Avatao blog about IT security and Appsec trainings. Avatao teaches people how to build secure software from design to deployment.
   Avatao covers the entire SDLC including topics like secure coding in Python, Java, C#, web security, OWASP top 10, Testing, Code review and DevSecOps.
 baseurl: "" # the subpath of your site, e.g. /blog
 host: "0.0.0.0"
@@ -13,12 +13,12 @@ avatar: https://raw.githubusercontent.com/avatao/avatao.github.io/master/images/
 
 authors:
   mark:
-    name: Márk Félegyházi    
+    name: Márk Félegyházi
     linkedin: felegyhazi
     twitter: markfelegyhazi
-    web: https://hu.linkedin.com/in/felegyhazi  
+    web: https://hu.linkedin.com/in/felegyhazi
   gabor:
-    name: Gábor Pék  
+    name: Gábor Pék
     linkedin: gaborpek
     twitter: gaborpek
     web: https://www.linkedin.com/in/gaborpek/
@@ -28,15 +28,15 @@ authors:
     twitter: gaborpek
     web: https://www.linkedin.com/in/gaborpek/
   akos:
-    name: Ákos Hajba    
-    linkedin: 
-    twitter: 
-    web: 
+    name: Ákos Hajba
+    linkedin:
+    twitter:
+    web:
   marton:
     name: Márton Németh
-    linkedin: 
-    twitter: 
-    web: 
+    linkedin:
+    twitter:
+    web:
 
 # SEO PLUGIN
 social:
@@ -54,6 +54,7 @@ navigation: # Navigation links
   - {name: 'Why us?', link: 'https://avatao.com/#WhyUs'}
   - {name: 'Impact', link: 'https://avatao.com/#Impact'}
   - {name: 'Blog', link: '/'}
+  - {name: 'Careers', link: '/careers'}
 
 #tagline: >
   #Learn to build secure software
