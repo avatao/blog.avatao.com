@@ -41,4 +41,4 @@ Please send your CV here: [careers@avatao.com](mailto:careers@avatao.com) to app
 - Competitive salary that increases with success.
 - Equity / Stock option.
 
-#### Have you seen our [Junior Front End Software Engineer position](/careers/junior-frontend-engineer)? 
+#### Have you seen our [Junior Front End Software Engineer](/careers/junior-frontend-engineer) position? 
