@@ -35,4 +35,4 @@ Please send your CV here: [careers@avatao.com](mailto:careers@avatao.com) to app
 - Competitive salary that increases with success.
 - Equity / Stock option.
 
-#### Have you seen our [Front End Software Engineer position](careers/frontend-engineer)? 
+#### Have you seen our [Front End Software Engineer](/careers/frontend-engineer) position? 
