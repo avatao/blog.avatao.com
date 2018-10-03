@@ -34,3 +34,5 @@ Please send your CV here: [careers@avatao.com](mailto:careers@avatao.com) to app
 - Good ambiance, teamwork and cooperation are our core values.
 - Competitive salary that increases with success.
 - Equity / Stock option.
+
+#### Have you seen our [Front End Software Engineer position](careers/frontend-engineer)? 
