@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to get into web-security as a developer
+title: How to dive into web-security as a developer
 author: szpisjakdaniel 
 author_name: "Dániel Szpisják"
 author_web: "https://www.securitydrops.com/author/daniel/"
-featured-img: 
+featured-img: howtodiveintosecurity
 ---
 
 Great developers possess a wide variety of skills, from technological expertise to product thinking. You need some of these for your current job, others you just picked up over the years. Nevertheless, it's all valuable and contributes to the fact that you are seen as a seasoned software engineer. 
