@@ -2,6 +2,7 @@
 layout: page
 title: Front End Software Engineer
 permalink: /careers/frontend-engineer
+featured-img: frontendengineerisneeded_bg
 ---
 
 # Front End Software Engineer

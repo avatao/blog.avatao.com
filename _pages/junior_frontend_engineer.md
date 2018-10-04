@@ -2,6 +2,7 @@
 layout: page
 title: Junior Front End Software Engineer
 permalink: /careers/junior-frontend-engineer
+featured-img: juniorfrontendengineerisneeded_bg
 ---
 
 # Junior Front End Software Engineer
