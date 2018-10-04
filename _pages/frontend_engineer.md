@@ -3,6 +3,7 @@ layout: page
 title: Front End Software Engineer
 permalink: /careers/frontend-engineer
 featured-img: frontendengineerisneeded
+summary: We are planning to expand the Avatao family with a Front End Software Engineer
 ---
 
 # Front End Software Engineer
