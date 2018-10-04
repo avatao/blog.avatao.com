@@ -89,3 +89,8 @@ Start with things already familiar and deepen your knowledge there. Once you are
 
 Remember, security is not about mindlessly enforcing best practices, it's about having the ability to make smart tradeoffs. For that, the industry needs developers with the right combination of security mindset and knowledge. We need you to join the security party!
 
+## About the author 
+Dániel Szpisják is the Head of Engineering at Emarsys, security expert and enthusiast. His blog [**Securitydrops**](https://www.securitydrops.com/) covers wide range of security related topics. 
+
+## About Avatao 
+Avatao is an online learning platform providing wide range of online security challanges and tutorials. With more than 600 online security challenges our topics cover web security, secure coding in Java, C/C++, GDPR, payment systems, secure API design, DevSecOps and many more.
