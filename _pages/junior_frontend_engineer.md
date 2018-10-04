@@ -3,7 +3,7 @@ layout: page
 title: Junior Front End Software Engineer
 permalink: /careers/junior-frontend-engineer
 featured-img: juniorfrontendengineerisneeded
-summary: We are planning to expand the Avatao family with a Juniour Front End Software Engineer
+summary: We are planning to expand the Avatao family with a Junior Front End Software Engineer
 ---
 
 # Junior Front End Software Engineer
