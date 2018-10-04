@@ -23,7 +23,7 @@ Well, let's see why so many choose not to engage with the topic. Here are the to
 
 "It doesn't present a clear reward..."
 
-**Yep, security is not a new language or a framework which makes your life a whole lot easier.*** If anything, it probably complicates it. It does, however, have upsides as well. Learning security will make you a better developer. It'll expose you to new concepts shaping your thinking allowing you to create better designs. The rewards are there, and you need to know where to look.
+**Yep, security is not a new language or a framework which makes your life a whole lot easier.** If anything, it probably complicates it. It does, however, have upsides as well. Learning security will make you a better developer. It'll expose you to new concepts shaping your thinking allowing you to create better designs. The rewards are there, and you need to know where to look.
 
 "It takes major upfront effort..."
 
@@ -53,7 +53,7 @@ It's not enough to know the surface; **you must develop a skill to see what's ha
 
 Start with the things you already know and make your understanding rock solid. **HTTP(S), XSS, SQL injections, CSRF, and alike might look too simple at first, but take the time to dig deeper and create the solid foundation needed to build on.**
 
-As a first step check out my [360 XSS](https://www.securitydrops.com/360-xss/) post and [Avatao's free XSS challenges](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/fa6eaf92-2f17-11e6-bdf4-0800200c9a66). It'll get you up to speed regarding XSS and also give you an idea about what kind of depth to look for in further resources. Also, take a look at [OWASP's cheatsheet series](https://www.owasp.org/index.php/OWASP_Cheat_Sheet_Series) and browse the rest of the [our blog](https://blog.avatao.com/). Both are excellent sources of knowledge.
+As a first step check out my [360 XSS](https://www.securitydrops.com/360-xss/) post and [Avatao's free XSS challenges](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/fa6eaf92-2f17-11e6-bdf4-0800200c9a66). It'll get you up to speed regarding XSS and also give you an idea about what kind of depth to look for in further resources. Also, take a look at [OWASP's cheatsheet series](https://www.owasp.org/index.php/OWASP_Cheat_Sheet_Series) and browse the rest of  [our blog](https://blog.avatao.com/). Both are excellent sources of knowledge.
 
 While reading these materials, don't aim for completion. Aim for comprehension. Engage with the ideas in the articles, connect them with your pre-existing knowledgebase, map them to your experiences, identify critical lessons. Most importantly, do not take them as laws you need to obey. Practicing security is not about enforcing best practices, it's about [making smart tradeoffs](https://www.securitydrops.com/security-for-software-engineers/). Onward.
 
@@ -93,4 +93,4 @@ Remember, security is not about mindlessly enforcing best practices, it's about 
 Dániel Szpisják is the Head of Engineering at Emarsys, security expert and enthusiast. His blog [**Securitydrops**](https://www.securitydrops.com/) covers wide range of security related topics. 
 
 ## About Avatao 
-Avatao is a learning platform providing wide range of **online security challanges and tutorials**. Our topics cover web security, secure coding in Java, C/C++, GDPR, payment systems, secure API design, DevSecOps and many more with **more than 600 online challenges**.
+Avatao is a learning platform providing wide range of **online security challenges and tutorials**. Our topics cover web security, secure coding in Java, C/C++, GDPR, payment systems, secure API design, DevSecOps and many more with **more than 600 online challenges**.
