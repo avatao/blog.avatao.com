@@ -93,4 +93,4 @@ Remember, security is not about mindlessly enforcing best practices, it's about 
 Dániel Szpisják is the Head of Engineering at Emarsys, security expert and enthusiast. His blog [**Securitydrops**](https://www.securitydrops.com/) covers wide range of security related topics. 
 
 ## About Avatao 
-Avatao is an online learning platform providing wide range of online security challanges and tutorials. With more than 600 online security challenges our topics cover web security, secure coding in Java, C/C++, GDPR, payment systems, secure API design, DevSecOps and many more.
+Avatao is a learning platform providing wide range of **online security challanges and tutorials**. Our topics cover web security, secure coding in Java, C/C++, GDPR, payment systems, secure API design, DevSecOps and many more with **more than 600 online challenges**.
