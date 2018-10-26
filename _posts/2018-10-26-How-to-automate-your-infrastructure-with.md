@@ -40,3 +40,7 @@ One last tip for this post: Ansible can handle multiple separate inventories whi
 
 Aspire to make everything reproducible! Keep your secrets secure and away from repositories!
 Check out some of our tutorials to get started!
+
+## About Avatao 
+
+Avatao is teaching software engineers not only to write secure code but also to create a more secure software development lifecycle. With more than 600 challenges available online covering various topics from DevSecOps including security on Git and Ansible, to web security and secure coding in Java or C/C++. [Learn more!](https://avatao.com/) 
