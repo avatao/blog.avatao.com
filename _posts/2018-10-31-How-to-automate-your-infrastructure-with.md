@@ -7,9 +7,11 @@ author_web: ""
 featured-img: Ansiblesecurity
 ---
 Here at Avatao, we are big believers of infrastructure-as-code which is a way of infrastructure automation using practices from software development. Setup tasks, configuration,  identity, and access management are coded as reproducible definitions. This dramatically reduces the chance of human error, changes in the infrastructure are reproducible and auditable. We can also make use of software development tools such as version control or automated testing and deployment.
+
 <!--excerpt-->
 
 ----
+
 There are two kinds of infrastructure automation tools: orchestration and configuration management. Orchestration tools are for provisioning templates of immutable systems such as VM or container images or cloud-native resources. Configuration-management tools, on the other hand, are designed for modifying a mutable base system, for example, any Linux distribution. Since we had a mixture of VMs and traditional hosts we started with the latter but nowadays, we use a combination of both. There are plenty of configuration management tools, the right choice ultimately comes down to personal preference.
 
 We went with Ansible. From here on, I’m going to assume you are familiar with basic concepts of Ansible or other configuration-management tools but this blog post is relatively generic that I hope you will find it useful even if you don't use Ansible yet.
