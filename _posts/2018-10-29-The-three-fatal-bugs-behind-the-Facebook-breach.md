@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The three bugs behind the Facebook breach 
+title: The three fatal bugs behind the Facebook breach 
 author: hajbaakos
 author_name: "Ákos Hajba"
 author_web: ""
@@ -47,4 +47,4 @@ As we can see from this example, even small bugs or unintended behaviors can cau
 
 ## Learn from the mistakes of others 
 
- We have created a [challenge](https://platform.avatao.com/challenges/f93766aa-0bfc-4aa1-b581-5bcd8d1e035d) simulating Facebook's vulnerability, where you can try it out in a virtual environment. The base concept is the same, but it has minor differences. The vulnerable application has three little bugs, just like Facebook had. Combined, these can get you any user's access token. With a token, you can access an API and act as the user that the token was created for. The web application and the API uses JSON Web Tokens for authentication and authorization purposes, instead of the ones Facebook used.
+We have created a [challenge](https://platform.avatao.com/challenges/f93766aa-0bfc-4aa1-b581-5bcd8d1e035d) simulating Facebook's vulnerability, where you can try it out in a virtual environment. The base concept is the same, but it has minor differences. The vulnerable application has three little bugs, just like Facebook had. Combined, these can get you any user's access token. With a token, you can access an API and act as the user that the token was created for. The web application and the API uses JSON Web Tokens for authentication and authorization purposes, instead of the ones Facebook used.
