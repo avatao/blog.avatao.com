@@ -90,7 +90,112 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
    }
 }
 ```
-For sensitive information, it is recommended to use POST instead of GET. This is a general requirement for proper CSRF prevention to avoid sensitive information leaking. For more details, visit the [CSRF Spring Documentation](https://docs.spring.io/spring-security/site/docs/3.2.0.CI-SNAPSHOT/reference/html/csrf.html).
+For sensitive information, it is recommended to use `POST` instead of `GET`. This is a general requirement for proper CSRF prevention to avoid sensitive information leaking. For more details, visit the [CSRF Spring Documentation](https://docs.spring.io/spring-security/site/docs/3.2.0.CI-SNAPSHOT/reference/html/csrf.html).
 
 On Avatao platform you can get a deeper understanding about the [CSRF protection](https://platform.avatao.com/paths/d667233e-ed36-40cc-9491-8aa29e25fdc1/challenges/f16b087e-7520-4204-a135-958da1235005). 
+
+## Method-level security 
+
+Sometimes we need to secure methods with Java configuration. Using `@EnableGlobalMethodSecurity` annotation we can ensure the security of the service layer. By defining roles, we can assure that users can only execute or trigger specific methods. 
+
+First, we need to enable global method security:
+
+```
+@Configuration
+@EnableGlobalMethodSecurity(
+  prePostEnabled = true, 
+  securedEnabled = true, 
+  jsr250Enabled = true)
+public class MethodSecurityConfig extends GlobalMethodSecurityConfiguration {
+	//...
+}
+```
+`prePostEnabled` is for enabling Spring Security pre and post annotations.  With `securedEnabled`, we can enable the `@Secured` annotation. The `jsr250Enabled` property allows us to use the `@RoleAllowed` annotation.
+
+```
+public interface FlightService {
+	List<Flight> findAll();
+    
+	@Secured("ROLE_ADMIN")
+	void updateFlight(Flight flight);
+    
+	@Secured({ "ROLE_USER", "ROLE_ADMIN" })
+	void makeReservationForFlight(Flight flight);
+}
+```
+We can define a list of security configuration attributes for service methods with `@Secured` annotation. If anyone tries to invoke a method and does not possess the required roles/permissions, an `AccessDenied` exception will be thrown. In the above example, anyone with an ADMIN role can invoke the `updateFlight` method.  For deleteUser method both USER or ADMIN roles are appropriate.
+
+## Encoding sensitive data
+
+Storing passwords as plain text is perhaps one of the worst security practices and by default forbidden by Spring Security. There are a few encoding mechanisms Spring Security supports,  like `MD5, SHA256, SHA512, PBKDF2, BCrypt`, and `SCrypt`. In our example, we will use `BCrypt`, one of the best available solutions. The PasswordEncoder interface has only two methods: `encodePassword` and `isPasswordValid`.
+
+You can encode the password during authentication by defining a PasswordEncoder bean in the security configuration class:
+
+```
+public class SecurityConfig extends WebSecurityConfigurerAdapter{
+//...
+@Bean
+   public PasswordEncoder encoder() {
+       return new BCryptPasswordEncoder(11);
+   }
+//...
+   @Override
+   protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+      auth.userDetailsService(
+	auth.getDefaultUserDetailsService()).passwordEncoder(encoder());
+   }
+}
+```
+
+The Spring provides a simple solution to encode the password in the database. Let’s see how to store a user with encoded password:
+
+```
+import org.springframework.security.crypto.password.PasswordEncoder;
+//...
+@Autowired PasswordEncoder passwordEncoder;
+//...	
+User john = new User("john", passwordEncoder.encode("johnny1"));
+List<User> users = new ArrayList<>();
+users.add(john);
+userRepository.save(users);
+```
+## Avoiding XSS Attacks
+
+When an XSS (Cross-Site Scripting) attack is performed, a malicious script is injected into a website usually with using an input field to send the malicious code. The possibilities of XSS vulnerabilities in a site is quite widespread, but we can avoid most of these with [Content Security Policy (CSP)](https://blog.avatao.com/CSP-tutorial/), an added layer of security detecting and mitigating certain types of attacks (including XSS). 
+
+According to the manual, Spring Security allows users to efficiently inject the default security headers. 
+
+Current Default Security Headers provided by Spring Security:
+
+* Cache-Control
+* Content-Type Options
+* HTTP Strict Transport Security
+* X-Frame-Options
+* X-XSS-Protection
+
+With using Java configuration, all default security headers are set. 
+
+## Avoiding clickjacking
+
+Clickjacking is a technique of tricking a web-user into clicking on something different from what the user perceives.  This - usually malicious - click is triggering an action in a hidden or transparent iframe. For example, a logged in user in a bank’s system might click on a button that gives access to someone else. Allowing your website to be shown in an iframe can create a new attack vector for clickjacking.
+
+There are some ways to avoiding clickjacking actions. You can use frame breaking code, however, a more modern approach is suggested to avoid clickjacking: using X-Frame-Options header set to „DENY”. Luckily, Spring Security automatically sets the X-Frame-Options to DENY, thus whenever you need to change it, you will need to change it explicitly.
+
+There are some ways to avoid clickjacking actions. You can use frame breaking code, however, a more modern approach is suggested to avoid clickjacking with the X-Frame-Options header set to „DENY”. Luckily, Spring Security automatically sets the X-Frame-Options to `DENY`, thus whenever you need to change it, you will need to do so explicitly.
+
+We can also selectively enable the frame options with Java configuration:
+
+```
+@EnableWebSecurity
+@Configuration
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+  @Override
+  protected void configure(HttpSecurity http) throws Exception {
+    http.headers().frameOptions();
+  }
+}
+```
+
+This will also add the required header.
 
