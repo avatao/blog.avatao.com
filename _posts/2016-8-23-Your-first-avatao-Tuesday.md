@@ -32,3 +32,5 @@ For more information, read the corresponding tutorial on [OWASP](https://www.owa
 ## All right, let's get started and solve your [first Avatao Tuesday challenge](https://platform.avatao.com/paths/2bf3c9cb-f759-4915-9a2f-f30164c45fce/challenges/fa6eaf92-2f17-11e6-bdf4-0800200c9a66)
 
 Have fun! :)
+
+[![Try Avatao Demo for free!](../images/AvataoDemoAd.svg)](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/fa6e6174-2f17-11e6-bdf4-0800200c9a66)
