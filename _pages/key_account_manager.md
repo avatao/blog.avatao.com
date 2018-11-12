@@ -38,4 +38,4 @@ We have a fun, relaxed work environment, no dress code. We believe in transparen
 
 You can make an impact on the software world. We need you now!
 
-#### Have you seen our [Key Account Manager](/careers/it-sales-representative) position? 
+#### Have you seen our [IT Sales Representative](/careers/it-sales-representative) position? 
