@@ -12,3 +12,5 @@ To learn more about our platform check it out at [platform.avatao.com](https://p
 
 - [Junior Front End Software Engineer](/careers/junior-frontend-engineer)
 - [Front End Software Engineer](/careers/frontend-engineer)
+- [IT Sales Representative](/careers/it-sales-representative)
+- [Key Account Manager](/careers/key-account-manager)
