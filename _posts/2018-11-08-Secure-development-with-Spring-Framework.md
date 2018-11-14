@@ -132,7 +132,7 @@ http.addFilterAfter(new SameSiteFilter(), BasicAuthenticationFilter.class)
 
 Although Spring Security provides a comprehensive toolkit to prevent the most common types of CSRF attacks, it can also be tricked with subdomain takeover and man in the middle attack because the tokens are not tied to the user identity and are not signed. To mitigate this do not expose an HTTP endpoint, only HTTPS and do not allow external content on subdomains.
 
-On Avatao platform you can get a deeper understanding about the [CSRF protection](https://platform.avatao.com/paths/d667233e-ed36-40cc-9491-8aa29e25fdc1/challenges/f16b087e-7520-4204-a135-958da1235005). 
+On Avatao platform you can get a deeper understanding of the [CSRF protection](https://platform.avatao.com/paths/d667233e-ed36-40cc-9491-8aa29e25fdc1/challenges/f16b087e-7520-4204-a135-958da1235005). 
 
 ## Method-level Authorization 
 
