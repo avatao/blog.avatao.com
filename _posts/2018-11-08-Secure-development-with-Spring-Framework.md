@@ -88,7 +88,7 @@ As [Adam Barth et al.](https://seclab.stanford.edu/websec/csrf/csrf.pdf) conclud
 
 Spring Boot can prevent a CSRF attack. The CSRF protection is active by default, thus we do not have to configure it explicitly. If you use *Thymeleaf*, the CSRF token will automatically be added as a hidden input field. With using JSP you have to add it to the form by yourself:
 
-```
+```html
 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/> 
 ```
 You can also disable CSRF protection, however, it is not recommended. 
@@ -118,7 +118,7 @@ Possible values for the flag are:
 
 **In Spring Security you can easily do this with a filter, like this:**
 
-```
+```java
 public class SameSiteFilter extends GenericFilterBean {
     @Override
     public void doFilter (ServletRequest request,  ServletResponse response, FilterChain chain) throws IOException, ServletException {
@@ -131,7 +131,7 @@ public class SameSiteFilter extends GenericFilterBean {
 
 Then add this filter to your SecurityConfig class:
 
-```
+```java
 http.addFilterAfter(new SameSiteFilter(), BasicAuthenticationFilter.class)
 ```
 
@@ -145,7 +145,7 @@ Sometimes we need to secure methods with Java configuration. Using `@EnableGloba
 
 For method level authorization, first, we need: 
 
-```
+```java
 @Configuration
 @EnableGlobalMethodSecurity(
   prePostEnabled = true, 
@@ -158,7 +158,7 @@ public class MethodSecurityConfig extends GlobalMethodSecurityConfiguration {
 
 `prePostEnabled`  is for enabling Spring Security pre and post annotations.  With `securedEnabled` , we can enable the `@Secured`  annotation. The `jsr250Enabled`  property allows us to use the `@RoleAllowed annotation`.
 
-```
+```java
 public interface FlightService {
 	List<Flight> findAll();
     
@@ -178,7 +178,7 @@ Storing passwords as plain text is perhaps one of the worst security practices a
 
 You can encode the password during authentication by defining a `PasswordEncoder` bean in the security configuration class:
 
-```
+```java
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 //...
 @Bean
@@ -196,7 +196,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
 The Spring provides a simple solution to encode the password in the database. Let’s see how to store a user with encoded password:
 
-```
+```java
 import org.springframework.security.crypto.password.PasswordEncoder;
 //...
 @Autowired PasswordEncoder passwordEncoder;
@@ -229,7 +229,7 @@ There are some ways to avoid clickjacking actions. You can use frame breaking co
 
 We can also selectively enable the frame options with Java annotations, adding the required header
 
-```
+```java
 @EnableWebSecurity
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
