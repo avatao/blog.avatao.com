@@ -27,23 +27,28 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.authorizeRequests()
-	.antMatchers("/users/**")
-		.hasRole("USER")//USER role can access /users/**   	.antMatchers("/admin/**")
-		.("hasRole('ROLE_ADMIN')") //ADMIN role can access /admin/**       .and()
-    	.formLogin() //enabling formlogin
-		.loginPage("/login") //deafult login page URL
-		.failureUrl("/login?error") //deafult login error URL
-    		.usernameParameter("username") // default parameter name of username
-		.passwordParameter("password")// default parameter name of password          .and().logout()
-		.logoutSuccessUrl("/login?logout") // redirect URL after logging out
+        .antMatchers("/users/**")
+            .hasRole("USER")//USER role can access /users/**       
+        .antMatchers("/admin/**")
+            .("hasRole('ROLE_ADMIN')") //ADMIN role can access /admin/**
+        .and()
+        .formLogin() //enabling formlogin
+            .loginPage("/login") //deafult login page URL
+            .failureUrl("/login?error") //deafult login error URL
+            .usernameParameter("username") // default parameter name of username
+            .passwordParameter("password") // default parameter name of password
+        .and()
+        .logout()
+            .logoutSuccessUrl("/login?logout") // redirect URL after logging out
   }
 }
 ```
+
 ## Using HTTPS 
 
 To use HTTPS, we need an SSL certificate. With Spring Boot we can enable HTTPS with a generated self-signed certificate for testing purposes. In the development phase, there is no easier way to get a certificate. However, to go public, we need publicly signed certificates to identify the service providers authenticity. So it’s  not recommended to use self-signed certificate in production. To go public, you will need an SSL (Secure Sockets Layer) certificate from a Certificate Authority. There are some free certificate providers but usually, their support isn’t satisfying. The most reliable and free certificate provider is Let's Encrypt. It is high quality, widely known and used.
 
-On the long run it won’t be sufficient but to get started in development, you can generate a self-signed certificate with a certificate management utility called keytool. Use this command:
+In the long run it won’t be sufficient but to get started in development, you can generate a self-signed certificate with a certificate management utility called keytool. Use this command:
 
 ```
 keytool -genkeypair -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048  -keystore keystore.p12 -validity 3650
@@ -79,7 +84,7 @@ As [Adam Barth et al. wrote](https://seclab.stanford.edu/websec/csrf/csrf.pdf), 
 
 * *validating custom headers attached to XMLHttpRequests:* sites can be defended from CSRF with a custom header set via XMLHttpRequest. Make sure to check the header is present before processing state-modifying requests.
 
-None of these techniques are satisfactory, for a variety of reasons.
+As [Adam Barth et al.](https://seclab.stanford.edu/websec/csrf/csrf.pdf) conclude in their article, there are three widely used techniques for defending from CSRF attacks but none of these techniques are satisfactory on their own.
 
 Spring Boot can prevent a CSRF attack. The CSRF protection is active by default, thus we do not have to configure it explicitly. If you use *Thymeleaf*, the CSRF token will automatically be added as a hidden input field. With using JSP you have to add it to the form by yourself:
 
@@ -115,12 +120,12 @@ Possible values for the flag are:
 
 ```
 public class SameSiteFilter extends GenericFilterBean {
-	@Override
-	public void doFilter (ServletRequest request,  ServletResponse response, FilterChain chain) throws IOException, ServletException {
-    	HttpServletResponse resp = (HttpServletResponse)response;
-    	resp.setHeader("Set-Cookie", "HttpOnly; SameSite=strict");
-    	chain.doFilter(request, response);
-	}
+    @Override
+    public void doFilter (ServletRequest request,  ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        HttpServletResponse resp = (HttpServletResponse) response;
+        resp.setHeader("Set-Cookie", "HttpOnly; SameSite=strict");
+        chain.doFilter(request, response);
+    }
 }
 ```
 
