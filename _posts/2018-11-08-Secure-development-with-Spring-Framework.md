@@ -170,7 +170,7 @@ public interface FlightService {
 }
 ```
 
-We can define a list of security configuration attributes for service methods with `@Secured` annotation. If anyone tries to invoke a method and does not possess the required roles/permissions, an `AccessDenied` exception will be thrown. In the above example, anyone with an `ADMIN` role can invoke the `updateFlight` method.  For `deleteUser` method both `USER` or `ADMIN` roles are appropriate.
+We can define a list of security configuration attributes for service methods with `@Secured` annotation. If anyone tries to invoke a method and does not possess the required roles/permissions, an `AccessDenied` exception will be thrown. In the above example, anyone with an `ADMIN` role can invoke the `updateFlight` method.  For `makeReservationForFlight` method both `USER` or `ADMIN` roles are appropriate.
 
 ## Encoding sensitive data
 
