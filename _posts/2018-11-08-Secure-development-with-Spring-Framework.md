@@ -93,7 +93,7 @@ Spring Boot can prevent a CSRF attack. The CSRF protection is active by default,
 ```
 You can also disable CSRF protection, however, it is not recommended. 
 
-Using proper HTTP verbs is also essential to protect our application from CSRF attacks since including sensitive data in the URL by using HTTP `GET` can cause information leakage. For sensitive information, it is recommended to use `POST` instead of `GET`. Another reason to avoid `GET` requests is that by default Spring does not CSRF protect them. This is a general requirement for proper CSRF prevention. For more details, visit  the [CSRF Spring Documentation](https://docs.spring.io/spring-security/site/docs/3.2.0.CI-SNAPSHOT/reference/html/csrf.html).
+It is recommended to use `POST` requests instead of `GET` to pass CSRF tokens, as by default Spring does not protect `GET` methods. This is a general requirement for proper CSRF prevention. For more details, visit  the [CSRF Spring Documentation](https://docs.spring.io/spring-security/site/docs/3.2.0.CI-SNAPSHOT/reference/html/csrf.html).
 
 **There are different CSRF protection types that Spring offers:**
 
