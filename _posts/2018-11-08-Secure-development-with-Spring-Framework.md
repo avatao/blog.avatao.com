@@ -19,7 +19,7 @@ Spring Security is a powerful and highly customizable authentication and access-
 
 By implementing a security configuration class, we can, for example, override the default security settings, specify permissions, define users, roles and a custom login page view. For this, we have to extend the WebSecurityConfigurerAdapter. By default, the following configuration is set up in the WebSecurityConfigurerAdapter class. This grants authenticated users access all URLs. 
 
-```
+```java
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
