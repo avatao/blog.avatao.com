@@ -209,7 +209,7 @@ userRepository.save(users);
 
 ## Avoiding XSS Attacks
 
-When an XSS (Cross-Site Scripting) attack is performed, a malicious script is injected into a website usually by using an input field to send the malicious code. There are a wide range of XSS attack vectors, however, we can avoid most of these by using choosing proper web frameworks, input validators/filters/encoders and right configurations such as Content Security Policy (CSP).
+When an XSS (Cross-Site Scripting) attack is performed, a malicious script is injected into a website usually by using an input field to send the malicious code. There are a wide range of XSS attack vectors, however, we can avoid most of these by choosing proper web frameworks, input validators/filters/encoders and right configurations such as Content Security Policy (CSP).
 Spring Security allows users to efficiently inject the default security headers. 
 
 Current Default Security Headers provided by Spring Security:
