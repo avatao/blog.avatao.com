@@ -4,7 +4,7 @@ title: Secure collaborative infrastructure deployment workflow with Terraform, V
 author: kristofhavasi
 author_name: "Kristóf Havasi"
 author_web: ""
-featured-img: terraform_vault_atlantis _collab_wtext
+featured-img: terraform_vault_atlantis_collab_wtext
 ---
 
 In one of our recent [posts](https://blog.avatao.com/How-to-automate-your-infrastructure-with/), we wrote about the difficulties of adopting infrastructure automation in a previously static environment. As experience shows, it's never easy to get accustomed to a tool when the size of your team excels in numbers. Exploring its strengths, weaknesses, and boundaries, adopting best practices could take weeks.
