@@ -2,6 +2,7 @@
 layout: page
 title: IT Sales Representative
 permalink: /careers/it-sales-representative
+featured-img: itsalesrepresentativeisneeded
 summary: We are planning to expand the Avatao family with an IT Sales Representative
 ---
 

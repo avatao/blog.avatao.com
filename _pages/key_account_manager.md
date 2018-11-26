@@ -2,10 +2,11 @@
 layout: page
 title: Key Account Manager
 permalink: /careers/key-account-manager
+featured-img: keyaccountmanagerisneeded
 summary: We are planning to expand the Avatao family with a Key Account Manager
 ---
 
-# IT Sales Representative
+# Key Account Manager
 
 Please send your CV/LinkedIn here: [careers@avatao.com](mailto:careers@avatao.com) to apply.
 
