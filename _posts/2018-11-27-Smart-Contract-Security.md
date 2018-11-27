@@ -64,7 +64,7 @@ Besides contract verification and vulnerability discovery, developers may also u
 
 * [**VeriSolid**](http://aronlaszka.com/papers/mavridou2019verisolid.pdf) is a [framework](https://github.com/anmavrid/smart-contracts) for the correct-by-design development of Ethereum smart contracts. VeriSolid allows developers to specify contracts using a transition-system based model with rigorous semantics, supported by an open-source, web-based, graphical IDE, to reason about and verify contract behavior at a high level of abstraction, and to generate Solidity code from verified models.
 
-* [ContractLarva](https://github.com/gordonpace/contractLarva) is a tool that enables extending contracts 
+* [**ContractLarva**](https://github.com/gordonpace/contractLarva) is a tool that enables extending contracts 
 (a) to detect violations at runtime and 
 (b) to offer monetary reparations in response to a violation.
 
@@ -73,5 +73,3 @@ Besides contract verification and vulnerability discovery, developers may also u
 [4] Atzei, N., Bartoletti, M., Cimoli, T.: A survey of attacks on Ethereum smart contracts (SoK). In: Proceedings of the 6th International Conference on Principles of Security and Trust (POST). pp. 164–186. Springer (April 2017)
 
 [5] Parizi, R.M., Dehghantanha, A., Choo, K.K.R., Singh, A.: Empirical vulnerability analysis of automated smart contracts security testing on blockchains. In: 28th Annual International Conference on Computer Science and Software Engineering (CASCON) (2018)
-
-
