@@ -2,7 +2,7 @@
 layout: post
 title: Smart Contract Security 
 author: laszkaaron
-author_name: "Áron Lászka"
+author_name: "Aron Laszka"
 author_web: ""
 featured-img: SmartContractSecurity
 seo_tags: "smart contracts, secure smart contracts, solidity, solidity vulnerabilities"
@@ -20,7 +20,7 @@ Contract vulnerabilities are often introduced due to the semantic gap between th
 
 ## Common Vulnerability Types
 
-Motivated by a large number of smart-contract vulnerabilities, many researchers have provided surveys and taxonomies of common [vulnerability types](https://github.com/melonproject/oyente) [4]. Here, we list some of the most typical vulnerabilities in Ethereum smart contracts, focusing on Solidity.
+Motivated by a large number of smart-contract vulnerabilities, many researchers have provided surveys and taxonomies of common [vulnerability types](https://github.com/melonproject/oyente) [1]. Here, we list some of the most typical vulnerabilities in Ethereum smart contracts, focusing on Solidity.
 
 ## Re-Entrancy
 
@@ -46,7 +46,7 @@ Depending on how a function is called, an exception in the callee may or may not
 
 ## Contract Verification and Vulnerability Discovery Tools
 
-To find and patch contract vulnerabilities before deployment, developers can employ contract verification and vulnerability discovery tools [5]. 
+To find and patch contract vulnerabilities before deployment, developers can employ contract verification and vulnerability discovery tools [2]. 
 
 * [**Oyente**](https://github.com/melonproject/oyente) is an analysis tool for Ethereum contracts that can detect certain typical security vulnerabilities. 
 
@@ -58,7 +58,7 @@ To find and patch contract vulnerabilities before deployment, developers can emp
 
 * [**Vandal**](https://github.com/usyd-blockchain/vandal) is a security analysis framework for Ethereum smart contracts, which converts EVM bytecode to semantic relations, which are then analyzed to detect vulnerabilities described in the Soufflé language.
 
-* [**Mythril**](https://github.com/ConsenSys/mythril-classic) [10] is a security analysis tool for Ethereum smart contracts with a symbolic execution backend.
+* [**Mythril**](https://github.com/ConsenSys/mythril-classic) is a security analysis tool for Ethereum smart contracts with a symbolic execution backend.
 
 Besides contract verification and vulnerability discovery, developers may also use correct-by-design frameworks and runtime verification.
 
@@ -70,6 +70,6 @@ Besides contract verification and vulnerability discovery, developers may also u
 
 ## References 
 
-[4] Atzei, N., Bartoletti, M., Cimoli, T.: A survey of attacks on Ethereum smart contracts (SoK). In: Proceedings of the 6th International Conference on Principles of Security and Trust (POST). pp. 164–186. Springer (April 2017)
+[1] Atzei, N., Bartoletti, M., Cimoli, T.: A survey of attacks on Ethereum smart contracts (SoK). In: Proceedings of the 6th International Conference on Principles of Security and Trust (POST). pp. 164–186. Springer (April 2017)
 
-[5] Parizi, R.M., Dehghantanha, A., Choo, K.K.R., Singh, A.: Empirical vulnerability analysis of automated smart contracts security testing on blockchains. In: 28th Annual International Conference on Computer Science and Software Engineering (CASCON) (2018)
+[2] Parizi, R.M., Dehghantanha, A., Choo, K.K.R., Singh, A.: Empirical vulnerability analysis of automated smart contracts security testing on blockchains. In: 28th Annual International Conference on Computer Science and Software Engineering (CASCON) (2018)
