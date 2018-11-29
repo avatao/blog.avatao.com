@@ -17,7 +17,7 @@ Spring Security is a powerful and highly customizable authentication and access-
 
 ## The magical WebSecurityConfigurerAdapter
 
-By implementing a security configuration class, we can, for example, override the default security settings, specify permissions, define users, roles and a custom login page view. For this, we have to extend the WebSecurityConfigurerAdapter. By default, the following configuration is set up in the WebSecurityConfigurerAdapter class. This grants authenticated users access all URLs. 
+By implementing a security configuration class, we can, for example, override the default security settings, specify permissions, define users, roles and a custom login page view. For this, we have to extend the `WebSecurityConfigurerAdapter`. By default, the following configuration is set up in the `WebSecurityConfigurerAdapter` class. This grants authenticated users access all URLs. 
 
 ```java
 @Configuration
@@ -54,7 +54,7 @@ In the long run it won’t be sufficient but to get started in development, you 
 keytool -genkeypair -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048  -keystore keystore.p12 -validity 3650
 ```
 
-This will generate a PKCS12 keystore with a generated certificate, with certificate alias tomcat. Put your generated keystore.p12 file into your project’s resources directory and add these lines to your application.properties:
+This will generate a PKCS12 keystore with a generated certificate, with certificate alias tomcat. Put your generated `keystore.p12` file into your project’s resources directory and add these lines to your application.properties:
 
 ```
 server.port = 8888
@@ -93,7 +93,7 @@ Spring Boot can prevent a CSRF attack. The CSRF protection is active by default,
 ```
 You can also disable CSRF protection, however, it is not recommended. 
 
-It is recommended to use `POST` requests instead of `GET` to pass CSRF tokens, as by default Spring does not protect `GET` methods. This is a general requirement for proper CSRF prevention. For more details, visit  the [CSRF Spring Documentation](https://docs.spring.io/spring-security/site/docs/3.2.0.CI-SNAPSHOT/reference/html/csrf.html).
+It is recommended to use `POST` requests instead of `GET` to pass CSRF tokens, as by default Spring does not protect `GET` methods. This is a general requirement for proper CSRF prevention. For more details, visit  the [CSRF Spring Documentation](https://docs.spring.io/spring-security/site/docs/current/reference/html/web-app-security.html#csrf).
 
 **There are different CSRF protection types that Spring offers:**
 
@@ -209,7 +209,8 @@ userRepository.save(users);
 
 ## Avoiding XSS Attacks
 
-When an XSS (Cross-Site Scripting) attack is performed, a malicious script is injected into a website usually by using an input field to send the malicious code. There are a wide range of XSS attack vectors, however, we can avoid most of these by choosing proper web frameworks, input validators/filters/encoders and right configurations such as Content Security Policy (CSP).
+When an XSS (Cross-Site Scripting) attack is performed, a malicious script is injected into a website usually by using an input field to send the malicious code. There are a wide range of XSS attack vectors, however, we can avoid most of these by choosing proper web frameworks, input validators/filters/encoders and right configurations such as [Content Security Policy](https://docs.spring.io/spring-security/site/docs/current/reference/html/web-app-security.html#headers-csp
+) (CSP).
 Spring Security allows users to efficiently inject the default security headers. 
 
 Current Default Security Headers provided by Spring Security:
@@ -227,16 +228,23 @@ Clickjacking is a technique of tricking a web-user into clicking on something di
 
 There are some ways to avoid clickjacking actions. You can use frame breaking code, however, a more modern approach is suggested to avoid clickjacking with the X-Frame-Options header set to `DENY`. Luckily, Spring Security automatically sets the X-Frame-Options to `DENY`, thus whenever you need to change it, you will need to do so it explicitly.
 
-We can also selectively enable the frame options with Java annotations, adding the required header
+We can also selectively enable, disable or define the `sameorigin` option with Java annotations, adding the required header:
 
-```java
+```
 @EnableWebSecurity
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
-    http.headers().frameOptions();
+    http.headers().frameOptions().sameOrigin(); // or disable()
   }
 }
 ```
+
+Here are available options for policy:
+
+`DENY` This is the default value. The page cannot be displayed in a frame, regardless of the site attempting to do so.
+`SAMEORIGIN` The page can be displayed in a frame on the same origin as the page itself
+`ALLOW-FROM` It is possible to define an origin, where the page can be displayed in a frame
+
