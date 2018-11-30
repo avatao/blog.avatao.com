@@ -3,116 +3,204 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://blog.avatao.com/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Responsible-vulnerability-reporting/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/semancat-versioning/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Learn-to-build-secure-software/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/Security-issues-to-be-aware-of-before-moving-to-the-cloud/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Are-you-ready-to-be-cloud-native-and-secure/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Broken-Access-Control/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Equifax-and-Apache-Struts/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Interview-Tamas-Koczka-SpamAndHex/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Insourcing-security_operations/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/CSP-tutorial/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/responsible-disclosure-maturity/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/The-three-fatal-bugs-behind-the-Facebook-breach/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/careers</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/How-to-automate-your-infrastructure-with/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/semancat-versioning/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Responsible-vulnerability-reporting/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Are-you-ready-to-be-cloud-native-and-secure/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/How-to-use-Git-in-a-secure-way/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Smart-Contract-Security/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Make-AWS-infrastructure-more-secure-with-the-help-of-IAM/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Secure-development-with-Spring-Framework/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Secure-collaborative-infrastructure-deployment-workflow-with-Terraform,-Vault,-and-Atlantis/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/careers/junior-frontend-engineer</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/How-to-dive-into-web-security-as-a-developer/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/careers/key-account-manager</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Broken-Access-Control/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/CSP-tutorial/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/careers/it-sales-representative</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/careers/frontend-engineer</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Insourcing-security_operations/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Equifax-and-Apache-Struts/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Learn-to-build-secure-software/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Interview-Tamas-Koczka-SpamAndHex/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/How-SpamAndHex-became-top-hacker-team-3/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/How-SpamAndHex-became-top-hacker-team-2/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Three-major-XSS-issues-in-2016/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/How-SpamAndHex-became-top-hacker-team/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/Reverse-engineering-tutorial-and-challenge/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blog.avatao.com/Interview-Gabor-Molnar-Rosetta-Flash/</loc>
+    <loc>https://blog.avatao.com/Three-major-XSS-issues-in-2016/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/Kaitai/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://blog.avatao.com/Interview-Mateusz-Jurczyk/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/Your-first-avatao-Tuesday/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blog.avatao.com/Interview-Charlie-Miller/</loc>
+    <loc>https://blog.avatao.com/Interview-Mateusz-Jurczyk/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/How-SpamAndHex-became-top-hacker-team-2/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/Interview-Chris-Wysopal/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://blog.avatao.com/Interview-CyKor/</loc>
+    <loc>https://blog.avatao.com/Interview-Gabor-Molnar-Rosetta-Flash/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Interview-Charlie-Miller/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/Interview-Zoltan-Balazs/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.avatao.com/avatao-Tools/</loc>
+    <lastmod>2018-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://blog.avatao.com/Interview-CyKor/</loc>
+    <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
-<!--<guid value="c67f3e9c-e3f5-4175-8af3-9733082c3359" />-->
+<!--<guid value="0de616de-3872-4997-a873-07ba65086e5a" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
