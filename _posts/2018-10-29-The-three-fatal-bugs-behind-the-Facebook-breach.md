@@ -5,7 +5,7 @@ author: hajbaakos
 author_name: "Ákos Hajba"
 author_web: ""
 featured-img: secflix_facebook_blog
-seo_tags: "facebook breach details"
+seo_tags: "facebook breach details; Facebook breach 2018;Facebook data breach 2018;Facebook cyber security; Facebook cyber crime"
 ---
 
 The breach was discovered after Facebook saw an unusual spike of user activity that began on September 14, 2018. A few days later, on Tuesday, September 25, Facebook's engineering team discovered an unprecedented security issue, that affected about 30 million users. The social media giant says the flaw has been patched, but the people behind this attack are still unknown.
