@@ -5,6 +5,7 @@ author: pekgabor
 author_name: "Gábor Pék"
 author_web: ""
 featured-img: cloud_native 
+seo_tags: "cloud native; cloud security; cloud services security risks"
 ---
 
 Being cloud native won't save you from external threats if you as a user are not aware of basic security needs - cloud providers simply cannot do everything for you while due to the heavy demand to scale our services, there is unexpected urgency to be cloud native. This shift allows for abstracting our infrastructure- and network layers into the software-defined space of clouds. 
