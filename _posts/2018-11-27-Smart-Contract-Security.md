@@ -5,7 +5,7 @@ author: laszkaaron
 author_name: "Aron Laszka"
 author_web: ""
 featured-img: SmartContractSecurity
-seo_tags: "smart contracts, secure smart contracts, solidity, solidity vulnerabilities"
+seo_tags: "smart contracts; solidity; solidity security; solidity programming; smart contracts; smart contract security; smart contract examples; blockchain smart contracts; ethereum smart contract; ethereum smart contract tutorial"
 ---
 
 Blockchain-based platforms are becoming increasingly popular due to their ability to maintain a public distributed ledger, providing reliability, integrity, and auditability for transactions without a trusted entity. **Early blockchain platforms, such as Bitcoin**, focused solely on creating cryptocurrencies and payment systems. In contrast, more recent platforms, such as **Ethereum, can also act as distributed computing platforms**, enabling the deployment and execution of software code in the form of smart contracts. The key advantage of smart contract based distributed applications is that the security guarantees of the underlying platform safeguard the state and execution of smart contracts. 
@@ -73,3 +73,7 @@ Besides contract verification and vulnerability discovery, developers may also u
 [1] Atzei, N., Bartoletti, M., Cimoli, T.: A survey of attacks on Ethereum smart contracts (SoK). In: Proceedings of the 6th International Conference on Principles of Security and Trust (POST). pp. 164–186. Springer (April 2017)
 
 [2] Parizi, R.M., Dehghantanha, A., Choo, K.K.R., Singh, A.: Empirical vulnerability analysis of automated smart contracts security testing on blockchains. In: 28th Annual International Conference on Computer Science and Software Engineering (CASCON) (2018)
+
+## About Avatao 
+
+We teach cybersecurity. Our online learning platform of **cybersecurity trainings** offer more than 600 hands-on security challenges and security tutorials in several topics - for example [Ethereum smart contracts](https://platform.avatao.com/paths/5bcdd82b-22c0-4146-9662-cb1533a97b36/info). 
