@@ -5,7 +5,7 @@ author: akos
 author_name: "Ákos Hajba"
 author_web: ""
 featured-img: avatao_tuesday
-seo_tags: "OWASP top 10; OWASP top ten vulnerabilities; OWASP top ten vulnerability; XSS attack; XSS injection; XSS protection; XSS-attacks; security headers; CSP header; content security policy"
+seo_tags: "OWASP top 10; OWASP top ten vulnerabilities; OWASP top ten vulnerability; XSS attack; XSS injection; XSS protection; XSS-attacks; security headers; CSP header; content security policy; cross site scripting"
 ---
 
 The security model of web is rooted in the **same-origin policy**. Each origin is isolated from the rest of the web and codes should only have access to their origin's data. Because of this model, browsers trust every code that shows up on a page as it's a part of the pages' **security origin**.
