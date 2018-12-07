@@ -4,7 +4,7 @@ title: Broken Access Control
 author: marton
 author_name: "Márton Németh"
 author_web: ""
-featured-img: brokenaccess; se
+featured-img: brokenaccess;
 seo_tags: "OWASP top 10; OWASP top ten vulnerabilities; OWASP top ten vulnerability; broken access control; security misconfiguration, "
 ---
 
