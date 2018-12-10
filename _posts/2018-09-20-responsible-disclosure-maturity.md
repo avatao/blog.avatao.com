@@ -5,6 +5,7 @@ author: judit
 author_name: "Judit Szőcs"
 author_web: ""
 featured-img: resp_disc_part2
+seo_tags: "Responsible Vulnerability Disclosure;Security researcher; bug bounty; responsible disclosure; bug bounty hunting; how to report bugs"
 ---
 A company has to be mature enough to implement a responsible disclosure policy – or at least mature enough to implement its own tailor-made program. Implementing a responsible disclosure policy can show your security consciousness, yet if you do it wrong, the effects can be detrimental .
 
