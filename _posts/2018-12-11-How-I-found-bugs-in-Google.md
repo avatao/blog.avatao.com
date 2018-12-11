@@ -71,11 +71,13 @@ for webapp in literally_every_online_google_product_I_have_found:
         response.analyze_manually()
 ```
 
-It was long and boring. I spent afternoons and nights reading the requests and responses with no success. I don't even remember how many different things I’d tried: * "Maybe there are some vulnerabilities in this CSS... or how about these fonts?" 
+It was long and boring. I spent afternoons and nights reading the requests and responses with no success. I don't even remember how many different things I’d tried: 
 
-* "Ok, what if I replay this request with my other account's cookies?" *
+*"Maybe there are some vulnerabilities in this CSS... or how about these fonts?"* 
 
-"Hmm, I can upload an SVG here. It's time for some XSS payloads".
+*"Ok, what if I replay this request with my other account's cookies?"*
+
+*"Hmm, I can upload an SVG here. It's time for some XSS payloads".*
 
 I focused on Drive and the Google Docs family because they are connected (Docs has access to your files), popular (so a security flaw would mean a serious threat) and they have many features and settings. The first thing I had observed was that Slides is really similar to Docs and Sheets, however, it uses different (legacy?) API endpoints in some cases. For example, inserting an image from my drive triggered these two requests:
 
