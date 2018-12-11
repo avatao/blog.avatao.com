@@ -24,7 +24,7 @@ https://docs.google.com/spreadsheets/d/cmFuZG9t_c3ByZWFkc2hlZXQ_aWQ/edit?usp=sha
 
 If you open the link above as owner, the document will load and a 'Share with others' modal pops up prefilled with the e-mail address from the URL:
 
-![Pic1](../images/google-pic1.png)
+![Pic1](../images/google_pic1.png)
 
 My first thought was "hmm.. the user input is reflected in the DOM - should I try XSS?", but my second thought instantly followed the first: "There's no way I'm the first one who found it. This is Google and there are lot of smarter guys in the world who're constantly trying to hack it. I won't waste my time with XSS payloads..."
 
@@ -38,7 +38,7 @@ https://docs.google.com/spreadsheets/d/cmFuZG9t_c3ByZWFkc2hlZXQ_aWQ/edit?usp=sha
 
 It worked as I expected - the name was shown in the form instead of the address and the real email address behind the name was only displayed if you moved your mouse over it.
 
-![Pic2](../images/google-pic2.png)
+![Pic2](../images/google_pic2.png)
 
 ### What could go wrong?
 
