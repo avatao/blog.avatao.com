@@ -51,7 +51,7 @@ An attack scenario:
 Timeline: 
 * 2017.10.03 - Bug reported 
 * 2017.10.03 - Bug verified by a security engineer (P4 -> P3) 
-* 2018.10.10 - $500 bounty awarded 
+* 2017.10.10 - $500 bounty awarded 
 * 2018.01.16 - Bug fixed
 
 ## GETTING PICTURES FROM YOUR DRIVE
