@@ -95,7 +95,9 @@ curl 'https://docs.google.com/presentation/d/pReS3nTaT10N_1D/renderdata?id=bG9s_
 
 You should notice that the first response basically contains `"ID_OF_THE_IMAGE":"SOME_RANDOM_ID"`, and `“SOME_RANDOM_ID”` appears in the second request as the value of `cosmoId`. Also, the second response contains a direct link to the image.
 
-I don't really see the reason behind using two API endpoints for processing an image because it feels a little overcomplicated - that's why I thought Slides had some legacy parts worth focusing on. So I replayed those requests above with different cookies. I prefer built-in tools so I copied the **cURL** command from the Chrome DevTools and replaced the `Cookie` header with the cookies from one of my other sessions. Fortunately, the authorization was missing from these endpoints, so with a valid Google session cookie I could get a direct URL of any picture from any drive (if I had the ID of the file)!
+I don't really see the reason behind using two API endpoints for processing an image because it feels a little overcomplicated - that's why I thought Slides had some legacy parts worth focusing on. So I replayed those requests above with different cookies. 
+
+I prefer built-in tools so I copied the **cURL** command from the Chrome DevTools and replaced the `Cookie` header with the cookies from one of my other sessions. Fortunately, the authorization was missing from these endpoints, so with a valid Google session cookie I could get a direct URL of any picture from any drive (if I had the ID of the file)!
 
 It sounds pretty cool, but the truth is that these image IDs are very long, case-sensitive strings. That’s why I can't foresee scary attack scenarios, which also explains the relatively low bounty for this Direct Object Reference vulnerability.
 
