@@ -137,3 +137,7 @@ Timeline:
 * 2018.08.22 - Bug fixed
 
 The hardest part was not knowing what to look for, which is true in most of the other bug bounty programs as well. The takeaway from these cases is not to limit yourself to specific vulnerabilities, like XSS or SQLi. Keep your eyes open and be creative.
+
+## About the author
+
+Gergő was one of the first members of the [Avatao](https://avatao.com/) team and now he is one of our best software engineers. His interest in web security has started at university and has not stopped since. He  develops his own challenges on [Avatao platform](https://platform.avatao.com/paths/e65ee304-7299-40d0-bdd1-93f35c381560/challenges/fa6e6174-2f17-11e6-bdf4-0800200c9a66) and also responsible for mentoring other content creators. In his free time he still hunts bugs. 
