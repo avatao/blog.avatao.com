@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I could steal your photos from Google - my first 3 bug bounty writeups
+title: How I could have stolen your photos from Google - my first 3 bug bounty writeups
 author: geri
 author_name: "Gergő Turcsányi"
 author_web: ""
