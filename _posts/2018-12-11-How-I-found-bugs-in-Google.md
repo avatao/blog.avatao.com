@@ -91,7 +91,7 @@ curl 'https://docs.google.com/presentation/d/pReS3nTaT10N_1D/renderdata?id=bG9s_
 {"r0":"https://lh6.googleusercontent.com/dmVyeXZlcnl2ZXJ5dmVyeXZlcnl2ZXJ5dmVyeXZlcnl2ZXJ5dmVyeXZlcnl2ZXJ5dmVyeXZlcnl2ZXJ5dmVyeXZlcnl2ZXJ5dmVyeXZlcnl2ZXJ5bG9uZ3N0cmluZw"}
 ```
 
-You should notice that the first response basically contains "ID_OF_THE_IMAGE":`"SOME_RANDOM_ID", and “SOME_RANDOM_ID”` appears in the second request as the value of `cosmoId`. Also, the second response contains a direct link to the image.
+You should notice that the first response basically contains `"ID_OF_THE_IMAGE":"SOME_RANDOM_ID"`, and `“SOME_RANDOM_ID”` appears in the second request as the value of `cosmoId`. Also, the second response contains a direct link to the image.
 
 I don't really see the reason behind using two API endpoints for processing an image because it feels a little overcomplicated - that's why I thought Slides had some legacy parts worth focusing on. So I replayed those requests above with different cookies. I prefer built-in tools so I copied the **cURL** command from the Chrome DevTools and replaced the `Cookie` header with the cookies from one of my other sessions. Fortunately, the authorization was missing from these endpoints, so with a valid Google session cookie I could get a direct URL of any picture from any drive (if I had the ID of the file)!
 
@@ -106,7 +106,10 @@ Timeline:
 ## PLEASE LOGIN TO GIVE ME YOUR PHOTOS
 
 After these two bugs I took a break because I felt I had used all my luck and it needed some time to regenerate. In May I decided to give it another try and within 3 hours, I had found an awesome vulnerability. I thought it was too good to be true, so I checked it three or four times before reporting it.
-On my first run I had somehow skipped Google Photos, so this time I started the bug hunting by focusing on it, using my good old method. Nothing notable on the Network tab, but the 'shared libraries (automatically share photos with a partner) feature' looked promising. If you want to set up a partner account you must type the email address of your partner first. After submitting it, a popup window appears with a Google accounts login screen. Finally, you need type your credentials, then your photos will be shared and you will be redirected to a page that only contains a 'Success message' and a 'Close window' button. The size of the popup prevented me from seeing the whole URL, so I copied it to the Notepad for further research:
+
+On my first run I had somehow skipped Google Photos, so this time I started the bug hunting by focusing on it, using my good old method. 
+
+Nothing notable on the Network tab, but the 'shared libraries (automatically share photos with a partner) feature' looked promising. If you want to set up a partner account you must type the email address of your partner first. After submitting it, a popup window appears with a Google accounts login screen. Finally, you need type your credentials, then your photos will be shared and you will be redirected to a page that only contains a 'Success message' and a 'Close window' button. The size of the popup prevented me from seeing the whole URL, so I copied it to the Notepad for further research:
 
 ```
 // URL before login
