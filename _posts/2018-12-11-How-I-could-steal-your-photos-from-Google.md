@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How I found bugs in Google
+title: How I could steal your photos from Google - my first 3 bug bounty writeups
 author: geri
 author_name: "Gergő Turcsányi"
 author_web: ""
@@ -24,7 +24,7 @@ https://docs.google.com/spreadsheets/d/cmFuZG9t_c3ByZWFkc2hlZXQ_aWQ/edit?usp=sha
 
 If you open the link above as owner, the document will load and a 'Share with others' modal pops up prefilled with the e-mail address from the URL:
 
-[pic1](/pic1.jpg)
+![Pic1](../images/google-pic1.png)
 
 My first thought was "hmm.. the user input is reflected in the DOM - should I try XSS?", but my second thought instantly followed the first: "There's no way I'm the first one who found it. This is Google and there are lot of smarter guys in the world who're constantly trying to hack it. I won't waste my time with XSS payloads..."
 
@@ -38,7 +38,7 @@ https://docs.google.com/spreadsheets/d/cmFuZG9t_c3ByZWFkc2hlZXQ_aWQ/edit?usp=sha
 
 It worked as I expected - the name was shown in the form instead of the address and the real email address behind the name was only displayed if you moved your mouse over it.
 
-[pic2](/pic2.jpg)
+![Pic2](../images/google-pic2.png)
 
 ### What could go wrong?
 
@@ -73,11 +73,11 @@ for webapp in literally_every_online_google_product_I_have_found:
 
 It was long and boring. I spent afternoons and nights reading the requests and responses with no success. I don't even remember how many different things I’d tried: 
 
-*"Maybe there are some vulnerabilities in this CSS... or how about these fonts?"* 
+ * "Maybe there are some vulnerabilities in this CSS... or how about these fonts?"* 
 
-*"Ok, what if I replay this request with my other account's cookies?"*
+ * "Ok, what if I replay this request with my other account's cookies?"*
 
-*"Hmm, I can upload an SVG here. It's time for some XSS payloads".*
+ * "Hmm, I can upload an SVG here. It's time for some XSS payloads".*
 
 I focused on Drive and the Google Docs family because they are connected (Docs has access to your files), popular (so a security flaw would mean a serious threat) and they have many features and settings. The first thing I had observed was that Slides is really similar to Docs and Sheets, however, it uses different (legacy?) API endpoints in some cases. For example, inserting an image from my drive triggered these two requests:
 
