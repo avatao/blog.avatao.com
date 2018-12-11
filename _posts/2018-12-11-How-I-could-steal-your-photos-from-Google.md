@@ -107,6 +107,8 @@ Timeline:
 * 2018.01.09 - $500 bounty awarded 
 * 2018.01.16 - Bug fixed
 
+In a simulated environment, you can see [how this vulnerability worked](https://platform.avatao.com/challenges/630fa4fc-3138-4805-bd78-ea85e492c2e2) until 10th January '19. 
+
 ## PLEASE LOGIN TO GIVE ME YOUR PHOTOS
 
 After these two bugs I took a break because I felt I had used all my luck and it needed some time to regenerate. In May I decided to give it another try and within 3 hours, I had found an awesome vulnerability. I thought it was too good to be true, so I checked it three or four times before reporting it.
@@ -135,6 +137,8 @@ Timeline:
 * 2018.05.14 - Bug verified by a security engineer (P4 -> P2, P2 -> P1) 
 * 2018.05.22 - $3133.70 bounty awarded 
 * 2018.08.22 - Bug fixed
+
+Try [our challenge](https://platform.avatao.com/challenges/e069a6c1-8265-4115-9126-f8e188c62765) to understand this vulnerability better. It is available for free until 10th January '19. 
 
 The hardest part was not knowing what to look for, which is true in most of the other bug bounty programs as well. The takeaway from these cases is not to limit yourself to specific vulnerabilities, like XSS or SQLi. Keep your eyes open and be creative.
 
