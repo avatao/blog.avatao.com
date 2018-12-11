@@ -114,7 +114,10 @@ https://accounts.google.com/signin/v2/sl/pwd?passive=133780085&osid=1&continue=h
 https://photos.google.com/initps?request=W1tudWxsLCIxMjU4NzQyNzU5MTIzOSJdLG51bGwsImUtbWFpbEBleGFtcGxlLmNvbSIsbnVsbCxbMixudWxsLCJXVzkxSUhKbFlXeHNlU0JzYVd0bElfR1JsWTI5a2FXNW5JSEpoYm1SdmJTQmlZWE5sTmpRZ2MzX1J5YVc1bmN5QXRJR1J2YmlkMElIbHZkVDgiXV0.
 ```
 It was clear that the `continue` parameter contained the second URL encoded, but the value of `request`, at first glance, was just a bunch of random characters with a dot at the end. The dot just didn't make any sense - why did it only appear at the end, like some padding? If it was an equal sign, 'request' could have been a valid base64 encoded string, because the charset was the same... So I changed it, pasted the modified string into a base64 decoder and it actually worked:
+
+```
 [[null,"12587427591239"],null,"e-mail@example.com",null,[2,null,"WW91IHJlYWxseSBsaWtlI_GRlY29kaW5nIHJhbmRvbSBiYXNlNjQgc3_RyaW5ncyAtIGRvbid0IHlvdT8"]]
+```
 
 I changed the email to my own (without touching the other values), base64 encoded the payload and replaced the equal sign with a dot. After opening the crafted URL with it and logging in with my second account,  photos were shared with the first account. The best part was that I didn't even get a warning/notification/email about it. I couldn’t wait to analyze the vulnerability further.  Unfortunately, I have NOT tested what happens if you visit the second URL directly - it's possible that you don't even need to login to share your pictures with the attacker because sending a GET request to the second URL could be enough.
 
