@@ -4,7 +4,7 @@ title: Security compromises and how to balance them
 author: bursaarmin
 author_name: "Ármin Bursa"
 author_web: ""
-featured-img:securitycompromises  
+featured-img: securitycompromises  
 seo_tags: "user experience, security measures, security features, application usability"
 ---
 
