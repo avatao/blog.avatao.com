@@ -5,9 +5,9 @@ permalink: /careers
 featured-img: carrers_bgwerehiring
 ---
 
-Software rules the world, but it is full of bugs. Avatao helps companies to build a security culture in software engineering with an awesome, hands-on online security training for developers. We have customers from Europe and getting a massive interest from the US.
+Software rules the world, but it is full of bugs. Avatao helps companies to build a security culture in software engineering with an awesome, hands-on, online security training for developers. We have customers in Europe and we are getting substantial interest in the US.
 
-To learn more about our platform check it out at [platform.avatao.com](https://platform.avatao.com)
+To learn more about our platform check it out [platform.avatao.com](https://platform.avatao.com)
 
 **Open positions**:
 
