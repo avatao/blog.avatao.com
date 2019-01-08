@@ -2,7 +2,7 @@
 layout: post
 title: Not so smart pointers
 author: richard
-author_name: "Richard R"
+author_name: "Richard Raciborski"
 author_web: ""
 featured-img: SmartPointers
 seo_tags: "C++; smart pointers; modern C++; secure coding in C; C++ security"
