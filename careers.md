@@ -15,3 +15,4 @@ To learn more about our platform check it out [platform.avatao.com](https://plat
 - [Front End Software Engineer](/careers/frontend-engineer)
 - [IT Sales Representative](/careers/it-sales-representative)
 - [Key Account Manager](/careers/key-account-manager)
+- [Digital Marketing Manager](/careers/digital-marketing-manager)
