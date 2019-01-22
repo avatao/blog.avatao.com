@@ -4,7 +4,7 @@ title: Wild card to win USPS customer data
 author: richard
 author_name: "Richard Raciborski"
 author_web: ""
-featured-img: USPS_blog_sm 
+featured-img: USPS_blog 
 seo_tags: "USPS breach; data breach 2018; USPS exposure; USPS vulnerability; USPS breach technical details"
 ---
 
