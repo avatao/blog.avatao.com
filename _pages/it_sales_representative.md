@@ -1,12 +1,12 @@
 ---
 layout: page
-title: IT Sales Representative
-permalink: /careers/it-sales-representative
+title: Junior IT Sales Representative
+permalink: /careers/junior-it-sales-representative
 featured-img: itsalesrepresentativeisneeded
-summary: We are planning to expand the Avatao family with an IT Sales Representative
+summary: We are planning to expand the Avatao family with a Junior IT Sales Representative
 ---
 
-# IT Sales Representative
+# Junior IT Sales Representative
 
 Please send your CV/LinkedIn here: [careers@avatao.com](mailto:careers@avatao.com) to apply.
 
@@ -39,4 +39,4 @@ We have a fun, relaxed work environment, no dress code. We believe in transparen
 
 You can make an impact on the software world. We need you now!
 
-#### Have you seen our [Key Account Manager](/careers/key-account-manager) position? 
+#### Have you seen our [Digital Marketing Manager](/careers/digital-marketing-manager) position? 

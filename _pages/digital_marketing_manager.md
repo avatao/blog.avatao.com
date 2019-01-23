@@ -59,4 +59,4 @@ You will be responsible for creating, managing and executing our marketing strat
 
 You can make an impact on the software world. We need you now!
 
-#### Have you seen our [IT Sales Representative](/careers/it-sales-representative) position? 
+#### Have you seen our [Junior IT Sales Representative](/careers/junior-it-sales-representative) position? 
