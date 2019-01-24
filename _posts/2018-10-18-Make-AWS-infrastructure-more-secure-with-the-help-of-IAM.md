@@ -5,6 +5,7 @@ author: acsbendeguz
 author_name: "Bendegúz Ács"
 author_web: ""
 featured-img: aws_IAM
+seo_tags: "AWS security; AWS security risks; AWS IAM; identity management; access management"
 ---
 The trend to move to the cloud seems to be unstoppable that raises more and more security concerns. [AWS can be considered the leader in the market of cloud service providers.](https://www.channelweb.co.uk/crn-uk/news/3034671/aws-dominates-public-cloud-with-40-per-cent-market-share) [It offers more than a hundred different cloud services and it is used by over a million companies](https://www.contino.io/insights/whos-using-aws). Given such an enormous volume of business, it should come as no surprise that AWS has its dedicated service to help developers keep their cloud infrastructure more secure. This service is called IAM which stands for Identity and Access Management.
 
