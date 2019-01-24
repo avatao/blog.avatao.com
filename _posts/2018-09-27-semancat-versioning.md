@@ -5,6 +5,7 @@ author: kristoftoth
 author_name: "Kristóf Tóth"
 author_web: ""
 featured-img: semancat_versioning 
+seo_tags: "versioning system; tutorial framework, engineering blog; versioning problems; versioning solutions"
 ---
 
 Tackling the versioning pains of a greenfield project with cats.
