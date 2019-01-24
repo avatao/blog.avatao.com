@@ -5,6 +5,7 @@ author: david
 author_name: "Dávid Osztertág"
 author_web: ""
 featured-img: Ansiblesecurity
+seo_tags: "Ansible; Ansible security; securing Ansible; infrastructure automation; orchestration management; configuration management; secure infrastructure automation"
 ---
 Here at Avatao, we are big believers of infrastructure-as-code which is a way of infrastructure automation using practices from software development. Setup tasks, configuration,  identity, and access management are coded as reproducible definitions. This dramatically reduces the chance of human error, changes in the infrastructure are reproducible and auditable. We can also make use of software development tools such as version control or automated testing and deployment.
 
