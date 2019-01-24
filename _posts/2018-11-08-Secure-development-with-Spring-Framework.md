@@ -5,6 +5,7 @@ author: jakabakos
 author_name: "Ákos Jakab"
 author_web: ""
 featured-img: spring_security
+seo_tags: "Spring framework, Spring security features; configuration of Spring, experiences with Spring; securing Spring framework"
 ---
  In the past decade, Spring Framework became a well established and prominent web framework for developing Java applications. The most exciting and essential changes in the Spring ecosystem was the birth and progression of Spring Boot. No matter what you need, the Spring Boot provides comprehensive, easy-to-use and interdisciplinary development environment, tools for deployment and assists in the whole development lifecycle.
 
