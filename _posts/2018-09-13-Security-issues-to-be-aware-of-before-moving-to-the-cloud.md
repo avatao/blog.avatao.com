@@ -4,7 +4,8 @@ title: Security issues to be aware of before moving to the cloud
 author: maroyandras
 author_name: "András Maróy"
 author_web: ""
-featured-img: aws_s3_security 
+featured-img: aws_s3_security
+seo_tags: "AWS security; AWS security risks; AWS S3; AWS S3 security; securing AWS S3"
 ---
 
 As more and more infrastructures are moved to the cloud datacenters, services offered by the cloud providers became an obvious target for exploitation and **cloud security in practice** is more important than ever. Configuring these services to be as secure as possible is a new challenge coming from the datacenter world. As explained in the [previous post](https://blog.avatao.com/Are-you-ready-to-be-cloud-native-and-secure/) there still are security considerations that we're already used to but these provide new angles to consider.
