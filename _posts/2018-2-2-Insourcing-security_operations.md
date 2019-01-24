@@ -5,6 +5,7 @@ author: mark
 author_name: "Mark Felegyhazi"
 author_web: "http://www.avatao.com"
 featured-img: insourcevsoutsource
+seo_tags: "security culture; cybersecurity operations; cybersecurity strategy; outsourcing; building a cybersecurity team"
 ---
 
 As the enterprise architecture becomes more and more complex, the task of the **Chief Security Information Officer (CISO)** becomes overwhelming. CISOs have a tough time to find talented cybersecurity professionals to support their job. In an interesting article in VentureBeat, Nir Donitza and Gal Ringel [wrote about the cybersecurity landscape of Israel](https://venturebeat.com/2018/01/31/what-israels-cybersecurity-landscape-foreshadows-for-2018/) in 2018, and what it might predict from the global cybersecurity. A few of their findings point to some interesting trends.
