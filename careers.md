@@ -11,7 +11,6 @@ To learn more about our platform check it out [platform.avatao.com](https://plat
 
 **Open positions**:
 
-- [Junior Front End Software Engineer](/careers/junior-frontend-engineer)
 - [Front End Software Engineer](/careers/frontend-engineer)
 - [Junior IT Sales Representative](/careers/junior-it-sales-representative)
 - [Digital Marketing Manager](/careers/digital-marketing-manager)
