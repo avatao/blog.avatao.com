@@ -30,7 +30,7 @@ Well, let's see why so many choose not to engage with the topic. Here are the to
 
 Not really, **security, like anything, can be learned iteratively, building on things you already know and understand.** Plus, if you start putting effort into it, you'll quickly become more valuable for your team and your company. Win-win!
 
-"The web is full of wildly inaccurate security articles, and it's easy to get wrong..."
+"The web is full of wildly inaccurate security articles, and it's easy to get it wrong..."
 
 You got me. This is all true, and it's all the more reason we need more developers to join the party. Depending on where you are in your career, you may have noticed that **without decent security knowledge you can only go so far.** It's expected of you, especially once you get into lead engineer roles.
 
@@ -74,7 +74,7 @@ Foundation, check! Exposure, check! Moving on!
 
 "In theory, there is no difference between theory and practice. In practice, there is."
 
-You need to get hands-on. Just like with software development, you learn faster and more deeply when your hands are on the keyboard. In my experience, the best way to learn something new is to practice it and have a mentor available to nudge you in the right direction if you wander off-track.
+You need to get hands-on. Just like with software development, you learn faster and more in depth when your hands are on the keyboard. In my experience, the best way to learn something new is to practice it and have a mentor available to nudge you in the right direction if you wander off-track.
 
 Consequently, I believe, the best way to learn security is in workshops with a great trainer. I have seen this work many times; it's engaging, fun and educational at the same time. This is not always available, and next best thing, in my opinion, is online hands-on training.
 
@@ -86,7 +86,7 @@ I found the [Avatao platform](https://avatao.com/) to be optimized for learning.
 
 Security knowledge is an excellent addition to your skillset. **During your career advancement, it will be a requirement at a certain point.** It'll also make you better at what you currently do. Your software knowledge is a great foundation to build on. Take one step at a time, and you will grow faster than you think.
 
-Start with things already familiar and deepen your knowledge there. Once you are confident in these topics expose yourself to new concepts, vulnerabilities, and defense techniques. In the meantime, do not forget about the importance of hands-on training.
+Start with things already familiar and deepen your knowledge there. Once you are confident withf these topics expose yourself to new concepts, vulnerabilities, and defense techniques. In the meantime, do not forget about the importance of hands-on training.
 
 Remember, security is not about mindlessly enforcing best practices, it's about having the ability to make smart tradeoffs. For that, the industry needs developers with the right combination of security mindset and knowledge. We need you to join the security party!
 
