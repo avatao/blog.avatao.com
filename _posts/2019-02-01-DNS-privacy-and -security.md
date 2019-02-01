@@ -4,7 +4,7 @@ title: DNS privacy and security
 author: tibi
 author_name: "Tibor Kálmán"
 author_web: ""
-featured-img: dns_blog
+featured-img: dns
 seo_tags: " DNS security; DNS privacy"
 ---
 
