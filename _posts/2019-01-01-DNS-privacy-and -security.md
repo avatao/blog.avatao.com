@@ -4,7 +4,7 @@ title: DNS privacy and security
 author: tibi
 author_name: "Tibor Kálmán"
 author_web: ""
-featured-img: dns
+featured-img: dns_blog
 seo_tags: " DNS security; DNS privacy"
 ---
 
@@ -48,7 +48,7 @@ Additionally, there [are](https://forums.att.com/t5/AT-T-Internet-Features/ATT-D
 Even in the case, where your traffic flows through HTTPS, your DNS query can be observed and easily read. Through observing DNS traffic, adversaries may gain significant information about you, based on the websites you visit, even if your actions on those websites are encrypted. ISPs have the ability to observe your DNS traffic, and the risk for misbehavior is further amplified if you use your ISP’s DNS server as your default DNS server.
 Observable query contents may also result in government content censoring for a multitude of reasons.
 
-##Solving security - DNSSEC overview
+## Solving security - DNSSEC overview
 
 Domain Name System Security Extensions (DNSSEC) aims to provide authenticity and integrity while maintaining backward compatibility.
 DNSSEC compliant servers’ replies are digitally signed at every level (root, TLD, etc.). By inspecting the replies and verifying the signatures, a chain of trust can be established. To complete the authentication chain, a trust anchor is required which is obtained from a source other than DNS, e.g. obtained via the OS or other means.
@@ -78,6 +78,7 @@ A quick and easy solution is to use a VPN service. Since all VPN traffic is encr
 As we have seen, authenticity and privacy require different solutions and if your goal is to achieve both, only using DNSSEC or DoT/DoH will not be enough. If you are in the position where you have DNS records that need to be published be sure to consider whether you should use a provider that does not provide these capabilities.
 The problem with DNSSEC, DoT and DoH is that these solutions are not yet ubiquitous. For example, not every website’s DNS records are signed using DNSSEC. Enforcing DNSSEC on the client side would make the usage of the internet quite difficult, e.g. some of google.comrecords are not signed therefore discarding them would hinder day-to-day usage.
 Client side enforcement or usage typically involves platform specific configuration and the usage of a private name server that can validate DNSSEC and perform DoT. Since using DoH involves the avoidance of the typical DNS query process, either client applications (e.g. browsers) have to implement this capability or OS level changes have to be made to use DoH. Using a private DNS server answers your requests by performing DoH queries is also an option. Not every browser supports DoH, but if you use Firefox, you can configure it to prioritize or enforce DoH by following a guide such as [this](https://www.ghacks.net/2018/04/02/configure-dns-over-https-in-firefox/) one.  
+
 If you would like to dig deeper, the [DNS Privacy Project](https://dnsprivacy.org/wiki/display/DP) and the corresponding RFC’s are a good start.
 
 
