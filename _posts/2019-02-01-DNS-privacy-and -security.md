@@ -27,7 +27,7 @@ The process of finding the IP address corresponding to a URL generally is as fol
 5.   	The default DNS server relays the query to the top-level domain’s DNS server that tells the initial server how to find the DNS server responsible for that your URL.
 6.   	This DNS server is then queried, and the result is forwarded to you.
 
-![DNS resolution process](/dnsproc.png)
+![DNS resolution process](../images/dnsproc.png)
 
 The usage of DNS has multiple advantages:
 
