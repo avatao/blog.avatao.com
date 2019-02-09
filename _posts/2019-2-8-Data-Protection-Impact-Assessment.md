@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Is your Data Protection Impact Assessment quantitative?
+title: A quantitative approach to Data Protection Impact Assessment
 author: GergelyBiczók 
 author_name: "Gergely Biczók"
 author_web: ""
