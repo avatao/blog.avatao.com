@@ -21,7 +21,7 @@ We are a fast growing international team of (currently) 14 people. We believe in
 
 ## Job description
 
-You will be responsible for creating, managing and executing our marketing strategy. We are looking for a task-oriented marketer who is able to translate the strategy to quarterly and monthly plans, to tear them down to tasks and execute them in a team. On the other hand, you are able to recognize when a solution needs external experts and capable to outsource the tasks, to brief freelancer experts or agencies while handling a quarterly budget. Our ideal candidate must be interested in IT and cybersecurity and willing to go through an exponential learning curve about our special market and needs.
+You will be responsible for managing and executing our marketing strategy based on the business plan. We are looking for a task-oriented marketer who is able to manage our digital marketing activities (70%) and support product development with the right user engagement tools (30%). You have to be ready to recognize when a specific solution needs external experts and capable to outsource the tasks (to brief freelancer experts or agencies while handling the budget). Our ideal candidate must be interested in IT and cybersecurity and willing to go through an exponential learning curve about our special market and needs. Having experience in marketing of SaaS solution(s) is an extra plus.
 
 ## Responsibilities
 
@@ -36,12 +36,13 @@ You will be responsible for creating, managing and executing our marketing strat
 
 ### Qualifications and experience
 
-- 3 years of marketing experience in a digital B2B role on the client side, ideally in software development, or at a digital agency.
-- Full working proficiency of the English language
+- 3 years of marketing experience in a digital B2B role on the client side, ideally in software development, or at a digital agency. 
+- Full working proficiency of English language 
 - Ability to create, manage and execute marketing strategies across multiple touchpoints
 - Proven ownership, leadership skills
-- Have an overall understanding of digital marketing and able to outsource
-- Familiar with digital marketing tools
+- Have an overall understanding of digital marketing and able to outsource 
+- Familiar with digital marketing tools (Google, Facebook, mailchimp, Buffer, etc)
+- Managing external resources through online productivity tools
 
 ### Personality
     
