@@ -49,6 +49,7 @@ social:
 
 # THEME SETTINGS
 navigation: # Navigation links
+  - {name: 'Home', link: 'https://avatao.com/'}
   - {name: 'About', link: 'https://avatao.com/about'}
   - {name: 'Company', link: 'https://avatao.com/company'}
   - {name: 'Solutions', link: 'https://avatao.com/solutions'}
