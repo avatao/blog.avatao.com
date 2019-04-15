@@ -1,10 +1,10 @@
 footer {
-  padding: 48px 48px 160px;
-  border-top: 1px solid #f0f0f0;
-  background-color: #000E1F;
+  padding: 85px 48px 180px;
+  background-color: #3B35D2;
+  background-image: url(/_includes/footer_bg.svg);
   text-align: center;
   font-size: 0.875rem;
-  color: $tao-gray-300;
+  color: white;
 
   a {
     &:hover,
@@ -38,31 +38,50 @@ footer {
   white-space: nowrap;
 
   & a {
-    color: $tao-gray-300 !important;
+    color: white !important;
     font-weight: 100;
   }
 }
 
-.tao-grid-footer-header {
-  font-weight: 500;
-  color: $tao-gray-100;
-  padding-bottom: 24px;
+.bottom--space {
+  margin-bottom: 10px;
 }
 
-.tao-grid-footer-logo {
-  height: 15px;
-  position: relative;
-  top: 5px;
-  max-width: 100px;
-  margin-bottom: 20px;
+.tao-grid-footer-header {
+  font-weight: 900;
+  color: white;
+}
+
+.footer__logo {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  padding: 19px 0;
+  outline: 0;
+  border-bottom: 0;
+  color: $heading-color;
+
+  &:hover {
+    color: $heading-color;
+    border-bottom: 0;
+  }
+
+  .footer__logo--container {
+    width: 130px;
+    margin-bottom: -10px;
+
+    .logo {
+      fill: currentColor;
+    }
+  }
 }
 
 .tao-footer-company-text {
-  color: $tao-gray-300;
+  color: white;
   text-align: center;
   width: 100%;
   position: relative;
-  top: 145px;
+  top: 125px;
 
 }
 

@@ -49,11 +49,11 @@ social:
 
 # THEME SETTINGS
 navigation: # Navigation links
-  - {name: 'Home', link: 'https://avatao.com/'}
-  - {name: 'About', link: 'https://avatao.com/about'}
-  - {name: 'Company', link: 'https://avatao.com/company'}
+  - {name: 'Product', link: 'https://avatao.com/'}
   - {name: 'Solutions', link: 'https://avatao.com/solutions'}
-  - {name: 'Contact', link: 'mailto:contact@avatao.com'}
+  - {name: 'Contact', link: 'https://avatao.com/contact'}
+  - {name: 'Careers', link: 'https://avatao.com/company'}
+  - {name: 'About', link: 'https://avatao.com/about'}
 
 #tagline: >
   #Learn to build secure software
