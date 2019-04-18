@@ -10,14 +10,6 @@ seo_tags: " XSS; Cross-Site Scripting; Bug Bounty; Google"
 
 You have probably heard about the recent Cross-Site Scripting vulnerability in the Google search engine. With a clever payload you could have crafted a link which executes JavaScript after opening it and clicking into the input box.
 
-<!--excerpt-->
-
-----
-
-## Introduction
-
-You have probably heard about the recent Cross-Site Scripting vulnerability in the Google search engine. With a clever payload you could have crafted a link which executes JavaScript after opening it and clicking into the input box.
-
 The bug was found by [Masato Kinugawa](https://twitter.com/kinugawamasato) and [LiveOverflow has made a video about it](https://www.youtube.com/watch?v=lG7U3fuNw3A) which became viral (it's really worth to check out and you can find a lot of additional great stuff on his YouTube channel as well).
 
 The video explains the bug clearly, but practice makes perfect so we have created a [tutorial challenge](https://platform.avatao.com/challenges/756c97e7-8605-4b5f-8c59-a6387f8fba67)  about the bug, where you can:
@@ -27,6 +19,12 @@ The video explains the bug clearly, but practice makes perfect so we have create
  * See how the vulnerable version of the sanitizer worked
 
 Also we think it's worth collecting the key elements and main points of the story, which is the goal of this post.
+
+![Search](../images/avatao-search.png)
+
+<!--excerpt-->
+
+----
 
 ## Dealing with user input
 
@@ -59,25 +57,11 @@ Inside the `<template>` element **scripting is disabled**, but in the browser (a
 It's parsed inside the template element like this:
 
 
-```
-<noscript>
-  <p title="</noscript><img src=x onerror=alert(1)>"></p>
-</noscript>
-```
+![HTML1](../images/scripts-disabled.png)
 
 But when it's used in a scripting enabled context it becomes:
 
-```
-<noscript>
-  <p title="
-</noscript>
-
-<img src="x" onerror="alert(1)">
-
-"&gt;
-
-<p></p>
-```
+![HTML2](../images/scripts-enabled.png)
 
 And boom - the `alert(1)` is executed. It's a really awesome example of how weird browsers could be and a motivation for all the bug bounty hunters out there, because I bet almost none of us thought that we'll see a working XSS on the homepage of Google.
 
