@@ -10,9 +10,9 @@ seo_tags: " XSS; Cross-Site Scripting; Bug Bounty; Google"
 
 You have probably heard about the recent Cross-Site Scripting vulnerability in the Google search engine. With a clever payload you could have crafted a link which executes JavaScript after opening it and clicking into the input box.
 
-The bug was found by [Masato Kinugawa](https://twitter.com/kinugawamasato) and [LiveOverflow has made a video about it](https://www.youtube.com/watch?v=lG7U3fuNw3A) which went viral!! (it really is worth checking it out plus you can find a lot of additional great stuff on his YouTube channel as well).
+The bug was found by [Masato Kinugawa](https://twitter.com/kinugawamasato){:target="_blank"} and [LiveOverflow has made a video about it](https://www.youtube.com/watch?v=lG7U3fuNw3A){:target="_blank"} which went viral!! (it really is worth checking it out plus you can find a lot of additional great stuff on his YouTube channel as well).
 
-The video explains the bug clearly, but practice makes perfect so we have created a [tutorial challenge](https://platform.avatao.com/challenges/756c97e7-8605-4b5f-8c59-a6387f8fba67)  about the bug, where you can:
+The video explains the bug clearly, but practice makes perfect so we have created a [tutorial challenge](https://platform.avatao.com/challenges/756c97e7-8605-4b5f-8c59-a6387f8fba67){:target="_blank"}  about the bug, where you can:
 
  * **Exploit the same vulnerability**
  * Play with the HTML parser of your browser
@@ -44,7 +44,7 @@ There is a very special `<template>` tag which is perfect for the job. It's cont
 
 ## The issue
 
-And here comes the `<noscript>` tag which is really special as well. The [specification](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-noscript-element.html) says:
+And here comes the `<noscript>` tag which is really special as well. The [specification](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-noscript-element.html){:target="_blank"} says:
 
 > The `noscript` element **represents nothing if scripting is enabled**, and **represents its children if scripting is disabled**. It is used to present different markup to user agents that support scripting and those that don't support scripting, by **affecting how the document is parsed**.
 
@@ -75,5 +75,5 @@ I've seen the video multiple times, checked many-many comments about this vulner
 
 ## Let's play
 
-Now it's your time to analyze the bug interactively by solving our [tutorial challenge](https://platform.avatao.com/challenges/756c97e7-8605-4b5f-8c59-a6387f8fba67) about it. Have fun!
+Now it's your time to analyze the bug interactively by solving our [tutorial challenge](https://platform.avatao.com/challenges/756c97e7-8605-4b5f-8c59-a6387f8fba67){:target="_blank"} about it. Have fun!
 
