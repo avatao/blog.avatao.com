@@ -36,9 +36,9 @@ It sounds really wrong - so why would Google do that? Because parsing HTML is no
 
 ## But how to do it securely?
 
-There is a very special `<template>` tag which is perfect for the job. It's content is parsed, but not rendered. That means the browser does its magic (like fixing the missing closing tags), but it won't execute scripts and load images. The basic concept of sanitizing HTML on the client is the following:
+There is a very special `<template>` tag which is perfect for the job. Its content is parsed, but not rendered. That means the browser does its magic (like fixing the missing closing tags), but it won't execute scripts or load images. The basic concept of sanitizing HTML on the client is the following:
 
- * Loading the user input into a `<template>` tag and let the browser parse it
+ * Loading the user input into a `<template>` tag and letting the browser parse it
  * Removing scripts and unwanted tags and attributes (by using a whitelist for example)
  * The result can now be used securely in the HTML code
 
@@ -65,9 +65,9 @@ But when it's used in a scripting enabled context it becomes:
 
 And boom - the `alert(1)` is executed. It's a really awesome example of how weird browsers could be and a motivation for all the bug bounty hunters out there. I bet almost none of us thought that we'd see a working XSS on the homepage of Google.
 
-## How it could have been avoided?
+## How could it have been avoided?
 
-The funny thing is that they (at Google) **knew about this attack vector** already and **fixed the code a long time ago**. However they didn't add any unit tests and when someone later reverted it the build passed (because it didn't break the non-existent test) and the vulnerability ended up in the production code. So I think the most important takeway from the story is **tests are really important**.
+The funny thing is that they (at Google) **knew about this attack vector** already and **fixed the code a long time ago**. However they didn't add any unit tests and when someone later reverted it, the build passed (because it didn't break the non-existent test) and the vulnerability ended up in the production code. So I think the most important takeway from the story is **tests are really important**.
 
 ## Why?
 
