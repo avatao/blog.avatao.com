@@ -58,3 +58,42 @@ button:disabled {
     border: 2px solid #277eec;
   }
 }
+
+.btn-login,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  height: 40px;
+  width: 160px;
+  padding-top: 7px;
+  font-family: inherit;
+  line-height: 1.5;
+  text-decoration: none;
+  background-color: #4e99f8;
+  cursor: pointer;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-align: center;
+  border-radius: 40px;
+  transition: all .18s ease-out .18s;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  :focus,
+  :active {
+    background-color: #70aefa;
+
+  }
+  
+  &:active {
+    background-color: #277eec
+  }
+}
+
