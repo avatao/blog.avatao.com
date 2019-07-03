@@ -1,6 +1,6 @@
 .header {
   background-color: $bg-color;
-  color: $text-color;
+  color: #414a56;
   position: fixed;
   z-index: 4;
   width: 100%;
@@ -34,11 +34,11 @@
   padding: 19px 0;
   outline: 0;
   border-bottom: 0;
-  color: $heading-color;
+  color: #414a56;
   margin: 0 10px;
 
   &:hover {
-    color: $heading-color;
+    color: #4e99f8;
     border-bottom: 0;
   }
 
@@ -94,7 +94,7 @@
 }
 
 .header__link {
-  color: $headertext-color;
+  color: #414a56;
   padding: .938rem 0;
   border-top: 1px solid $border;
 }
@@ -208,7 +208,7 @@
     padding: .938rem .5rem;
     border: 0;
     height: 100%;
-    color:$primary;
+    color:#414a56;
 
 
     &::after {
@@ -224,14 +224,14 @@
     }
 
     &:hover {
-      color: darken($primary, 20%);
+      color: #4e99f8;
     }
 
     &:hover::after,
     :active::after,
     :focus::after {
       transform: scaleX(1);
-      color: darken($primary, 20%);
+      color: #4e99f8;
       transition: width .45s cubic-bezier(.694, .048, .335, 1);
     }
   }

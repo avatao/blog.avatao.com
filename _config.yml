@@ -49,11 +49,9 @@ social:
 
 # THEME SETTINGS
 navigation: # Navigation links
-  - {name: 'Product', link: 'https://avatao.com/'}
-  - {name: 'Solutions', link: 'https://avatao.com/solutions'}
-  - {name: 'Contact', link: 'https://avatao.com/contact'}
-  - {name: 'Careers', link: 'https://avatao.com/company'}
-  - {name: 'About', link: 'https://avatao.com/about'}
+  - {name: 'SOLUTION', link: 'https://avatao.com/'}
+  - {name: 'PRICING', link: 'https://avatao.com/pricing'}
+  - {name: 'CONTACT', link: 'https://avatao.com/contact'}
 
 #tagline: >
   #Learn to build secure software

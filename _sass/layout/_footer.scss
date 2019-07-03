@@ -1,9 +1,9 @@
 footer {
   padding: 85px 48px 180px;
-  background-color: #3B35D2;
+  background-color: #f3f6f9;
   text-align: center;
   font-size: 0.875rem;
-  color: white;
+  color: #414a56;
 
   a {
     &:hover,
@@ -35,10 +35,13 @@ footer {
   justify-content: left;
   width: 80%;
   white-space: nowrap;
+  padding-bottom: 5px;
+  color: #414a56;
 
   & a {
-    color: white !important;
     font-weight: 100;
+    padding-bottom: 5px;
+    color: #414a56;
   }
 }
 
@@ -48,7 +51,8 @@ footer {
 
 .tao-grid-footer-header {
   font-weight: 900;
-  color: white;
+  color: #414a56;
+  margin-bottom: 10px;
 }
 
 .footer__logo {
@@ -76,7 +80,7 @@ footer {
 }
 
 .tao-footer-company-text {
-  color: white;
+  color: #414a56;
   text-align: center;
   width: 100%;
   position: relative;
