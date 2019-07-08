@@ -52,6 +52,7 @@ navigation: # Navigation links
   - {name: 'SOLUTION', link: 'https://avatao.com/'}
   - {name: 'PRICING', link: 'https://avatao.com/pricing'}
   - {name: 'CONTACT', link: 'https://avatao.com/contact'}
+  - {name: 'ABOUT', link: 'https://avatao.com/about'}
 
 #tagline: >
   #Learn to build secure software
