@@ -7,6 +7,8 @@ author_web: ""
 featured-img: AvataoCulture
 seo_tags: "Secure Coding, Secure Code, Cybersecurity, DevSecOps, DevOps"
 ---
+<!--excerpt-->
+
 I nearly fell off my chair when our content guy, Anshul came to me and said 
 “Steve, I want you to write our next blog on the culture of [Avatao](https://avatao.com)”
 “Culture!!??” I said, “You do realise I’m Australian. I’m an Australian living in Europe, the cultural capital of the world”’
@@ -22,8 +24,7 @@ So I set out on my journey of discovery, researching what company culture really
  The only thing I learned about all this research was that I could fall asleep sitting upright. For regular long haul flight connoisseurs, sleeping up right seems normal, for me it was something that seemed impossible but became quite an enjoyable experience.
 
 
-Read more from Avatao: 
-Learn to build secure software: https://blog.avatao.com/Learn-to-build-secure-software/ 
+Read more from Avatao: [Learn to build secure software](https://blog.avatao.com/Learn-to-build-secure-software/)
 
 
 That was it, my epiphany. To describe the culture of working for such a dynamic startup like [Avatao](https://avatao.com), I’d have to reach down inside. Speak from the heart and not from the pages of the websites I visited on my way to compiling what could have been an uninteresting blog filled with ‘expert’ opinions and cited corporate jargon.
@@ -36,6 +37,4 @@ It’s coming to the office everyday looking forward to being there, it’s the 
 Coming from structured corporate roles to an office filled with friends was something that seemed impossible but is now the most enjoyable experience of my life. Now bring on the beers and barbeque, I have to keep the Australian culture going somehow you know…
 
 
-Read more from Avatao: 
-
-How you can deep-dive into web security as a developer: https://blog.avatao.com/How-to-dive-into-web-security-as-a-developer/
+Read more from Avatao: [How you can deep-dive into web security as a developer](https://blog.avatao.com/How-to-dive-into-web-security-as-a-developer/)
