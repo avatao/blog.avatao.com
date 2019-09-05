@@ -1,12 +1,13 @@
 ---
 layout: post
-title: The Office and Beyond: The culture of Avatao
+title: The Office and Beyond - The culture of Avatao
 author: SteveBentley
 author_name: "Steve Bentley"
 author_web: ""
 featured-img: AvataoCulture
-seo_tags: "Secure Coding, Secure Code, Cybersecurity, DevSecOps, DevOps"
+seo_tags: "Secure Coding; Secure Code; Cybersecurity; DevSecOps; DevOps"
 ---
+
 <!--excerpt-->
 
 I nearly fell off my chair when our content guy, Anshul came to me and said 
