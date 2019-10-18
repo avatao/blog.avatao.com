@@ -8,9 +8,9 @@ featured-img: MakeYourCompanyBetter
 seo_tags: "AppSec, AppSec Training, CyberSecurity, Secure Coding, DevOps, DevSecOps, Secure Code"
 ---
 
-**Human errors**
-Your workforce could be your biggest strength... and yet it could just turn out to be your biggest weakness! 
+## Human errors
 
+Your workforce could be your biggest strength... and yet it could just turn out to be your biggest weakness! 
 
 To err is human, everyone makes them. Not making any is certainly impossible, but there are some processes organisations can implement to reduce the chances of those errors occuring.
 
