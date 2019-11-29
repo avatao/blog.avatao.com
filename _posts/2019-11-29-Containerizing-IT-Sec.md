@@ -8,9 +8,7 @@ featured-img: ContainerizingITSec
 seo_tags: "IT Security, Software Development, Container Security, Infosec, Information Security, Code Training, Secure Coding training, Open Source, IT Framework, Tech Framework, Secure Coding, IT Training, CTF, Cybersecurity, Online Training, Tutorial Framework, Open Source, OS Framework, Open Source Framework"
 ---
 ​
-Something is not quite right with cybersecurity.
-As our industry slowly realizes how big of an issue it is, the more we seem to be failing at it.
-But why is this the case?
+Something is not quite right with cybersecurity. As our industry slowly realizes how big of an issue it is, the more we seem to be failing at it. But why is this the case?
 ​
 ## The Phantom Menace
 ​
