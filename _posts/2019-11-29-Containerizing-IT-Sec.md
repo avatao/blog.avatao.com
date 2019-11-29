@@ -247,6 +247,7 @@ Note that the direction of fifos (send or receive) is determined by their names
 ​
 ## Giving back to the community
 ​
+
 ![](../images/LGPLv3_free_as_in_freedom.svg)
 
 ​
