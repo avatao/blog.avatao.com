@@ -8,6 +8,7 @@ featured-img: ContainerizingITSec
 seo_tags: "IT Security, Software Development, Container Security, Infosec, Information Security, Code Training, Secure Coding training, Open Source, IT Framework, Tech Framework, Secure Coding, IT Training, CTF, Cybersecurity, Online Training, Tutorial Framework, Open Source, OS Framework, Open Source Framework"
 ---
 ​
+
 Something is not quite right with cybersecurity. As our industry slowly realizes how big of an issue it is, the more we seem to be failing at it. But why is this the case?
 ​
 ## The Phantom Menace
@@ -25,8 +26,10 @@ And boy, is that software ugly.
 That software is the worst million lines of legacy braindeath nobody dares to touch at your
 organisation.
 We all have it, we've all seen it and we all know it's not going away anytime soon.
+
 ​
 ![](../images/this_is_fine.jpeg)
+
 ​
 If you throw security into this whole mix, it gets even worse.
 ITSec still seems to be an exotic topic at universities and
@@ -104,6 +107,7 @@ The framework also offers tooling to deal with:
 ​
 The whole package is conveniently shipped as a Docker baseimage available on [DockerHub](https://hub.docker.com/r/avatao/baseimage-tutorial-framework).
 ​
+
 ## Welcome on Board!
 ​
 The foundation of the framework is a messaging system built on [ZeroMQ](https://zeromq.org).
@@ -151,11 +155,14 @@ deciding what should happen based on the current state of the tutorial and the r
 For instance you could listen for `ide.write` events, try to compile & run the code found
 in the `content` field and notify the user of success when the code passes certain test cases.
 ​
+
 ## Disassembling the Hyperdrive
 ​
 On a high level the framework looks like this:
+
 ​
 ![](../images/tfw_architecture.png)
+
 ​
 The TFW server could be described as a router.
 Its job is routing messages between
@@ -214,6 +221,7 @@ Note that the direction of fifos (send or receive) is determined by their names
 ## Giving back to the community
 ​
 ![](../images/LGPLv3_free_as_in_freedom.svg)
+
 ​
 The Tutorial Framework is available on GitHub and it is licensed under the GNU LGPLv3.
 ​
@@ -223,5 +231,6 @@ Check out our repositories:
 - [https://github.com/avatao-content/frontend-tutorial-framework](https://github.com/avatao-content/frontend-tutorial-framework)
 - [https://github.com/avatao-content/test-tutorial-framework](https://github.com/avatao-content/test-tutorial-framework)
 ​
+
 Feedback, contributions or questions are very welcome. 
 Thank you for reading!
