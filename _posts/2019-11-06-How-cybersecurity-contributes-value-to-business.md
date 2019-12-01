@@ -40,7 +40,7 @@ Here’s the ‘vicious’ cycle of cybersecurity:
 
 It is very important that all participants in software product design work together to break this cycle. Software developers need to build systems that are secure by design (especially in [web application security](https://platform.avatao.com/paths/c7b22cf2-3044-42ca-bfc4-308d3023034d/info), and [secure coding](https://www.pluralsight.com/browse/information-cyber-security/secure-by-design)). 
 
-It is imperative we see that **[cybersecurity teams can deliver great value to the business]**(https://hbr.org/2016/09/how-cybersecurity-teams-can-convince-the-c-suite-of-their-value) if they are treated as internal consultants and value centers rather than a cost center. The major problem is that developers and product managers need cybersecurity to be seamlessly integrated with product development. 
+It is imperative we see that **[cybersecurity teams can deliver great value to the business](https://hbr.org/2016/09/how-cybersecurity-teams-can-convince-the-c-suite-of-their-value)** if they are treated as internal consultants and value centers rather than a cost center. The major problem is that developers and product managers need cybersecurity to be seamlessly integrated with product development. 
 
 1. First, cybersecurity teams can and should be present during the design stage of any product. Product and developer teams should consider cybersecurity as a feature. It starts with [threat modeling](https://www.owasp.org/index.php/Application_Threat_Modeling) and continues with secure architecture design. Having security integrated in the development process can significantly reduce debugging time as developers start to think more rigorously about their code.
 
