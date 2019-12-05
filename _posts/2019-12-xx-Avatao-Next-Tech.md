@@ -11,7 +11,7 @@ seo_tags: "IT Security, Software Development, Infosec, Information Security, Cod
 
 Why Avatao Next?
 
-Well, let's start from the very beginning. Avatao is a security training company the provides really cool (personal opinion :) ) container-based challenges and tutorials to transform companies from the stalled, pale and chaotic plane of security ignorance to a much better place where security is handled with a proper state of mind and responsibility. To achive this, we build a platform with hundreds of security exercises that help developers to hone their skills in a really hands-on way and hopefully joyful way. At the same time, we implemented some basics features for managers to see the progress of their organization. That is it. 
+Well, let's start from the very beginning. Avatao is a security training company the provides really cool - biased personal opinion :) - container-based challenges and tutorials to transform companies from the stalled, pale and chaotic plane of security ignorance to a much better place where security is handled with a proper state of mind and responsibility. To achive this, we build a platform with hundreds of security exercises that help developers to hone their skills in a really hands-on way and hopefully joyful way. At the same time, we implemented some basics features for managers to see the progress of their organization. That is it. 
 Avatao was always well-known for its reliability and the huge effort we placed into creating relevant challenges that help understand application security from zero to hero. That sounds really cool, however, as time goes on we had to learn (sometimes painfully and slowly, but that is life). Actually, we learnt a lot from our clients, failures, successes, investors, friends and our "competitors". Without them, we couldn't have taken a huge progress in our way of thinking to change something that didn't work in the past. So what was it?
 
 --- 
@@ -19,7 +19,7 @@ Avatao was always well-known for its reliability and the huge effort we placed i
 
 ## What was the problem?
 
-In the early dawn of Avatao in 2014, when we were still sitting in one of the rooms of CrySyS Lab at the Budapest University of Technology and Economics (huge thanks [Levi](https://www.crysys.hu/member/buttyan) for hosting us), we didn't really know anything about how to build a real product for real clients. We had now idea about target personas and go-to-market strategies. However, we knew that something
+In the early dawn of Avatao in 2014, when we were still sitting in one of the rooms of [CrySyS Lab](https://crysys.hu) at the Budapest University of Technology and Economics - huge thanks [Levi](https://www.crysys.hu/member/buttyan) for hosting us - , we didn't really know anything about how to build a real product for real clients. We had now idea about target personas and go-to-market strategies. However, we knew that something
 is really bad with existing traing platform and methods as they are neither cost-effecitve and scalable enough to deliver hands-on training to a massive scale of people. Due to our CTF background (Kudos for [!SpamAndHEx](https://spamandhex.com/))
 
 
