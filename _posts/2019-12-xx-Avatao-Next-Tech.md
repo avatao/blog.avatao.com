@@ -1,13 +1,36 @@
 ---
 layout: post
-title: Containerizing IT Security Knowledge
-author: KristofToth
-author_name: "Kristóf Tóth"
+title: Avatao next under the hood
+author: gaborpek
+author_name: "Gábor Pék"
 author_web: "https://avatao.com"
-featured-img: ContainerizingITSec
-seo_tags: "IT Security, Software Development, Container Security, Infosec, Information Security, Code Training, Secure Coding training, Open Source, IT Framework, Tech Framework, Secure Coding, IT Training, CTF, Cybersecurity, Online Training, Tutorial Framework, Open Source, OS Framework, Open Source Framework"
+featured-img: AvataoNextTech
+seo_tags: "IT Security, Software Development, Infosec, Information Security, Code Training, Secure Coding training, Product management, Vision, Secure Coding, IT Training, CTF, Cybersecurity, Online Training"
 ---
 ​
+
+Why Avatao Next?
+
+Well, let's start from the very beginning. Avatao is a security training company the provides really cool (personal opinion :) ) container-based challenges and tutorials to transform companies from the stalled, pale and chaotic plane of security ignorance to a much better place where security is handled with a proper state of mind and responsibility. To achive this, we build a platform with hundreds of security exercises that help developers to hone their skills in a really hands-on way and hopefully joyful way. At the same time, we implemented some basics features for managers to see the progress of their organization. That is it. 
+Avatao was always well-known for its reliability and the huge effort we placed into creating relevant challenges that help understand application security from zero to hero. That sounds really cool, however, as time goes on we had to learn (sometimes painfully and slowly, but that is life). Actually, we learnt a lot from our clients, failures, successes, investors, friends and our "competitors". Without them, we couldn't have taken a huge progress in our way of thinking to change something that didn't work in the past. So what was it?
+
+--- 
+
+
+## What was the problem?
+
+In the early dawn of Avatao in 2014, when we were still sitting in one of the rooms of CrySyS Lab at the Budapest University of Technology and Economics (huge thanks [Levi](https://www.crysys.hu/member/buttyan) for hosting us), we didn't really know anything about how to build a real product for real clients. We had now idea about target personas and go-to-market strategies. However, we knew that something
+is really bad with existing traing platform and methods as they are neither cost-effecitve and scalable enough to deliver hands-on training to a massive scale of people. Due to our CTF background (Kudos for [!SpamAndHEx](https://spamandhex.com/))
+
+
+
+
+
+
+
+
+
+
 
 Something is not quite right with cybersecurity. As our industry slowly realizes how big of an issue it is, the more we seem to be failing at it. But why is this the case?
 ​
