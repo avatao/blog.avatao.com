@@ -35,11 +35,14 @@ That's great. What's now? We also realized that there is no point supporting mul
 
 > Squads help group developers around software stack, interest or location inside an organization.
 
-Hmm, that seems to be something that is getting closer to the reality. 
+Hmm, this is a bit better now. Here is a quick overview of organization features.
 
-  * Bulk invite
+  * Bulk invite of users 
   * Squad support to group organization users 
   * More in-depth statistics
+  * Notifications to engage learning
+  * Organization-level 
+  * Careers tracks and belt system (coming soon)
 
 ![](../images/LGPLv3_free_as_in_freedom.svg)
 
@@ -54,10 +57,16 @@ Hmm, that seems to be something that is getting closer to the reality.
   * Supporting individuals and teams
   * Ability to join a public Event without organization access
   * Assigning Events to Squads
+  
+  
 
-### A story of success?
+### Okay, okay, but what about learning?
 
-We still don't know if Avatao Next is the silver bullet for the all the , but it is definitely a right answer to a sore problem that is weakening companies for decades now. 
+Similarly to organization-level recommendations, developers can now pick topics in accordance with to learn to learn what they really want. Tutorials (not the challenges) are now embedded into the platform so we can automatically communicate with the bot inside that to check your progress. For example, you don't need to go back to the platform to click on submit solution :) And this is just the beginning. A lot of improvement is coming next year. 
+
+## A story of success? 
+
+We still don't know if Avatao Next is the silver bullet for all the pains that the lack of security consiciousness causes, however, it's definitely an answer to a sore problem that is weakening companies for decades now. Our initial release is just the very beginning of a story we build together with our team, our clients and the whole industry. We are more than happy to hear the real pains to save time and resources to deliver that make revolutionize your security culture. 
 
 ## Thank you all!
 
