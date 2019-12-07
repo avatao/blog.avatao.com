@@ -39,7 +39,7 @@ That's great. What's now? We also realized that there is no point supporting mul
 
 ![](../images/Macbook_usermanagement.jpg)
 
-That's great. What else? There many other great things we plan to change and include in the future by keeping ourself to our real goal. Here is a quick overview of organization feautures for now. 
+That's great. What else? There are many other great things we plan to change and include in the future by keeping ourself to our real goal. Here is a quick overview of organization feautures for now. 
 
   * Bulk invite of users 
   * Squad support to group organization users 
