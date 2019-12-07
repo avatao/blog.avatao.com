@@ -59,29 +59,29 @@ Is it really that special? Yes, absolutely! By enabling to launch CTFs, Hackthon
  
 Got it, but what if I want to use the same sequence of challenges without expiry (e.g., *Continuous learning*, *Onboarding*)? Not an issue at all. Events created without date - permanent Events - work exactly the same way as the concept of learning paths in the old platform. They can be solved at anytime with no constraints. 
  
-And this is just the very beginning. What if security champions could add these events to developers' calendar so as not to skip them? What if developers could now play jointly on these cool events that help them solve problems together? Hmm, it's getting more and more interesting. 
+And this is just the very beginning. What if security champions could add these events to developers' calendar so as not to ignore these sessions? What if developers could now play jointly on these cool events that help them solve problems together? Hmm, it's getting more and more interesting. 
 
-We know also that security champions are overloaded. They have to do code reviews, participating threat modeling sessions, organizing security traingings, being involved in security compliances and so on. Zillions of things to do at once. We would love to save as much as time as possible for them. That's why we started coming up with features that improves their daily life. Here is a quick checklist:
+We know also that security champions are overloaded. They have to do code reviews, participate threat modeling sessions, organize security trainings, being involved in security compliances and so on. Zillions of things to do at once. We would love to save as much time as possible for them. That's why we started coming up with features that improves their daily life. Here is a quick checklist:
  
   * Self-served Event creation
-  * Permanent and schedule Events
+  * Permanent and scheduled Events
   * Calendar integration
-  * Supporting individuals and teams
+  * Creating Events for individuals and teams
   * Ability to join a public Event without organization access
   * Assigning Events to Squads
  
 
 ### Okay, okay, but what about those who actually learn?
 
-Similarly to organization-level recommendations, developers can now pick from topics they're interested in. Tutorials (not challenges) are now embedded into the platform so we can automatically communicate with the bot inside that to check users' progress. For example, you don't need to go back to the platform to click on the 'Submit solution' button :) And this is just the beginning. A lot of improvement is coming next year. 
+Similarly to organization-level recommendations, developers can now pick from topics they're interested in. Tutorials (not challenges) are now embedded into the platform so we can check users' progress easily. For example, developers don't need to go back to the platform to click on the 'Submit solution' button anymore :)  And this is just the beginning. A lot of improvement is coming next year. 
 
 ## A story of success? 
 
-We still don't know if Avatao Next is the silver bullet for all the security training pains, however, it's definitely an answer to a sore problem that is weakening companies for decades now. Our initial release is just the very beginning of a story we build together with our team, our clients and the whole industry. 
+We still don't know if Avatao Next is the silver bullet for all the security training pains, however, it's definitely an answer to a sore problem that is weakening companies for decades now. Our initial release is just the very beginning of a story we build together with our clients and the whole industry. 
 
 ## Thank you all!
 
-First and foremost, thank you Avatao team for being with us and taking this amazing step. There were many up and downs, I know, but I believe it made us stronger. Special thank goes to [Alex](https://speedinvest.com/alex-zhigarev/) and [Santiago](https://speedinvest.com/corredoira-jack/) from Speedinvest for pushing us to take the control back on our processes and product. Last, but not least, kudos for all the people and companies of the security space who work day and night on the brighter future of the services and products we altogether use.
+First and foremost, thank you Avatao team for being with us and taking this amazing step. There were many up and downs, I know, but I believe it made us stronger. Special thank goes to [Alex](https://speedinvest.com/alex-zhigarev/) and [Santiago](https://speedinvest.com/corredoira-jack/) from Speedinvest, one of our investors, for pushing us to take the control back on our processes and product. Last, but not least, kudos for all the people and companies of the security space who work day and night on the brighter future of the services and products we altogether use.
 
  \[1\]: Joshua Seiden: Outcome over output.
  
