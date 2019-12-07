@@ -83,6 +83,6 @@ We still don't know if Avatao Next is the silver bullet for all the security tra
 
 First and foremost, thank you Avatao team for being with us and taking this amazing step. There were many up and downs, I know, but I believe it made us stronger. Special thank goes to [Alex](https://speedinvest.com/alex-zhigarev/) and [Santiago](https://speedinvest.com/corredoira-jack/) from Speedinvest for pushing us to take the control back on our processes and product. Last, but not least, kudos for all the people and companies of the security space who work day and night on the brighter future of the services and products we altogether use.
 
- \[1\]: Joshua Seiden - Outcome over output.
+ \[1\]: Joshua Seiden: Outcome over output.
  
- \[2\]: Mellissa Perri - How Effective Product Management Creates Real Value.
+ \[2\]: Mellissa Perri: Escaping the build trap - How Effective Product Management Creates Real Value.
