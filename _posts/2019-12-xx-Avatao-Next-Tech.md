@@ -39,7 +39,7 @@ That's great. What's now? We also realized that there is no point in supporting 
 
 ![](../images/Macbook_usermanagement.jpg)
 
-That's great. What else? There are many other great things we plan to change and include in the future by keeping ourself to our real goal. Here is a quick overview of organization feautures for now. 
+That's great. What else? There are many other pretty nice things we plan to change and include in the future by keeping ourself to our real goal. Here is a quick overview of organization feautures for now. 
 
   * Bulk invite of users 
   * Squad support to group organization users 
