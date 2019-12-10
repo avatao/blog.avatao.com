@@ -39,7 +39,7 @@ That's great. What's now? We also realized that there is no point in supporting 
 
 ![](../images/Macbook_usermanagement.jpg)
 
-That's great. What else? There are many other pretty nice things we plan to change and include in the future by keeping ourself to our real goal. Here is a quick overview of organization feautures for now. 
+That's great. What else? There are many other things we plan to change and include in the future by keeping ourself to our real goal. Here is a quick overview of organization features for now. 
 
   * Bulk invite of users 
   * Squad support to group organization users 
@@ -49,9 +49,9 @@ That's great. What else? There are many other pretty nice things we plan to chan
   * Career tracks and belt system (coming soon)
   
   
-  ### __Learning Paths vs. Events__
+  ### Redesigned learning paths are now called Events
  
- _Learning path_ is a great feature to interlink challenges around a topic such as programming languages or various technologies so as to allow for a continuous flow of learning. We had to face, however, the rough reality that developers don't really invest time to learn on our platform in their working hours except there is a trigger that they cannot ignore. One of these, of course, is the call of free pizza on Hackthons and CTFs. Awesome. We felt like finding something that people really enjoy, but learn from a lot. At this point, we realized that our hard-coded learning paths are not flexible enough to support these on-demand events. We had to come up with a solution that enables security champions to organize more and more from these. This is when the idea of _Events_, namely scheduled Learning Paths, was born. 
+ _Learning path_ is a great feature to interlink challenges around a topic such as programming languages or various technologies so as to allow for a continuous flow of learning. We had to face, however, the rough reality that developers don't really invest time to learn in their working hours except there is a trigger that they cannot ignore. One of these, of course, is the call of free pizza on Hacktahons and CTFs. Awesome. We felt like finding something that people really enjoy, but learn from a lot. At this point, we realized that our hard-coded learning paths are not flexible enough to support these on-demand events. We had to come up with a solution that enables security champions to organize more and more from these. This is when the idea of _Events_, namely scheduled Learning Paths, was born. 
  
 Is it really that special? Yes, absolutely! By enabling to launch CTFs, Hackthons and Workshops at anytime by just simply picking a date and a sequence of challenges, security champions can lead a real war against the stalled and swampy concept of existing security training methods. 
  
