@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Avatao Next was born? 
+title: Avatao Next: A vision to revolutionize your security culture 
 author: gaborpek
 author_name: "Gábor Pék"
 author_web: "https://avatao.com"
@@ -9,7 +9,7 @@ seo_tags: "IT Security, Software Development, Infosec, Information Security, Cod
 ---
 ​
 
-## The beginning
+## Motivation
 
 Well, let's start from the very beginning. Avatao is a security training company providing really cool - biased personal opinion :) - containerized challenges and tutorials to transform companies from the stalled, pale and chaotic plane of security ignorance to a much better place where security is handled with the proper state of mind and responsibility. To achieve this, we built a platform with nearly a thousand security exercises that help developers hone their skills in a really hands-on and hopefully enjoyable way. At the same time, we implemented some basic features for managers to see the progress of their company. That's it. 
 
@@ -73,11 +73,11 @@ We also know that security champions are overloaded. They have to do code review
 
 ### Okay, okay, but what about those who actually learn?
 
-Similarly to organization-level recommendations, developers can now pick from topics they're interested in. Tutorials (not challenges) are now embedded into the platform so we can check users' progress easily. For example, developers don't need to go back to the platform to click on the 'Submit solution' button anymore :)  And this is just the beginning. A lot of improvement is coming next year. 
+Similarly to organization-level recommendations, developers can now pick from topics they're interested in. Tutorials (not challenges) are now embedded into the platform so we can check users' progress easily. And this is just the beginning. A lot of improvement is coming next year. 
 
 ## A story of success? 
 
-We still don't know if Avatao Next is the silver bullet for all the security training pains, however, it's definitely an answer to a sore problem that is weakening companies for decades now. Our initial release is just the very beginning of a story we build together with our clients and the whole industry. 
+Avatao Next was a grand vision that became a reality now. Over the last 2 years, we carefully collected feedbacks from our users, customers, partners and understood what their real pain is. At a certain point, we realized that we need to give even more control and flexibility to them. To achieve this, we redesigned the whole platform concept with 2 key pillars in mind: organizations with squad-, and events with team support. We truly believe that our new concept and training delivery method  will help software companies all over world to radically transform their coding practices to create and maintain secure and reliable products.
 
 ## Thank you all!
 
