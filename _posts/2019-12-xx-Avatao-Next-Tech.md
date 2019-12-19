@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Avatao next was born? A story of failure, learning and hopefully success
+title: Why Avatao Next was born? 
 author: gaborpek
 author_name: "Gábor Pék"
 author_web: "https://avatao.com"
@@ -9,7 +9,7 @@ seo_tags: "IT Security, Software Development, Infosec, Information Security, Cod
 ---
 ​
 
-## Why Avatao Next?
+## The beginning
 
 Well, let's start from the very beginning. Avatao is a security training company providing really cool - biased personal opinion :) - containerized challenges and tutorials to transform companies from the stalled, pale and chaotic plane of security ignorance to a much better place where security is handled with the proper state of mind and responsibility. To achieve this, we built a platform with nearly a thousand security exercises that help developers hone their skills in a really hands-on and hopefully enjoyable way. At the same time, we implemented some basic features for managers to see the progress of their company. That's it. 
 
