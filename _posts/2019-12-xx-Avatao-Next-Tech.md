@@ -77,7 +77,7 @@ Similarly to organization-level recommendations, developers can now pick from to
 
 ## A story of success? 
 
-Avatao Next was a grand vision that became a reality now. Over the last 2 years, we carefully collected feedbacks from our users, customers, partners and understood what their real pain is. At a certain point, we realized that we need to give even more control and flexibility to them. To achieve this, we redesigned the whole platform concept with 2 key pillars in mind: organizations with squad-, and events with team support. We truly believe that our new concept and training delivery method  will help software companies all over world to radically transform their coding practices to create and maintain secure and reliable products.
+Avatao Next was a grand vision that became a reality now. Over the last 2 years, we carefully collected feedbacks from our users, customers, partners and understood what their real pains are. At a certain point, we realized that we need to give even more control and flexibility to them. To achieve this, we redesigned the whole platform with 2 key pillars in mind: organizations with squad-, and events with team support. Certainly, we cannot stop here. We truly believe, however, that our new approach and training delivery method will help software companies all over world to radically transform their coding practices to create and maintain secure and reliable products.
 
 ## Thank you all!
 
